@@ -28,10 +28,10 @@ const Nav2 = () => {
         </li>
         <li>
           <Link
-            href="/about"
-            className={router.pathname === "/about" ? styles.active : ""}
+            href="/blog"
+            className={router.pathname === "/blog" ? styles.active : ""}
           >
-            À propos
+            Blog
           </Link>
         </li>
         <li>
@@ -44,7 +44,7 @@ const Nav2 = () => {
         </li>
       </ul>
 
-      <button className={styles.ctaButton}>S'inscrire</button>
+      <button className={styles.ctaButton}>Contact</button>
     </nav>
   );
 };

@@ -2,9 +2,11 @@ import React from "react";
 
 const index = () => {
   return (
-    <div>
-      <div>index</div>
-    </div>
+    <>
+        <div className="container">
+          <h5>Accueil. 🏠</h5>
+        </div>
+    </>
   );
 };
 

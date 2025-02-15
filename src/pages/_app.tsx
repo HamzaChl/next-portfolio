@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Nav2 from "@/components/Nav2";
 import "@/styles/globals.css";
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Nav2 />
       <Component {...pageProps} />
+      <Footer/>
     </>
   );
 }

@@ -37,6 +37,42 @@ const projects: Project[] = [
       "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01hover.png",
     category: "UI/UX",
   },
+  {
+    id: 4,
+    title: "Freezmix",
+    year: 2023,
+    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02.png",
+    hoverImage:
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02hover.png",
+    category: "Design",
+  },
+  {
+    id: 5,
+    title: "Projet Gamma",
+    year: 2023,
+    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01.png",
+    hoverImage:
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01hover.png",
+    category: "UI/UX",
+  },
+  {
+    id: 6,
+    title: "Freezmix",
+    year: 2023,
+    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02.png",
+    hoverImage:
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02hover.png",
+    category: "Design",
+  },
+  {
+    id: 7,
+    title: "Projet Gamma",
+    year: 2023,
+    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01.png",
+    hoverImage:
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01hover.png",
+    category: "UI/UX",
+  },
 ];
 
 const ProjectGrid = () => {
