@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px 20px 40px;
+
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    font-size: 13px;
+    gap: 20px;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #d5d5d5;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+
+.navLinks li a:hover,
+.navLinks .active {
+    color: #161616;
+    background-color: #ffffff;
+}
+
+.ctaButton {
+    background-color: #eeeeee;
+    color: #414141;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.ctaButton:hover {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}

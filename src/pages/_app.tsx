@@ -1,6 +1,13 @@
+import Nav from "@/components/Nav";
+import Nav2 from "@/components/Nav2";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Nav2 />
+      <Component {...pageProps} />
+    </>
+  );
 }

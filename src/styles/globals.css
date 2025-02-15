@@ -1,6 +1,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-shadow: rgba(0, 0, 0, 0.2);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,4 +43,13 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.container {
+  padding: 50px 100px 50px 100px;
+}
+
+h5 {
+  font-size: 40px;
+  font-weight: 400;
 }

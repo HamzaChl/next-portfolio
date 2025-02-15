@@ -1,0 +1,47 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.projectContainer {
+    position: relative;
+    /* Permet de positionner le label */
+}
+
+.project {
+    margin-top: 100px;
+    background-image: var(--image);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    transition: background-image 0.3s ease-in-out;
+    background-color: rgb(198, 198, 198);
+    position: relative;
+}
+
+.project:hover {
+    background-image: var(--hover);
+}
+
+/* Style du label */
+.label {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--background);
+    backdrop-filter: blur(8px);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 13px;
+    color: white;
+    padding: 5px;
+}
