@@ -6,7 +6,6 @@
 
 .projectContainer {
     position: relative;
-    /* Permet de positionner le label */
 }
 
 .project {
@@ -17,7 +16,7 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     transition: background-image 0.3s ease-in-out;
-    background-color: rgb(198, 198, 198);
+    background-color: rgb(29, 29, 29);
     position: relative;
 }
 
@@ -52,4 +51,24 @@
         gap: 5px;
     }
 
+}
+
+@media (max-width: 600px) {
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+}
+
+
+@keyframes loadingSkeleton {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
 }

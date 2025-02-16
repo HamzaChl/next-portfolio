@@ -61,3 +61,30 @@
 .ctaContainer {
     gap: 10px;
 }
+
+.statusIndicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+    border-radius: 50%;
+
+
+}
+
+.online {
+    background-color: #4CAF50;
+    box-shadow: 0px 0px 5px 0px rgba(34, 255, 0, 0.75);
+
+}
+
+.offline {
+    background-color: #E53935;
+    box-shadow: 0px 0px 5px 0px #E53935;
+
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+}
