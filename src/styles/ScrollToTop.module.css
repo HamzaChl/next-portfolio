@@ -1,0 +1,19 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    color: #f0f0f0;
+}
+
+.scrollToTop.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scrollToTop:hover {
+    color: #ffffff;
+}

@@ -1,87 +1,33 @@
+import { useEffect, useState } from "react";
 import styles from "@/styles/Project.module.css";
+import { Project } from "@/functions/types";
 
-interface Project {
-  id: number;
-  title: string;
-  year: number;
-  image: string;
-  hoverImage: string;
-  category: string; // Nouvelle propriété pour le label
-}
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "EventGather",
-    year: 2023,
-    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01.png",
-    hoverImage:
-      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01hover.png",
-    category: "Design",
-  },
-  {
-    id: 2,
-    title: "Freezmix",
-    year: 2023,
-    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02.png",
-    hoverImage:
-      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02hover.png",
-    category: "Design",
-  },
-  {
-    id: 3,
-    title: "Projet Gamma",
-    year: 2023,
-    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01.png",
-    hoverImage:
-      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01hover.png",
-    category: "UI/UX",
-  },
-  {
-    id: 4,
-    title: "Freezmix",
-    year: 2023,
-    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02.png",
-    hoverImage:
-      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02hover.png",
-    category: "Design",
-  },
-  {
-    id: 5,
-    title: "Projet Gamma",
-    year: 2023,
-    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01.png",
-    hoverImage:
-      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01hover.png",
-    category: "UI/UX",
-  },
-  {
-    id: 6,
-    title: "Freezmix",
-    year: 2023,
-    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02.png",
-    hoverImage:
-      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02hover.png",
-    category: "Design",
-  },
-  {
-    id: 7,
-    title: "Projet Gamma",
-    year: 2023,
-    image: "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01.png",
-    hoverImage:
-      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/01hover.png",
-    category: "UI/UX",
-  },
-];
+const PROJECTS_URL =
+  "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects.json"; // Remplace par ton URL GitHub
 
 const ProjectGrid = () => {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch(PROJECTS_URL);
+        if (!response.ok) throw new Error("Erreur de chargement des projets");
+
+        const data: Project[] = await response.json();
+        setProjects(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
   return (
     <div className={styles.grid}>
       {projects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>
-          
-          
           <div
             className={styles.project}
             style={
@@ -90,7 +36,9 @@ const ProjectGrid = () => {
                 "--hover": `url(${project.hoverImage})`,
               } as React.CSSProperties
             }
-          ><span className={styles.label}>{project.category}</span></div>
+          >
+            <span className={styles.label}>{project.category}</span>
+          </div>
           <h3 className={styles.title}>
             {project.title} ━ {project.year}
           </h3>
