@@ -3,7 +3,7 @@ import styles from "@/styles/Project.module.css";
 import { Project } from "@/functions/types";
 
 const PROJECTS_URL =
-  "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects.json"; // Remplace par ton URL GitHub
+  "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects.json";
 
 const ProjectGrid = () => {
   const [projects, setProjects] = useState<Project[]>([]);
