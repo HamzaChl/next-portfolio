@@ -25,7 +25,6 @@
     background-image: var(--hover);
 }
 
-/* Style du label */
 .label {
     position: absolute;
     top: 8px;
@@ -44,4 +43,13 @@
     font-size: 13px;
     color: white;
     padding: 5px;
+}
+
+@media (max-width: 1000px) {
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
 }
