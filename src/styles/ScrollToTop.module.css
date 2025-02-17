@@ -1,12 +1,13 @@
 .scrollToTop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     cursor: pointer;
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.3s, transform 0.3s;
     color: #f0f0f0;
+    z-index: 100;
 }
 
 .scrollToTop.show {

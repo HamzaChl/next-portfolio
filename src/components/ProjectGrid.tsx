@@ -59,17 +59,7 @@ const ProjectGrid = () => {
 
   return (
     <>
-      <div className={styles.sortMenu}>
-        {["year", "title", "category"].map((key) => (
-          <label
-            key={key}
-            className={sortBy === key ? styles.active : styles.inactive}
-            onClick={() => setSortBy(key as "year" | "title" | "category")}
-          >
-            {key === "year" ? "Année" : key === "title" ? "Titre" : "Catégorie"}
-          </label>
-        ))}
-      </div>
+      
 
       <div ref={gridRef} className={styles.grid}>
         {sortedProjects.map((project) => (

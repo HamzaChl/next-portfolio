@@ -143,3 +143,20 @@
 .inactive {
     color: gray;
 }
+
+.imgProject {
+    width: 90vw;
+    margin-top: 10px;
+    height: calc(100vw * (1080 / 1920));
+    max-height: 100vh;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesGrid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

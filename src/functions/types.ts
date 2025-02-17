@@ -13,4 +13,5 @@ export interface Project {
   image: string;
   hoverImage: string;
   category: ProjectCategory;
+  projectImages: string[];
 }

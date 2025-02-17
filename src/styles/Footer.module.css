@@ -44,7 +44,6 @@
     opacity: 1;
 }
 
-/* Copyright */
 .copyright {
     text-align: center;
     margin-top: 30px;
@@ -54,7 +53,6 @@
     opacity: 0.7;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
