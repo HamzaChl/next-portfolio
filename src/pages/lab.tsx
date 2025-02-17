@@ -2,15 +2,15 @@ import React from "react";
 import ProjectGrid from "@/components/ProjectGrid";
 import Nav from "@/components/Nav";
 import Nav2 from "@/components/Nav2";
-import Footer from "@/components/Footer";
 
 const Lab = () => {
   return (
     <>
+      
         <div className="container">
           <h5>Laboratoire. 🏗</h5>
         </div>
-        
+      
     </>
   )
 }

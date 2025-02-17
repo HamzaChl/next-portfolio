@@ -1,4 +1,8 @@
+"use client";
+
 import { useEffect, useState, useRef } from "react";
+import gsap from "gsap";
+import Link from "next/link";
 import styles from "@/styles/Project.module.css";
 import { Project } from "@/functions/types";
 
@@ -7,6 +11,7 @@ const PROJECTS_URL =
 
 const ProjectGrid = () => {
   const [projects, setProjects] = useState<Project[]>([]);
+  const [sortBy, setSortBy] = useState<"year" | "title" | "category">("year");
   const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -25,49 +30,75 @@ const ProjectGrid = () => {
     fetchProjects();
   }, []);
 
+  const generateSlug = (title: string) =>
+    title.toLowerCase().replace(/\s+/g, "-");
+
+  const sortedProjects = [...projects].sort((a, b) => {
+    if (sortBy === "year") return b.year - a.year;
+    if (sortBy === "title") return a.title.localeCompare(b.title);
+    if (sortBy === "category") return a.category.localeCompare(b.category);
+    return 0;
+  });
+
   useEffect(() => {
-    const loadGSAP = async () => {
-      const gsapModule = await import("gsap");
-
-      if (projects.length > 0 && gridRef.current) {
-        gsapModule.gsap.fromTo(
-          gridRef.current.children,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power3.out",
-            stagger: 0.2,
-          }
-        );
-      }
-    };
-
-    loadGSAP();
-  }, [projects]);
+    if (sortedProjects.length > 0 && gridRef.current) {
+      gsap.fromTo(
+        gridRef.current.children,
+        { opacity: 0, y: 50, scale: 0.9 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          stagger: 0.2,
+        }
+      );
+    }
+  }, [sortedProjects]);
 
   return (
-    <div ref={gridRef} className={styles.grid}>
-      {projects.map((project) => (
-        <div key={project.id} className={styles.projectContainer}>
-          <div
-            className={styles.project}
-            style={
-              {
-                "--image": `url(${project.image})`,
-                "--hover": `url(${project.hoverImage})`,
-              } as React.CSSProperties
-            }
+    <>
+      <div className={styles.sortMenu}>
+        {["year", "title", "category"].map((key) => (
+          <label
+            key={key}
+            className={sortBy === key ? styles.active : styles.inactive}
+            onClick={() => setSortBy(key as "year" | "title" | "category")}
           >
-            <span className={styles.label}>{project.category}</span>
-          </div>
-          <h3 className={styles.title}>
-            {project.title} ━ {project.year}
-          </h3>
-        </div>
-      ))}
-    </div>
+            {key === "year" ? "Année" : key === "title" ? "Titre" : "Catégorie"}
+          </label>
+        ))}
+      </div>
+
+      <div ref={gridRef} className={styles.grid}>
+        {sortedProjects.map((project) => (
+          <div className={styles.projectContainer}>
+            <Link
+              key={project.id}
+              href={`/projects/${generateSlug(project.title)}`}
+              className={styles.projectLink}
+            >
+              <div
+                className={styles.project}
+                style={
+                  {
+                    "--image": `url(${project.image})`,
+                    "--hover": `url(${project.hoverImage})`,
+                  } as React.CSSProperties
+                }
+              >
+                <span className={styles.label}>{project.category}</span>
+              </div>
+                </Link>
+              <h3 className={styles.title}>
+                {project.title} ━ {project.year}
+              </h3>
+            </div>
+          
+        ))}
+      </div>
+    </>
   );
 };
 

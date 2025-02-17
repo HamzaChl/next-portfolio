@@ -1,5 +1,6 @@
 enum ProjectCategory {
   Dev = "Dev",
+  Web = "Web",
   Design = "Design",
   UIUX = "UI/UX",
   Autre = "Autre"

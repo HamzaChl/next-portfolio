@@ -45,8 +45,8 @@ const Nav2 = () => {
       </ul>
 
       <div className={styles.ctaContainer}>
-        <button className={styles.ctaButton}>Contact</button>
         <button className={styles.ctaButton}>Résumé</button>
+        <button className={styles.ctaButton2}>Contact</button>
       </div>
     </nav>
   );

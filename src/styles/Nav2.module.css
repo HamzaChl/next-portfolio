@@ -58,6 +58,23 @@
     background-color: #ffffff;
 }
 
+.ctaButton2 {
+    background-color: #414141;
+    color: #eeeeee;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.ctaButton2:hover {
+    background-color: #ffffff;
+    color: #161616;
+}
+
 .ctaContainer {
     gap: 10px;
 }
