@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import styles from "@/styles/Project.module.css";
 import { Project } from "@/functions/types";
 
@@ -7,6 +7,7 @@ const PROJECTS_URL =
 
 const ProjectGrid = () => {
   const [projects, setProjects] = useState<Project[]>([]);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -24,8 +25,30 @@ const ProjectGrid = () => {
     fetchProjects();
   }, []);
 
+  useEffect(() => {
+    const loadGSAP = async () => {
+      const gsapModule = await import("gsap");
+
+      if (projects.length > 0 && gridRef.current) {
+        gsapModule.gsap.fromTo(
+          gridRef.current.children,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            stagger: 0.2,
+          }
+        );
+      }
+    };
+
+    loadGSAP();
+  }, [projects]);
+
   return (
-    <div className={styles.grid}>
+    <div ref={gridRef} className={styles.grid}>
       {projects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>
           <div

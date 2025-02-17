@@ -6,7 +6,7 @@ import styles from "@/styles/Nav2.module.css";
 const Nav2 = () => {
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
-  const [isAvailable, setIsAvailable] = useState(false); 
+  const [isAvailable, setIsAvailable] = useState(true); 
 
   useEffect(() => {
     const handleScroll = () => {
