@@ -5,7 +5,7 @@ const projects = () => {
   return (
     <>
     <div className='container'>
-      <h5>Mes projets</h5>
+      {/* <h5>Mes projets</h5> */}
     </div>
     <ProjectGrid/> 
     </>

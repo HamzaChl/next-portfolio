@@ -47,20 +47,17 @@
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-/* Soulignement au hover pour les liens */
 .links a:hover::after {
     width: 100%;
     left: 0;
 }
 
-/* Style pour l'élément actif */
 .active {
     color: #00c9ff !important;
     font-weight: bold;
     position: relative;
 
 }
-
 
 .active::after {
     content: "";
@@ -73,7 +70,6 @@
 
 }
 
-/* Burger */
 .burger {
     display: none;
     font-size: 2rem;
@@ -81,7 +77,6 @@
     color: white;
 }
 
-/* Menu burger mobile */
 @media (max-width: 768px) {
     .burger {
         display: block;

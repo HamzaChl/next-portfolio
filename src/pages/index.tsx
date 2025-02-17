@@ -49,7 +49,7 @@ const Home = () => {
         <a href="https://github.com/HamzaChl" target="_blank">
           <FaGithub />
         </a>
-        <a href="https://instagram.com/" target="_blank">
+        <a href="https://www.instagram.com/hamzaachl/" target="_blank">
           <FaInstagram />
         </a>
         <a href="mailto:contact@exemple.com">

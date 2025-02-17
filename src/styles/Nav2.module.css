@@ -56,7 +56,6 @@
 
 .ctaButton:hover {
     background-color: #ffffff;
-
 }
 
 .ctaButton2 {
@@ -86,23 +85,93 @@
     height: 10px;
     margin-left: 8px;
     border-radius: 50%;
-
-
 }
 
 .online {
     background-color: #4CAF50;
     box-shadow: 0px 0px 5px 0px rgba(34, 255, 0, 0.75);
-
 }
 
 .offline {
     background-color: #E53935;
     box-shadow: 0px 0px 5px 0px #E53935;
-
 }
 
 .navLeft {
     display: flex;
     align-items: center;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burgerLine {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+}
+
+.menu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+.navLinks.open {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .ctaButton,
+    .ctaButton2 {
+        display: none;
+    }
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .navLinks {
+        display: none;
+    }
+
+    .ctaButton {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
 }
