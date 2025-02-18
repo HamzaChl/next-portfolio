@@ -87,7 +87,7 @@ const Nav2 = () => {
         </ul>
 
         <div className={styles.ctaContainer}>
-          <ThemeToggle/>
+         
           <button onClick={() => Resume()} className={styles.ctaButton}>
             Résumé
           </button>

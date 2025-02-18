@@ -11,12 +11,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-    <ThemeProvider>
+    
       <Nav2 />
       <Component {...pageProps} />
       <ScrollToTop/>
       <Footer />
-    </ThemeProvider>
+    
     </>
   );
 }
