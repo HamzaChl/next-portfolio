@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "@/styles/Nav2.module.css";
 import gsap from "gsap";
+import ThemeToggle from "./ThemeToggle";
 
 function Resume() {
   alert("Je n'ai pas de résumé pour l'instant !");
@@ -86,6 +87,7 @@ const Nav2 = () => {
         </ul>
 
         <div className={styles.ctaContainer}>
+          <ThemeToggle/>
           <button onClick={() => Resume()} className={styles.ctaButton}>
             Résumé
           </button>

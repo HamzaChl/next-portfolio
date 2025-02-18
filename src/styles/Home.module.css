@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--foreground);
     font-family: "Poppins", sans-serif;
     position: relative;
     overflow: hidden;
@@ -29,7 +29,7 @@
     padding: 12px 24px;
     font-size: 1.2rem;
     background: #ff4d4d;
-    color: white;
+    color: var(--foreground);
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -48,7 +48,7 @@
 }
 
 .socials a {
-    color: white;
+    color: var(--foreground);
     font-size: 1.8rem;
     transition: transform 0.3s ease-in-out;
 }
@@ -61,7 +61,7 @@
 .cursor {
     width: 20px;
     height: 20px;
-    background: white;
+    background: var(--foreground);
     position: absolute;
     border-radius: 50%;
     pointer-events: none;

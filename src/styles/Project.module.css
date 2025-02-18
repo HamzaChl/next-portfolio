@@ -16,7 +16,7 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     transition: background-image 0.3s ease-in-out;
-    background-color: rgb(29, 29, 29);
+    background-color: var(--background);
     position: relative;
 }
 
@@ -34,13 +34,13 @@
     border-radius: 5px;
     font-size: 12px;
     font-weight: bold;
-    color: white;
+    color: var(--foreground);
     text-transform: uppercase;
 }
 
 .title {
     font-size: 13px;
-    color: white;
+    color: var(--foreground);
     padding: 5px;
 }
 

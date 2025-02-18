@@ -16,9 +16,9 @@
 /* Lorsque la page est scrollée */
 .scrolled {
     backdrop-filter: blur(10px);
-    background: rgba(12, 12, 12, 0.95);
+    background: var(--background);
     padding: 10px 40px;
-    box-shadow: 0px 5px 10px rgba(12, 12, 12, 0.95);
+    box-shadow: 0px 5px 10px var(--background);
 }
 
 .navLinks {
@@ -30,7 +30,7 @@
 
 .navLinks li a {
     text-decoration: none;
-    color: #d5d5d5;
+    color: var(--foreground);
     font-weight: 500;
     padding: 10px 20px;
     border-radius: 20px;
@@ -40,8 +40,8 @@
 
 .navLinks li a:hover,
 .navLinks .active {
-    color: #161616;
-    background-color: #ffffff;
+    color: var(--background);
+    background-color: var(--foreground);
 }
 
 .ctaButton,
@@ -53,28 +53,28 @@
 }
 
 .ctaButton {
-    background-color: #eeeeee;
-    color: #414141;
+    background-color: var(--foreground);
+    color: var(--background);
     border: none;
     cursor: pointer;
     margin-left: 10px;
 }
 
 .ctaButton:hover {
-    background-color: #ffffff;
+    background-color: var(--foreground);
 }
 
 .ctaButton2 {
-    background-color: #414141;
-    color: #eeeeee;
+    background-color: var(--background);
+    background-color: var(--foreground);
     border: none;
     cursor: pointer;
     margin-left: 10px;
 }
 
 .ctaButton2:hover {
-    background-color: #ffffff;
-    color: #161616;
+    background-color: var(--foreground);
+    color: var(--background);
 }
 
 .ctaContainer {
@@ -114,7 +114,7 @@
 }
 
 .burgerLine {
-    background-color: #fff;
+    background-color: var(--foreground);
     height: 3px;
     width: 100%;
 }
@@ -124,15 +124,15 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--background);
     max-height: 600px;
     overflow-y: auto;
     position: absolute;
     top: 80px;
     left: 0;
     z-index: 999;
-    background-color: rgb(0, 0, 0);
-    height: 300px;
+    background-color: var(--background);
+    height: 500px;
 }
 
 .menu.open {
@@ -161,9 +161,9 @@
     z-index: 1000;
     height: 80px;
     backdrop-filter: blur(10px);
-    background: rgba(12, 12, 12, 0.95);
+    background: var(--background);
     padding: 10px 40px;
-    box-shadow: 0px 5px 10px rgba(12, 12, 12, 0.95);
+    box-shadow: 0px 5px 10px var(--background);
 
 }
 

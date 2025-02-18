@@ -3,7 +3,8 @@ enum ProjectCategory {
   Web = "Web",
   Design = "Design",
   UIUX = "UI/UX",
-  Autre = "Autre"
+  Autre = "Autre",
+  FullStack = "Full Stack"
 }
 
 export interface Project {
