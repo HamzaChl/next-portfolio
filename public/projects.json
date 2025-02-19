@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "title": "EventGather",
+    "year": 2023,
+    "image": "/Images/01.png",
+    "hoverImage": "/Images/01hover.png",
+    "category": "Design"
+  },
+  {
+    "id": 2,
+    "title": "Freezmix Morocco",
+    "year": 2023,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/02hover.png",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "BloomBar Brussels",
+    "year": 2022,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/03.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/03hover.png",
+    "category": "Design"
+  },
+  {
+    "id": 4,
+    "title": "Chandelle Botanique",
+    "year": 2024,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/04.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/04hover.png",
+    "category": "Web"
+  },
+  {
+    "id": 5,
+    "title": "Beauty Slim",
+    "year": 2025,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/05.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/05hover.png",
+    "category": "Web"
+  },
+  {
+    "id": 6,
+    "title": "Nayehza",
+    "year": 2025,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/06.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/06hover.png",
+    "category": "Web"
+  },
+  {
+    "id": 7,
+    "title": "Murcia Trading",
+    "year": 2024,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/07.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/07hover.png",
+    "category": "Web",
+    "projectImages": [
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects/07-1.png",
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects/07-3.png",
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects/07-4.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Body Slim",
+    "year": 2024,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/08.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/08hover.png",
+    "category": "Web"
+  },
+  {
+    "id": 9,
+    "title": "Boutique Maschio",
+    "year": 2023,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/09.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/09hover.png",
+    "category": "Web"
+  },
+  {
+    "id": 10,
+    "title": "Murcia Renovo",
+    "year": 2024,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/10.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/10hover.png",
+    "category": "Web"
+  },
+  {
+    "id": 11,
+    "title": "MileStone",
+    "year": 2024,
+    "image": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/11.png",
+    "hoverImage": "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/11hover.png",
+    "category": "Full-Stack",
+    "projectImages": [
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects/11-1.png",
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects/11-2.png",
+      "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects/11-3.png"
+    ]
+  }
+]

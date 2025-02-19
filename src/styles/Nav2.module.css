@@ -66,8 +66,8 @@
 
 .ctaButton2 {
     background-color: var(--background);
-    background-color: var(--foreground);
-    border: none;
+    border: 1px solid var(--foreground);
+    /* border: none; */
     cursor: pointer;
     margin-left: 10px;
 }
