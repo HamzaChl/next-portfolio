@@ -12,6 +12,11 @@ const Lab = () => {
       
         <div className="container">
           <h5>Laboratoire. 🏗</h5>
+          <p>Juste en train de tester, ne pas faire attention.</p>
+        </div>
+        <div className="projectContainer">
+
+        <ProjectGrid2/>
         </div>
     </>
   )

@@ -3,12 +3,9 @@
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "@/styles/Project.module.css";
 import { Project } from "@/functions/types";
 import projects from "../../public/projects.json";
-
-
 
 const ProjectGrid2 = () => {
   const [sortBy, setSortBy] = useState<"year" | "title" | "category">("year");
@@ -49,21 +46,15 @@ const ProjectGrid2 = () => {
             href={`/projects/${generateSlug(project.title)}`}
             className={styles.projectLink}
           >
-            <div className={styles.project}>
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={300}
-                height={200}
-                className={styles.projectImage}
-              />
-              <Image
-                src={project.hoverImage}
-                alt={project.title}
-                width={300}
-                height={200}
-                className={styles.projectHoverImage}
-              />
+            <div
+              className={styles.project}
+              style={
+                {
+                  "--image": `url(${project.image})`,
+                  "--hover": `url(${project.hoverImage})`,
+                } as React.CSSProperties
+              }
+            >
               <span className={styles.label}>{project.category}</span>
             </div>
           </Link>
