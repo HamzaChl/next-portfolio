@@ -96,5 +96,18 @@
       "/Images/projects/11-2.png",
       "/Images/projects/11-3.png"
     ]
+  },
+  {
+    "id": 12,
+    "title": "Magic The Gathering",
+    "year": 2024,
+    "image": "/Images/12.png",
+    "hoverImage": "/Images/12hover.png",
+    "category": "Full-Stack",
+    "projectImages": [
+      "/Images/projects/12-1.png",
+      "/Images/projects/12-2.png",
+      "/Images/projects/12-3.png"
+    ]
   }
 ]

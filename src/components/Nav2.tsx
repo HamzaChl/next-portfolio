@@ -6,7 +6,7 @@ import gsap from "gsap";
 import ThemeToggle from "./ThemeToggle";
 
 function Resume() {
-  alert("Je n'ai pas de résumé pour l'instant !");
+  alert("Je n'ai pas de contact pour l'instant !");
 }
 
 const Nav2 = () => {
@@ -92,9 +92,9 @@ const Nav2 = () => {
         <div className={styles.ctaContainer}>
          
           <button onClick={() => Resume()} className={styles.ctaButton}>
-            Résumé
+            Contact
           </button>
-          <button className={styles.ctaButton2}>Contact</button>
+          {/* <button className={styles.ctaButton2}>Contact</button> */}
         </div>
       </nav>
       
