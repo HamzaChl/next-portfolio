@@ -160,3 +160,22 @@
     align-items: center;
     flex-direction: column;
 }
+
+.backButton {
+    background-color: transparent;
+    color: var(--foreground);
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+
+.backButton svg {
+    margin-right: 8px;
+}

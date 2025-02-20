@@ -13,12 +13,13 @@
     height: 80px;
 }
 
-/* Lorsque la page est scrollée */
 .scrolled {
     backdrop-filter: blur(10px);
-    background: var(--background);
+    background: rgba(var(--background-rgb), 1.0);
+    background-color: #f3f3f3c5;
     padding: 10px 40px;
-    box-shadow: 0px 5px 10px var(--background);
+    box-shadow: 0px 5px 10px rgba(var(--background-rgb), 0.9);
+
 }
 
 .navLinks {
@@ -41,7 +42,7 @@
 .navLinks li a:hover,
 .navLinks .active {
     color: var(--background);
-    background-color: var(--foreground);
+    background: linear-gradient(to top, #000000, #434343);
 }
 
 .ctaButton,
@@ -53,7 +54,7 @@
 }
 
 .ctaButton {
-    background-color: var(--foreground);
+    background: linear-gradient(to top, #000000, #434343);
     color: var(--background);
     border: none;
     cursor: pointer;
@@ -67,13 +68,19 @@
 .ctaButton2 {
     background-color: var(--background);
     border: 1px solid var(--foreground);
+    color: var(--foreground);
     /* border: none; */
     cursor: pointer;
     margin-left: 10px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .ctaButton2:hover {
-    background-color: var(--foreground);
+    background: linear-gradient(to top, #000000, #434343);
     color: var(--background);
 }
 

@@ -21,6 +21,16 @@ const ProjectGrid2 = () => {
     return 0;
   });
 
+  // Fonction pour générer une couleur pastel basée sur le texte de la catégorie
+  const generatePastelColor = (text: string) => {
+    let hash = 0;
+    for (let i = 0; i < text.length; i++) {
+      hash = text.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const hue = Math.abs(hash % 360); // Assure que la teinte est entre 0 et 360
+    return `hsl(${hue}, 70%, 85%)`; // Teinte pastel
+  };
+
   useEffect(() => {
     if (sortedProjects.length > 0 && gridRef.current) {
       gsap.fromTo(
@@ -55,7 +65,12 @@ const ProjectGrid2 = () => {
                 } as React.CSSProperties
               }
             >
-              <span className={styles.label}>{project.category}</span>
+              <span
+                className={styles.label}
+                style={{ backgroundColor: generatePastelColor(project.category) }}
+              >
+                {project.category}
+              </span>
             </div>
           </Link>
           <h3 className={styles.title}>

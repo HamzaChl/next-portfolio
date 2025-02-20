@@ -1,5 +1,5 @@
 .homeContainer {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,15 +12,27 @@
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     letter-spacing: 2px;
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    background: linear-gradient(to top, #000000, #434343);
+    /* Chrome 10-25, Safari 5.1-6 */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+
 .subtitle {
-    font-size: 1.5rem;
+
     margin-top: 10px;
-    opacity: 0.8;
+    opacity: 0.7;
+}
+
+.subContainer {
+    width: 70%;
+
 }
 
 
@@ -69,7 +81,33 @@
     transition: transform 0.2s ease-out;
 }
 
+.lightEffect {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60vh;
+    background: radial-gradient(ellipse at top, rgba(20, 96, 211, 0.6) 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
 .cursorHover {
     transform: scale(2);
     background: red;
+}
+
+@media (max-width: 1350px) {
+
+    .subContainer {
+        background-color: green;
+    }
+
+    .title {
+        font-size: 46px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-align: center;
+    }
 }

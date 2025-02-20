@@ -57,7 +57,10 @@ const Nav2 = () => {
     <header className={styles.headerContainer}>
       <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
         <div className={styles.navLeft}>
+          <div className={styles.wrapper}>
           <div className={styles.logo}>HAMZA</div>
+          <p>Bruxelles, Belgique</p>
+          </div>
           <span
             className={`${styles.statusIndicator} ${isAvailable ? styles.online : styles.offline}`}
           ></span>
