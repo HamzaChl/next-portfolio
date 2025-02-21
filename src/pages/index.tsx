@@ -35,7 +35,7 @@ const Home = () => {
       height: "70vh", 
       scale: 1.2, 
       opacity: 0.8,
-      duration: Infinity, 
+      duration: 3, 
       ease: "sine.inOut",
       repeat: -1,
       yoyo: true,

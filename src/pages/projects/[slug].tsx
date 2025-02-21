@@ -2,13 +2,11 @@
 
 import { useRouter } from "next/router";
 import { useEffect, useState, useRef } from "react";
-import { FaArrowLeft } from "react-icons/fa"; // Import de l'icône de flèche gauche
-import styles from "@/styles/Project.module.css";
-import { Project } from "@/functions/types";
 import gsap from "gsap";
-
-const PROJECTS_URL =
-  "https://raw.githubusercontent.com/HamzaChl/portfolio-urls/main/projects.json";
+import { FaArrowLeft } from "react-icons/fa"; // Icône de flèche
+import styles from "@/styles/Project.module.css";
+import { Project, ProjectCategory } from "@/functions/types"; // Import de l'énumération
+import projects from "../../../public/projects.json"; // Import du JSON local
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -16,19 +14,17 @@ const ProjectPage = () => {
   const [project, setProject] = useState<Project | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Fonction pour récupérer les données du projet
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await fetch(PROJECTS_URL);
-        if (!response.ok) throw new Error("Erreur de chargement des projets");
-
-        const data: Project[] = await response.json();
-        const foundProject = data.find(
+        // Recherche du projet dans les données locales
+        const foundProject = projects.find(
           (proj) => proj.title.toLowerCase().replace(/\s+/g, "-") === slug
         );
 
         if (foundProject) {
+          // Conversion explicite de la catégorie en ProjectCategory
+          foundProject.category = foundProject.category as ProjectCategory;
           setProject(foundProject);
         }
       } catch (error) {
@@ -39,18 +35,7 @@ const ProjectPage = () => {
     if (slug) fetchProject();
   }, [slug]);
 
-  // Animation avec GSAP
-  useEffect(() => {
-    if (project) {
-      gsap.fromTo(
-        containerRef.current,
-        { opacity: 0, y: 0 },
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
-      );
-    }
-  }, [project]);
-
-  // Vérification si le projet est en cours de chargement
+  
   if (!project) return <p>Chargement...</p>;
 
   // Fonction pour retourner à la page /projects

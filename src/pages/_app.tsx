@@ -7,7 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 export default function App({ Component, pageProps }: AppProps) {
-  useLenis(); 
+  // useLenis(); 
 
   return (
     <>

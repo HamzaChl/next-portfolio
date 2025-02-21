@@ -1,4 +1,4 @@
-enum ProjectCategory {
+export enum ProjectCategory {
   Dev = "Dev",
   Web = "Web",
   Design = "Design",
@@ -13,6 +13,6 @@ export interface Project {
   year: number;
   image: string;
   hoverImage: string;
-  category: ProjectCategory;
+  category: ProjectCategory | string;
   projectImages: string[];
 }

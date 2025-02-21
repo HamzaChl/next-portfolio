@@ -6,52 +6,10 @@
     justify-content: space-around;
 }
 
-.box1 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.box2 {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.box3 {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.box4 {
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-}
-
 .projectContainer {
     width: 100vw;
     height: calc(100vw * (1080 / 1920));
     max-height: 100vh;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0 100px 50px 100px;
+
 }
