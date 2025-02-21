@@ -15,13 +15,13 @@
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 2px;
-    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
     background: linear-gradient(to right, #e8cbc0, #636fa4);
 
-    /* Chrome 10-25, Safari 5.1-6 */
+    /* Chrome 10-25, Safari 5.1-6 
 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 
@@ -67,8 +67,8 @@
 }
 
 .socials a:hover {
-    transform: scale(1.2);
-    color: #ff4d4d;
+    transform: scale(1.1);
+    color: var(--highlight);
 }
 
 .cursor {
@@ -84,20 +84,25 @@
 
 .lightEffect {
     position: absolute;
-    top: 0;
+    top: 80px;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
     height: 60vh;
-    background: radial-gradient(ellipse at top, #636fa477 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    background: radial-gradient(ellipse at top, #0e6aa842 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
     pointer-events: none;
     z-index: -1;
     left: 0;
 }
 
+
+.blueText {
+    color: var(--highlight);
+}
+
 .cursorHover {
     transform: scale(2);
-    background: red;
+    background: var(--highlight);
 }
 
 @media (max-width: 1350px) {

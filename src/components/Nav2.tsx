@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import styles from "@/styles/Nav2.module.css";
 import gsap from "gsap";
 import ThemeToggle from "./ThemeToggle";
+import { IoIosMail } from "react-icons/io";
+
 
 function Resume() {
   alert("Je n'ai pas de contact pour l'instant !");
@@ -59,7 +61,6 @@ const Nav2 = () => {
         <div className={styles.navLeft}>
           <div className={styles.wrapper}>
           <div className={styles.logo}>HAMZA</div>
-          <p>Bruxelles, Belgique</p>
           </div>
           <span
             className={`${styles.statusIndicator} ${isAvailable ? styles.online : styles.offline}`}
@@ -92,7 +93,7 @@ const Nav2 = () => {
         <div className={styles.ctaContainer}>
          
           <button onClick={() => Resume()} className={styles.ctaButton}>
-            Contact
+            Contact <IoIosMail size={20}/>
           </button>
           {/* <button className={styles.ctaButton2}>Contact</button> */}
         </div>

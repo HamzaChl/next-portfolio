@@ -2,10 +2,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
+    padding: 0 20px 0 20px;
 }
 
 .projectContainer {
     position: relative;
+
 }
 
 .project {
@@ -18,10 +20,15 @@
     transition: background-image 0.3s ease-in-out;
     background-color: var(--background);
     position: relative;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+
 }
 
 .project:hover {
     background-image: var(--hover);
+    box-shadow: 10px 10px 13px 0px rgba(14, 106, 168, 0.048);
+    transition: background-image 0.3s ease-in-out;
 }
 
 .label {

@@ -31,16 +31,7 @@ const Home = () => {
       { scale: 1, duration: 0.5, delay: 0.6, ease: "back.out(1.7)" }
     );
 
-    gsap.to(lightRef.current, {
-      height: "70vh", 
-      scale: 1.2, 
-      opacity: 0.8,
-      duration: 3, 
-      ease: "sine.inOut",
-      repeat: -1,
-      yoyo: true,
-      stagger: 0.5,
-    });
+    
 
   }, []);
 
@@ -48,10 +39,11 @@ const Home = () => {
     <div className={styles.homeContainer}>
       {/* Effet lumineux */}
       <div ref={lightRef} className={styles.lightEffect}></div>
+      
 
       <div className={styles.subContainer}>
         <h1 ref={titleRef} className={styles.title}>
-          Transformons vos idées en <br />expériences numériques
+          Transformons vos <span className={styles.blueText}>idées</span> en <br />expériences numériques
         </h1>
         <p ref={subtitleRef} className={styles.subtitle}>
           Développeur passionné, je conçois des applications web et mobiles performantes et élégantes. Besoin d'un site sur-mesure ou d'une app innovante ? Parlons-en !
