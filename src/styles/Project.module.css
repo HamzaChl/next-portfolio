@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     padding: 0 20px 0 20px;
+    margin-bottom: 200px;
 }
 
 .projectContainer {
@@ -22,7 +23,20 @@
     position: relative;
     border-radius: 5px;
     border: 1px solid rgb(224, 224, 224);
+}
 
+.headTitle {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.p {
+    width: 65vw;
+    text-align: center;
 }
 
 .project:hover {
@@ -185,4 +199,17 @@
 
 .backButton svg {
     margin-right: 8px;
+}
+
+.lightEffect {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    left: 100%;
+    transform: translateX(-50%);
+    height: 60vh;
+    background: radial-gradient(ellipse at top, #0e6aa842 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    pointer-events: none;
+    z-index: -1;
+    right: 0;
 }

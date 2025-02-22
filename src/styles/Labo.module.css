@@ -1,15 +1,25 @@
 .container {
+    margin-top: 100px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
 }
 
-.projectContainer {
-    width: 100vw;
-    height: calc(100vw * (1080 / 1920));
-    max-height: 100vh;
-    padding: 0 100px 50px 100px;
+.testContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-between;
+    padding: 0 40px 100px 40px;
+}
 
+.TestPerimeter {
+    border: 1px solid rgb(224, 224, 224);
+    padding: 40px;
+    min-width: 45vw;
+    border-radius: 5px;
+    margin-bottom: 50px;
 }

@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 import gsap from "gsap";
 import styles from "@/styles/Home.module.css";
+import text from "@/styles/Text.module.css";
 
 const Home = () => {
   const titleRef = useRef(null);
@@ -37,15 +38,14 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-      {/* Effet lumineux */}
       <div ref={lightRef} className={styles.lightEffect}></div>
       
 
       <div className={styles.subContainer}>
-        <h1 ref={titleRef} className={styles.title}>
-          Transformons vos <span className={styles.blueText}>idées</span> en <br />expériences numériques
+        <h1 ref={titleRef} className={text.textHeading}>
+          Transformons vos idées en <br /><span className={text.blueText}>expériences numériques</span>
         </h1>
-        <p ref={subtitleRef} className={styles.subtitle}>
+        <p ref={subtitleRef} className={text.subtitle}>
           Développeur passionné, je conçois des applications web et mobiles performantes et élégantes. Besoin d'un site sur-mesure ou d'une app innovante ? Parlons-en !
         </p>
       </div>

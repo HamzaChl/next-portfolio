@@ -11,29 +11,17 @@
     overflow: hidden;
 }
 
-.title {
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    /* background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
-    background: linear-gradient(to right, #e8cbc0, #636fa4);
-
-    /* Chrome 10-25, Safari 5.1-6 
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
-
-.subtitle {
-
-    margin-top: 10px;
-    opacity: 0.7;
-}
 
 .subContainer {
     width: 70%;
+}
 
+.error {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
