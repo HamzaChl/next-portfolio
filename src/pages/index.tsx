@@ -43,7 +43,7 @@ const Home = () => {
 
       <div className={styles.subContainer}>
         <h1 ref={titleRef} className={text.textHeading}>
-          Transformons vos idées en <br /><span className={text.blueText}>expériences numériques</span>
+        Développement <span className={text.blueText}>web</span> & <span className={text.blueText}>mobile</span><br /> concrétisez vos idées avec <span className={text.blueText}>style</span>.
         </h1>
         <p ref={subtitleRef} className={text.subtitle}>
           Développeur passionné, je conçois des applications web et mobiles performantes et élégantes. Besoin d'un site sur-mesure ou d'une app innovante ? Parlons-en !

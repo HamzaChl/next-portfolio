@@ -1,5 +1,5 @@
 .homeContainer {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .error {
-    height: 40vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,12 +72,12 @@
 
 .lightEffect {
     position: absolute;
-    top: 80px;
+    bottom: 0px;
     width: 100%;
-    left: 50%;
+    left: 80%;
     transform: translateX(-50%);
     height: 60vh;
-    background: radial-gradient(ellipse at top, #0e6aa842 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    background: radial-gradient(ellipse at bottom, #0e6aa88b 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
     pointer-events: none;
     z-index: -1;
     left: 0;
