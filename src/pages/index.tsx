@@ -37,6 +37,7 @@ const Home = () => {
   }, []);
 
   return (
+    <>
     <div className={styles.homeContainer}>
       <div ref={lightRef} className={styles.lightEffect}></div>
       
@@ -63,6 +64,10 @@ const Home = () => {
         </a>
       </div>
     </div>
+    <div className={styles.homeContainer}>
+
+    </div>
+    </>
   );
 };
 

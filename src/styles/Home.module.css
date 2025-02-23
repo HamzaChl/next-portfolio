@@ -74,9 +74,9 @@
     position: absolute;
     bottom: 0px;
     width: 100%;
-    left: 80%;
+    left: 0%;
     transform: translateX(-50%);
-    height: 60vh;
+    height: 100vh;
     background: radial-gradient(ellipse at bottom, #0e6aa88b 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
     pointer-events: none;
     z-index: -1;
