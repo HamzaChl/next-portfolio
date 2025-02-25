@@ -210,7 +210,7 @@
     left: 100%;
     transform: translateX(-50%);
     height: 60vh;
-    background: radial-gradient(ellipse at top, #0e6aa842 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    background: radial-gradient(ellipse at top, var(--highlight) -50%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
     pointer-events: none;
     z-index: -1;
     right: 0;

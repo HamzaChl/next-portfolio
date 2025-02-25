@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 import gsap from "gsap";
+import { FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 import styles from "@/styles/Home.module.css";
 import text from "@/styles/Text.module.css";
+import Technologies from "@/components/Technologies";
+import Spacer from "@/components/Spacer";
 
 const Home = () => {
   const titleRef = useRef(null);
@@ -39,7 +41,7 @@ const Home = () => {
   return (
     <>
     <div className={styles.homeContainer}>
-      <div ref={lightRef} className={styles.lightEffect}></div>
+      {/* <div ref={lightRef} className={styles.lightEffect}></div> */}
       
 
       <div className={styles.subContainer}>
@@ -51,18 +53,9 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Icônes réseaux sociaux */}
-      <div className={styles.socials}>
-        <a href="https://github.com/HamzaChl" target="_blank">
-          <FaGithub />
-        </a>
-        <a href="https://www.instagram.com/hamzaachl/" target="_blank">
-          <FaInstagram />
-        </a>
-        <a href="mailto:contact@exemple.com">
-          <FaEnvelope />
-        </a>
-      </div>
+    <Spacer/>
+      
+    <Technologies/>
     </div>
     <div className={styles.homeContainer}>
 

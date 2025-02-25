@@ -1,4 +1,5 @@
 import ProjectGrid2 from '@/components/ProjectGrid2'
+import Technologies from '@/components/Technologies'
 import React from 'react'
 
 const projects = () => {
@@ -8,6 +9,8 @@ const projects = () => {
       {/* <h5>Mes projets</h5> */}
     </div>
     <ProjectGrid2/> 
+    <Technologies/>
+    
     </>
   )
 }

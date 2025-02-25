@@ -39,7 +39,7 @@ const ProjectGrid2 = () => {
     if (sortedProjects.length > 0 && gridRef.current) {
       gsap.fromTo(
         gridRef.current.children,
-        { opacity: 0, y: 50, scale: 0.9 },
+        { opacity: 0, x: 20, scale: 0.9 },
         {
           opacity: 1,
           y: 0,
@@ -55,8 +55,8 @@ const ProjectGrid2 = () => {
   useEffect(()=>{
     gsap.fromTo(
       titleRef.current,
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      { x: 50, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1, ease: "power3.out" }
     );
 
     gsap.fromTo(
@@ -68,7 +68,7 @@ const ProjectGrid2 = () => {
 
   return (
 <div>
-<div ref={lightRef} className={styles.lightEffect}></div>
+{/* <div ref={lightRef} className={styles.lightEffect}></div> */}
 <div className={text.e}>
   <h1 ref={titleRef} className={text.subHeading}>Mes réalisations</h1>
   <p ref={subtitleRef} className={text.corpsText}>Découvrez une sélection de mes réalisations en développement web, mobile et design. De l'idée à la mise en ligne, chaque projet est conçu avec passion et précision.</p>

@@ -73,6 +73,10 @@ gsap.fromTo(
           </div>
 
         </div>
+<div className="" style={{background:"lightgray"}}>
+
+        <Technologies/>
+</div>
         
     </>
   )
