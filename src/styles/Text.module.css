@@ -19,6 +19,9 @@
 
 .blueText {
     color: var(--highlight);
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .corpsText {

@@ -39,7 +39,7 @@ const ProjectGrid2 = () => {
     if (sortedProjects.length > 0 && gridRef.current) {
       gsap.fromTo(
         gridRef.current.children,
-        { opacity: 0, x: 20, scale: 0.9 },
+        { opacity: 0, y: 20, scale: 0.9 },
         {
           opacity: 1,
           y: 0,
@@ -55,8 +55,8 @@ const ProjectGrid2 = () => {
   useEffect(()=>{
     gsap.fromTo(
       titleRef.current,
-      { x: 50, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
     );
 
     gsap.fromTo(

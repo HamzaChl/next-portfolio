@@ -1,5 +1,6 @@
 import styles from "@/styles/Footer.module.css";
 import Link from "next/link";
+import Socials from "./Socials";
 
 const Footer = () => {
   return (
@@ -7,12 +8,10 @@ const Footer = () => {
       <div className={styles.container}>
 
         <div className={styles.column}>
-          
-          
+          <Socials/>
         </div>
 
         <div className={styles.column}>
-          
         </div>
 
         <div className={styles.column}>

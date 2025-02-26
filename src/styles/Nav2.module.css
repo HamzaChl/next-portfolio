@@ -42,8 +42,11 @@
 
 .navLinks li a:hover,
 .navLinks .active {
-    color: var(--highlight);
+    /* color: var(--highlight); */
     /* background: linear-gradient(to top, #000000, #434343); */
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .ctaButton,
