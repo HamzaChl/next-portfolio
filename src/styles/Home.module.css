@@ -53,12 +53,31 @@
     color: var(--foreground);
     font-size: 1.8rem;
     transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    /* Ajouté */
 }
 
 .socials a:hover {
-    transform: scale(1.1);
-    color: var(--highlight);
+
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
 }
+
+.socials a svg {
+    fill: var(--foreground);
+    /* Couleur par défaut */
+    transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.socials a:hover svg {
+    fill: url(#gradient);
+    /* Applique le gradient uniquement au hover */
+    transform: scale(1.1);
+    /* Effet zoom */
+}
+
 
 .cursor {
     width: 20px;
