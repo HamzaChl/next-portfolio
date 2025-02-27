@@ -3,10 +3,9 @@
 import { useRouter } from "next/router";
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
-import { FaArrowLeft } from "react-icons/fa"; // Icône de flèche
+import { FaArrowLeft } from "react-icons/fa";
 import styles from "@/styles/Project.module.css";
-import { Project, ProjectCategory } from "@/functions/types"; // Import de l'énumération
-import projects from "../../../public/projects.json"; // Import du JSON local
+import { Project, ProjectCategory } from "@/functions/types";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -17,14 +16,11 @@ const ProjectPage = () => {
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        // Recherche du projet dans les données locales
-        const foundProject = projects.find(
-          (proj) => proj.title.toLowerCase().replace(/\s+/g, "-") === slug
-        );
+        const response = await fetch("/api/projects");
+        const data: Project[] = await response.json();
+        const foundProject = data.find((proj) => proj.title.toLowerCase().replace(/\s+/g, "-") === slug);
 
         if (foundProject) {
-          // Conversion explicite de la catégorie en ProjectCategory
-          foundProject.category = foundProject.category as ProjectCategory;
           setProject(foundProject);
         }
       } catch (error) {
@@ -35,17 +31,17 @@ const ProjectPage = () => {
     if (slug) fetchProject();
   }, [slug]);
 
-  
-  if (!project) return <p>Chargement...</p>;
+  useEffect(() => {
+    if (containerRef.current) {
+      gsap.fromTo(containerRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, ease: "power3.out" });
+    }
+  }, [project]);
 
-  // Fonction pour retourner à la page /projects
-  const goBack = () => {
-    router.push("/projects");
-  };
+  if (!project) return <p>Chargement...</p>;
 
   return (
     <div ref={containerRef} className="container">
-      <button onClick={goBack} className={styles.backButton}>
+      <button onClick={() => router.push("/projects")} className={styles.backButton}>
         <FaArrowLeft /> Retour aux projets
       </button>
 
@@ -55,12 +51,7 @@ const ProjectPage = () => {
 
       <div className={styles.imagesGrid}>
         {project.projectImages?.map((img, index) => (
-          <img
-            className={styles.imgProject}
-            key={index}
-            src={img}
-            alt={`Project ${project.title} ${index}`}
-          />
+          <img className={styles.imgProject} key={index} src={img} alt={`Project ${project.title} ${index}`} />
         ))}
       </div>
     </div>
