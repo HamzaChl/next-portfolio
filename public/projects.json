@@ -109,5 +109,13 @@
       "/Images/projects/12-2.png",
       "/Images/projects/12-3.png"
     ]
+  },
+  {
+    "id": 13,
+    "title": "League Of Legends App",
+    "year": 2025,
+    "image": "/Images/13.png",
+    "hoverImage": "/Images/13hover.png",
+    "category": "Mobile"
   }
 ]
