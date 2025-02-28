@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import styles from "@/styles/Home.module.css";
+import text from "@/styles/Text.module.css";
 import gsap from "gsap";
 
 
@@ -25,8 +26,8 @@ const Error = () => {
   return (
     <div className='container' style={{textAlign:"center", display: "flex", justifyContent:"center", alignItems:"center", height:"center"}}>
         <div className={styles.error}>
-        <h1 ref={titleRef} className={styles.title}>
-          404 <span className={styles.blueText}>Error</span>
+        <h1 ref={titleRef} className={text.textHeading}>
+          404 <span className={text.blueText}>Error</span>
         </h1>
         <p ref={subtitleRef} className={styles.subtitle}>
           Page non existante.
