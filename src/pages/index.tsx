@@ -7,6 +7,7 @@ import styles from "@/styles/Home.module.css";
 import text from "@/styles/Text.module.css";
 import Technologies from "@/components/Technologies";
 import Spacer from "@/components/Spacer";
+import Faq from "@/components/Faq";
 
 const Home = () => {
   const titleRef = useRef(null);
@@ -58,7 +59,7 @@ const Home = () => {
     <Technologies/>
     </div>
     <div className={styles.homeContainer}>
-
+    <Faq/>
     </div>
     </>
   );

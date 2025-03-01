@@ -14,7 +14,7 @@ function Resume() {
 const Nav2 = () => {
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
-  const [isAvailable, setIsAvailable] = useState(true);
+  const [isAvailable, setIsAvailable] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
