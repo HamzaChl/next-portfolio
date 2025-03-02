@@ -166,9 +166,9 @@
 }
 
 .imgProject {
-    width: 90vw;
-    margin-top: 30px;
-    height: calc(100vw * (1080 / 1920));
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
     max-height: 100vh;
     background-color: rgb(59, 59, 59);
     display: flex;
@@ -176,6 +176,8 @@
     justify-content: center;
     border: 1px solid rgb(224, 224, 224);
     border-radius: 5px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.11);
+
 }
 
 .imagesGrid {
@@ -214,4 +216,17 @@
     pointer-events: none;
     z-index: -1;
     right: 0;
+}
+
+.container {
+    padding: 160px 100px 50px 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.aside {
+
+    grid-column: 1;
+    position: sticky;
 }

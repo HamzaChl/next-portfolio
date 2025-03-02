@@ -40,7 +40,8 @@ const ProjectPage = () => {
   if (!project) return <p>Chargement...</p>;
 
   return (
-    <div ref={containerRef} className="container">
+    <div ref={containerRef} className={styles.container}>
+      <div className={styles.aside}>
       <button onClick={() => router.push("/projects")} className={styles.backButton}>
         <FaArrowLeft /> Retour aux projets
       </button>
@@ -48,12 +49,16 @@ const ProjectPage = () => {
       <h1>{project.title}</h1>
       <p>Année: {project.year}</p>
       <p>Catégorie: {project.category}</p>
+      </div>
 
+      <div className="images">
       <div className={styles.imagesGrid}>
         {project.projectImages?.map((img, index) => (
           <img className={styles.imgProject} key={index} src={img} alt={`Project ${project.title} ${index}`} />
         ))}
       </div>
+      </div>
+      
     </div>
   );
 };

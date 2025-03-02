@@ -59,12 +59,19 @@ const ProjectGrid2 = () => {
         { opacity: 1, y: 0, scale: 1, duration: 1, ease: "power3.out", stagger: 0.2 }
       );
     }
+    gsap.fromTo(
+      titleRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+    );
+    
+    gsap.fromTo(
+      subtitleRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, delay: 0.3, ease: "power3.out" }
+    );
   }, [sortedProjects]);
 
-  useEffect(() => {
-    gsap.fromTo(titleRef.current, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: "power3.out" });
-    gsap.fromTo(subtitleRef.current, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1, delay: 0.3, ease: "power3.out" });
-  }, []);
 
   if (projects.length === 0) return <p>Chargement...</p>;
 
