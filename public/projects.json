@@ -5,7 +5,7 @@
     "year": 2023,
     "image": "/Images/01.png",
     "hoverImage": "/Images/01hover.png",
-    "category": "Design"
+    "categories": ["Web", "Design"]
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "year": 2023,
     "image": "/Images/02.png",
     "hoverImage": "/Images/02hover.png",
-    "category": "Design"
+    "categories": ["Design"]
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "year": 2022,
     "image": "/Images/03.png",
     "hoverImage": "/Images/03hover.png",
-    "category": "Design"
+    "categories": ["Design"]
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "year": 2024,
     "image": "/Images/04.png",
     "hoverImage": "/Images/04hover.png",
-    "category": "Web"
+    "categories": ["Web", "Design"]
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "year": 2025,
     "image": "/Images/05.png",
     "hoverImage": "/Images/05hover.png",
-    "category": "Web"
+    "categories": ["Web", "Design"]
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "year": 2025,
     "image": "/Images/06.png",
     "hoverImage": "/Images/06hover.png",
-    "category": "Web"
+    "categories": ["Web"]
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "year": 2024,
     "image": "/Images/07.png",
     "hoverImage": "/Images/07hover.png",
-    "category": "Web",
+    "categories": ["Web", "Design"],
     "projectImages": [
       "/Images/projects/07-1.png",
       "/Images/projects/07-3.png",
@@ -66,7 +66,7 @@
     "year": 2024,
     "image": "/Images/08.png",
     "hoverImage": "/Images/08hover.png",
-    "category": "Web"
+    "categories": ["Web", "Design"]
   },
   {
     "id": 9,
@@ -74,7 +74,7 @@
     "year": 2023,
     "image": "/Images/09.png",
     "hoverImage": "/Images/09hover.png",
-    "category": "Web"
+    "categories": ["Web", "Design"]
   },
   {
     "id": 10,
@@ -82,7 +82,7 @@
     "year": 2024,
     "image": "/Images/10.png",
     "hoverImage": "/Images/10hover.png",
-    "category": "Web"
+    "categories": ["Web", "Design"]
   },
   {
     "id": 11,
@@ -90,7 +90,7 @@
     "year": 2024,
     "image": "/Images/11.png",
     "hoverImage": "/Images/11hover.png",
-    "category": "Full-Stack",
+    "categories": ["Full-Stack", "Design"],
     "projectImages": [
       "/Images/projects/11-1.png",
       "/Images/projects/11-2.png",
@@ -103,7 +103,7 @@
     "year": 2024,
     "image": "/Images/12.png",
     "hoverImage": "/Images/12hover.png",
-    "category": "Full-Stack",
+    "categories": ["Full-Stack", "Design"],
     "projectImages": [
       "/Images/projects/12-1.png",
       "/Images/projects/12-2.png",
@@ -116,6 +116,6 @@
     "year": 2025,
     "image": "/Images/13.png",
     "hoverImage": "/Images/13hover.png",
-    "category": "Mobile"
+    "categories": ["Mobile"]
   }
 ]

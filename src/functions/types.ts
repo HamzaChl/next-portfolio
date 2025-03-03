@@ -13,6 +13,6 @@ export interface Project {
   year: number;
   image: string;
   hoverImage: string;
-  category: ProjectCategory | string;
-  projectImages: string[];
+  categories: ProjectCategory[] | string[];  // ← Ici, c'est un tableau
+  projectImages?: string[];
 }

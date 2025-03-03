@@ -2,13 +2,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-    padding: 0 20px 0 20px;
+    padding: 0 5px 0 5px;
     margin-bottom: 200px;
 }
 
 .projectContainer {
     position: relative;
-
 }
 
 .project {
@@ -45,10 +44,16 @@
     transition: background-image 0.3s ease-in-out;
 }
 
-.label {
+/* ✅ Labels des catégories */
+.labels {
     position: absolute;
     top: 8px;
     right: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.label {
     background: var(--background);
     backdrop-filter: blur(8px);
     padding: 5px 10px;
@@ -65,25 +70,14 @@
     padding: 5px;
 }
 
-@media (max-width: 1000px) {
-
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-    }
-
-}
-
 @media (max-width: 600px) {
-
     .grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
     }
-
 }
 
-
+/* ✅ Animation pour le chargement */
 @keyframes loadingSkeleton {
     0% {
         background-position: -200% 0;
@@ -177,7 +171,6 @@
     border: 1px solid rgb(224, 224, 224);
     border-radius: 5px;
     box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.11);
-
 }
 
 .imagesGrid {
@@ -200,7 +193,6 @@
     transition: background-color 0.3s;
 }
 
-
 .backButton svg {
     margin-right: 8px;
 }
@@ -220,13 +212,26 @@
 
 .container {
     padding: 160px 100px 50px 100px;
-
     display: grid;
     grid-template-columns: 1fr 1.5fr;
 }
 
 .aside {
-
     grid-column: 1;
     position: sticky;
+}
+
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
 }

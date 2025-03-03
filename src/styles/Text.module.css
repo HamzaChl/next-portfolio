@@ -22,7 +22,9 @@
     background: linear-gradient(to right, #4568dc, #b06ab3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 10px #b16ab36b;
 }
+
 
 .corpsText {
     margin-top: 20px;

@@ -5,7 +5,17 @@ import gsap from "gsap";
 import Link from "next/link";
 import styles from "@/styles/Project.module.css";
 import text from "@/styles/Text.module.css";
-import { Project } from "@/functions/types";
+
+// Définition du type Project
+export interface Project {
+  id: number;
+  title: string;
+  year: number;
+  image: string;
+  hoverImage: string;
+  categories: string[];  
+  projectImages?: string[];
+}
 
 const ProjectGrid2 = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -14,10 +24,8 @@ const ProjectGrid2 = () => {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
 
-  // Fonction pour générer un slug à partir du titre
   const generateSlug = (title: string) => title.toLowerCase().replace(/\s+/g, "-");
 
-  // Fonction pour générer une couleur pastel unique par catégorie
   const generatePastelColor = (text: string) => {
     let hash = 0;
     for (let i = 0; i < text.length; i++) {
@@ -27,13 +35,18 @@ const ProjectGrid2 = () => {
     return `hsl(${hue}, 70%, 85%)`;
   };
 
-  // Récupération des projets via l'API
   useEffect(() => {
     const fetchProjects = async () => {
       try {
         const response = await fetch("/api/projects");
         const data = await response.json();
-        setProjects(data);
+        
+        const formattedProjects = data.map((project: any) => ({
+          ...project,
+          categories: Array.isArray(project.categories) ? project.categories : [project.categories],
+        }));
+
+        setProjects(formattedProjects);
       } catch (error) {
         console.error("Erreur lors de la récupération des projets", error);
       }
@@ -42,15 +55,13 @@ const ProjectGrid2 = () => {
     fetchProjects();
   }, []);
 
-  // Tri des projets
   const sortedProjects = [...projects].sort((a, b) => {
     if (sortBy === "year") return b.year - a.year;
     if (sortBy === "title") return a.title.localeCompare(b.title);
-    if (sortBy === "category") return a.category.localeCompare(b.category);
+    if (sortBy === "category") return a.categories.join(", ").localeCompare(b.categories.join(", "));
     return 0;
   });
 
-  // Animation GSAP au chargement des projets
   useEffect(() => {
     if (sortedProjects.length > 0 && gridRef.current) {
       gsap.fromTo(
@@ -71,7 +82,6 @@ const ProjectGrid2 = () => {
       { y: 0, opacity: 1, duration: 1, delay: 0.3, ease: "power3.out" }
     );
   }, [sortedProjects]);
-
 
   if (projects.length === 0) return <p>Chargement...</p>;
 
@@ -95,9 +105,17 @@ const ProjectGrid2 = () => {
                   "--hover": `url(${project.hoverImage})`,
                 } as React.CSSProperties
               }>
-                <span className={styles.label} style={{ backgroundColor: generatePastelColor(project.category) }}>
-                  {project.category}
-                </span>
+                <div className={styles.labels}>
+                  {project.categories.map((cat, index) => (
+                    <span 
+                      key={index} 
+                      className={styles.label} 
+                      style={{ backgroundColor: generatePastelColor(cat) }}
+                    >
+                      {cat}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
             <h3 className={styles.title}>{project.title} ━ {project.year}</h3>

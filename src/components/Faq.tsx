@@ -4,9 +4,10 @@ import styles from "@/styles/Global.module.css";
 import text from "@/styles/Text.module.css";
 
 const faqData = [
-  { question: "Comment fonctionne ce service ?", answer: "Notre service vous permet de ..." },
-  { question: "Quels sont les modes de paiement acceptés ?", answer: "Nous acceptons les cartes bancaires, PayPal..." },
-  { question: "Puis-je annuler mon abonnement ?", answer: "Oui, vous pouvez annuler votre abonnement à tout moment..." },
+  { question: "Question", answer: "Réponse." },
+  { question: "Question", answer: "Réponse." },
+  { question: "Question", answer: "Réponse." },
+  { question: "Question", answer: "Réponse." },
 ];
 
 const Faq = () => {
