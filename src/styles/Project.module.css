@@ -44,7 +44,6 @@
     transition: background-image 0.3s ease-in-out;
 }
 
-/* ✅ Labels des catégories */
 .labels {
     position: absolute;
     top: 8px;
