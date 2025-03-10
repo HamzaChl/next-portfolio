@@ -5,7 +5,12 @@
     "year": 2023,
     "image": "/Images/01.png",
     "hoverImage": "/Images/01hover.png",
-    "categories": ["Web", "Design"]
+    "categories": ["Web", "Design"],
+    "projectImages": [
+      "/Images/projects/1-1.png",
+      "/Images/projects/1-2.png",
+      "/Images/projects/1-3.png"
+    ]
   },
   {
     "id": 2,
