@@ -7,6 +7,7 @@
     "hoverImage": "/Images/01hover.png",
     "categories": ["Web", "Design"],
     "projectImages": [
+      "/Images/projects/1-4.png",
       "/Images/projects/1-1.png",
       "/Images/projects/1-2.png",
       "/Images/projects/1-3.png"
@@ -42,7 +43,13 @@
     "year": 2025,
     "image": "/Images/05.png",
     "hoverImage": "/Images/05hover.png",
-    "categories": ["Web", "Design"]
+    "categories": ["Web", "Design"],
+    "projectImages": [
+      "/Images/projects/5-1.png",
+      "/Images/projects/5-2.png",
+      "/Images/projects/5-3.png",
+      "/Images/projects/5-4.png"
+    ]
   },
   {
     "id": 6,
