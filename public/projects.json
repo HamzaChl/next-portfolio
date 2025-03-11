@@ -19,7 +19,12 @@
     "year": 2023,
     "image": "/Images/02.png",
     "hoverImage": "/Images/02hover.png",
-    "categories": ["Design"]
+    "categories": ["Design"],
+    "projectImages": [
+      "/Images/projects/2-1.png",
+      "/Images/projects/2-2.png",
+      "/Images/projects/2-3.png"
+    ]
   },
   {
     "id": 3,

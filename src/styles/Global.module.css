@@ -88,3 +88,34 @@
     text-align: start;
     color: #333;
 }
+
+.ServiceContainer {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.Services {
+    margin-top: -100px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+
+    border: 1px solid;
+    /* Nécessaire pour afficher la bordure */
+    border-image-source: linear-gradient(to right, #4568dc, #b06ab3);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+
+.Services:hover {
+    box-shadow: 0 0 15px rgba(69, 104, 220, 0.5);
+    /* Ombre colorée */
+
+}
+
+
+.subContainer {
+    display: flex;
+    justify-content: center;
+}

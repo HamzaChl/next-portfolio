@@ -9,6 +9,7 @@ import text from "@/styles/Text.module.css"
 import Technologies from "@/components/Technologies";
 import ProjectGrid2 from "@/components/ProjectGrid2";
 import Faq from "@/components/Faq";
+import Services from "@/components/Services";
 
 const Lab = () => {
   const titleRef = useRef(null);
@@ -79,6 +80,9 @@ gsap.fromTo(
         <Technologies/>
 </div>
 <Faq/>
+<div className="container">
+  <Services/>
+</div>
         
     </>
   )
