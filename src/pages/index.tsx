@@ -59,7 +59,7 @@ const Home = () => {
       
     <Technologies/>
     </div>
-    <Services/>
+    {/* <Services/> */}
     <div className={styles.homeContainer}>
     
     </div>
