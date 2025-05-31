@@ -103,6 +103,10 @@
     left: 0;
 }
 
+.Maintitle {
+    font-family: "ogg", sans-serif;
+
+}
 
 .blueText {
     color: var(--highlight);
