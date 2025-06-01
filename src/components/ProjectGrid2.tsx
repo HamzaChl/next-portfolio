@@ -13,7 +13,7 @@ export interface Project {
   year: number;
   image: string;
   hoverImage: string;
-  categories: string[];  
+  categories: string[];
   projectImages?: string[];
 }
 
@@ -24,7 +24,8 @@ const ProjectGrid2 = () => {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
 
-  const generateSlug = (title: string) => title.toLowerCase().replace(/\s+/g, "-");
+  const generateSlug = (title: string) =>
+    title.toLowerCase().replace(/\s+/g, "-");
 
   const generatePastelColor = (text: string) => {
     let hash = 0;
@@ -40,10 +41,12 @@ const ProjectGrid2 = () => {
       try {
         const response = await fetch("/api/projects");
         const data = await response.json();
-        
+
         const formattedProjects = data.map((project: any) => ({
           ...project,
-          categories: Array.isArray(project.categories) ? project.categories : [project.categories],
+          categories: Array.isArray(project.categories)
+            ? project.categories
+            : [project.categories],
         }));
 
         setProjects(formattedProjects);
@@ -58,7 +61,8 @@ const ProjectGrid2 = () => {
   const sortedProjects = [...projects].sort((a, b) => {
     if (sortBy === "year") return b.year - a.year;
     if (sortBy === "title") return a.title.localeCompare(b.title);
-    if (sortBy === "category") return a.categories.join(", ").localeCompare(b.categories.join(", "));
+    if (sortBy === "category")
+      return a.categories.join(", ").localeCompare(b.categories.join(", "));
     return 0;
   });
 
@@ -67,7 +71,14 @@ const ProjectGrid2 = () => {
       gsap.fromTo(
         gridRef.current.children,
         { opacity: 0, y: 20, scale: 0.9 },
-        { opacity: 1, y: 0, scale: 1, duration: 1, ease: "power3.out", stagger: 0.2 }
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          stagger: 0.2,
+        }
       );
     }
     gsap.fromTo(
@@ -75,7 +86,7 @@ const ProjectGrid2 = () => {
       { y: 50, opacity: 0 },
       { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
     );
-    
+
     gsap.fromTo(
       subtitleRef.current,
       { y: 50, opacity: 0 },
@@ -87,29 +98,38 @@ const ProjectGrid2 = () => {
 
   return (
     <div>
-      <div className={text.e}>
-        <h1 ref={titleRef} className={text.subHeading}>Mes réalisations</h1>
+      {/* <div className={text.e}>
+        <h1 ref={titleRef} className={text.subHeading}>
+          Mes réalisations
+        </h1>
         <p ref={subtitleRef} className={text.corpsText}>
-          Découvrez une sélection de mes réalisations en développement web, mobile et design.
-          De l'idée à la mise en ligne, chaque projet est conçu avec passion et précision.
+          Découvrez une sélection de mes réalisations en développement web,
+          mobile et design. De l'idée à la mise en ligne, chaque projet est
+          conçu avec passion et précision.
         </p>
-      </div>
+      </div> */}
 
       <div ref={gridRef} className={styles.grid}>
         {sortedProjects.map((project) => (
           <div key={project.id} className={styles.projectContainer}>
-            <Link href={`/projects/${generateSlug(project.title)}`} className={styles.projectLink}>
-              <div className={styles.project} style={
-                {
-                  "--image": `url(${project.image})`,
-                  "--hover": `url(${project.hoverImage})`,
-                } as React.CSSProperties
-              }>
+            <Link
+              href={`/projects/${generateSlug(project.title)}`}
+              className={styles.projectLink}
+            >
+              <div
+                className={styles.project}
+                style={
+                  {
+                    "--image": `url(${project.image})`,
+                    "--hover": `url(${project.hoverImage})`,
+                  } as React.CSSProperties
+                }
+              >
                 <div className={styles.labels}>
                   {project.categories.map((cat, index) => (
-                    <span 
-                      key={index} 
-                      className={styles.label} 
+                    <span
+                      key={index}
+                      className={styles.label}
                       style={{ backgroundColor: generatePastelColor(cat) }}
                     >
                       {cat}
@@ -118,7 +138,6 @@ const ProjectGrid2 = () => {
                 </div>
               </div>
             </Link>
-            <h3 className={styles.title}>{project.title} ━ {project.year}</h3>
           </div>
         ))}
       </div>

@@ -6,13 +6,11 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-
         <div className={styles.column}>
-          <Socials/>
+          <Socials />
         </div>
 
-        <div className={styles.column}>
-        </div>
+        <div className={styles.column}></div>
 
         <div className={styles.column}>
           <h3>Liens rapides</h3>
@@ -28,6 +26,17 @@ const Footer = () => {
             </li>
             <li>
               <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.column}>
+          <h3>Liens utiles</h3>
+          <ul>
+            <li>
+              <Link href="/documentation">Documentation</Link>
+            </li>
+            <li>
+              <Link href="/legal-mentions">Mentions légales</Link>
             </li>
           </ul>
         </div>

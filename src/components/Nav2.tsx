@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "@/styles/Nav2.module.css";
 import { IoIosMail } from "react-icons/io";
+import { DateModule, fa } from "@faker-js/faker";
 
 function Resume() {
   alert("Je n'ai pas de contact pour l'instant !");
@@ -11,7 +12,7 @@ function Resume() {
 const Nav2 = () => {
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
-  const [isAvailable, setIsAvailable] = useState(true);
+  const [isAvailable, setIsAvailable] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {

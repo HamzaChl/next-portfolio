@@ -34,7 +34,7 @@
 .scrolled {
     top: 20px;
     max-width: 70%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.765);
     backdrop-filter: blur(12px) saturate(180%);
     -webkit-backdrop-filter: blur(12px) saturate(180%);
     border-radius: 20px;
@@ -86,7 +86,7 @@
     list-style: none;
     display: flex;
     gap: 16px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .navLinks li a {
@@ -94,7 +94,7 @@
     color: #334155;
 
     font-family: "ebrima", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     padding: 10px;
     transition: all 0.3s ease;
 }
@@ -103,6 +103,7 @@
 .navLinks .active {
     background: linear-gradient(to right, #4568dc, #b06ab3);
     -webkit-background-clip: text;
+    font-weight: 500;
     -webkit-text-fill-color: transparent;
 }
 
@@ -178,27 +179,6 @@
     text-align: center;
 }
 
-.mobileScrolled {
-    top: 20px;
-    position: fixed;
-    width: 100%;
-    max-width: 90%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 70px;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(12px) saturate(180%);
-    -webkit-backdrop-filter: blur(12px) saturate(180%);
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.35s ease;
-}
 
 
 /* RESPONSIVE */
@@ -210,6 +190,29 @@
         padding: 15px 24px;
         background: #fff;
         border-bottom: 1px solid #eee;
+    }
+
+
+    .mobileScrolled {
+        top: 20px;
+        position: fixed;
+        width: 100%;
+        max-width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 70px;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.35s ease;
     }
 
     .navbar {
