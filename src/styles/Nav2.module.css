@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/rfn8mmy.css");
+
 .container {
     width: 100%;
     display: flex;
@@ -92,8 +94,7 @@
 .navLinks li a {
     text-decoration: none;
     color: #334155;
-
-    font-family: "ebrima", sans-serif;
+    font-family: "Public Sans", sans-serif;
     font-weight: 400;
     padding: 10px;
     transition: all 0.3s ease;

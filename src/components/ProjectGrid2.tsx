@@ -98,16 +98,32 @@ const ProjectGrid2 = () => {
 
   return (
     <div>
-      {/* <div className={text.e}>
-        <h1 ref={titleRef} className={text.subHeading}>
-          Mes réalisations
-        </h1>
-        <p ref={subtitleRef} className={text.corpsText}>
-          Découvrez une sélection de mes réalisations en développement web,
-          mobile et design. De l'idée à la mise en ligne, chaque projet est
-          conçu avec passion et précision.
-        </p>
-      </div> */}
+      <div
+        style={{
+          marginBottom: "1rem",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <label htmlFor="sort" style={{ marginRight: "0.5rem" }}>
+          Trier par :
+        </label>
+        <select
+          id="sort"
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
+          style={{
+            padding: "0.5rem",
+            borderRadius: "0.5rem",
+            border: "1px solid #ccc",
+          }}
+        >
+          <option value="year">Année (du plus récent)</option>
+          <option value="title">Titre (A-Z)</option>
+          <option value="category">Catégorie</option>
+        </select>
+      </div>
 
       <div ref={gridRef} className={styles.grid}>
         {sortedProjects.map((project) => (

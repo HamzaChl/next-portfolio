@@ -2,70 +2,53 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 import styles from "@/styles/Home.module.css";
-import text from "@/styles/Text.module.css";
-import Technologies from "@/components/Technologies";
-import Spacer from "@/components/Spacer";
-import Faq from "@/components/Faq";
-import Services from "@/components/Services";
 
 const Home = () => {
-  const titleRef = useRef(null);
-  const subtitleRef = useRef(null);
-  const buttonRef = useRef(null);
-  const lightRef = useRef(null); // Ref pour l'effet lumineux
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const bangRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    // Animation du texte et du bouton
-    gsap.fromTo(
-      titleRef.current,
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
-    );
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        titleRef.current,
+        {
+          letterSpacing: "-0.03em",
+          opacity: 0.85,
+          y: 10,
+        },
+        {
+          letterSpacing: "0em",
+          opacity: 1,
+          y: 0,
+          duration: 3,
+          repeat: -1,
+          yoyo: true,
+          ease: "power2.inOut",
+        }
+      );
 
-    gsap.fromTo(
-      subtitleRef.current,
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, delay: 0.3, ease: "power3.out" }
-    );
+      gsap.to(bangRef.current, {
+        rotate: 360,
+        duration: 6,
+        repeat: -1,
+        ease: "linear",
+        transformOrigin: "50% 50%",
+      });
+    });
 
-    gsap.fromTo(
-      buttonRef.current,
-      { scale: 0 },
-      { scale: 1, duration: 0.5, delay: 0.6, ease: "back.out(1.7)" }
-    );
+    return () => ctx.revert();
   }, []);
 
   return (
-    <>
-      <div className="container">{/* <h5>Mes projets</h5> */}</div>
-      <div className={styles.homeContainer}>
-        {/* <div ref={lightRef} className={styles.lightEffect}></div> */}
-
-        {/* <div className={styles.subContainer}>
-          <h1 ref={titleRef} className={text.textHeading}>
-            Développement <span className={text.blueText}>web</span> &{" "}
-            <span className={text.blueText}>mobile</span>
-            <br /> concrétisez vos idées avec{" "}
-            <span className={text.blueText}>style</span>.
-          </h1>
-          <p ref={subtitleRef} className={text.subtitle}>
-            Développeur passionné, je conçois des applications web et mobiles
-            performantes et élégantes. Besoin d'un site sur-mesure ou d'une app
-            innovante ? Parlons-en !
-          </p>
-        </div> */}
-        <div className={styles.subContainer}>
-          <h1 className={styles.Maintitle}>Hello world</h1>
-        </div>
-
-        <Spacer />
-
-        <Technologies />
-      </div>
-      <div className={styles.homeContainer}></div>
-    </>
+    <div className={styles.heroContainer}>
+      <h1 ref={titleRef} className={styles.heroText}>
+        Je donne vie à vos idées
+        <span ref={bangRef} className={styles.bang}>
+          !
+        </span>
+      </h1>
+    </div>
   );
 };
 
