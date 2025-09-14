@@ -1,13 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import ProjectGrid from "@/components/ProjectGrid";
 import gsap from "gsap";
 
-import Nav from "@/components/Nav";
-import Nav2 from "@/components/Nav2";
 import styles from "@/styles/Labo.module.css";
 import text from "@/styles/Text.module.css";
 import Technologies from "@/components/Technologies";
-import ProjectGrid2 from "@/components/ProjectGrid2";
+
 import Faq from "@/components/Faq";
 import Services from "@/components/Services";
 
