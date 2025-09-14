@@ -34,3 +34,44 @@
         font-size: clamp(2.5rem, 10vw, 5rem);
     }
 }
+
+.heroContainer {
+    height: 100vh;
+    width: 100%;
+    padding: 0 5vw;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: black;
+}
+
+.bang {
+    display: inline-block;
+    color: #00ffff;
+    font-weight: 900;
+    margin-left: 0.2em;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "@/styles/Nav2.module.css";
 import { IoIosMail } from "react-icons/io";
-import { DateModule, fa } from "@faker-js/faker";
 
 function Resume() {
   alert("Je n'ai pas de contact pour l'instant !");
