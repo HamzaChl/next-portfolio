@@ -78,14 +78,6 @@
     ]
   },
   {
-    "id": 8,
-    "title": "Body Slim",
-    "year": 2024,
-    "image": "/Images/08.png",
-    "hoverImage": "/Images/08hover.png",
-    "categories": ["Web", "Design"]
-  },
-  {
     "id": 9,
     "title": "Boutique Maschio",
     "year": 2023,

@@ -3,11 +3,14 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
-  const ctaRef = useRef<HTMLButtonElement>(null);
+  const ctaAnchorRef = useRef<HTMLAnchorElement>(null);
+  const photoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -22,21 +25,13 @@ const Home = () => {
           ease: "power4.out",
         }
       );
-
       gsap.fromTo(
         subtitleRef.current,
         { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.2,
-          delay: 0.3,
-          ease: "power3.out",
-        }
+        { opacity: 1, y: 0, duration: 1.2, delay: 0.3, ease: "power3.out" }
       );
-
       gsap.fromTo(
-        ctaRef.current,
+        ctaAnchorRef.current,
         { opacity: 0, scale: 0.9 },
         {
           opacity: 1,
@@ -46,6 +41,11 @@ const Home = () => {
           ease: "back.out(1.7)",
         }
       );
+      gsap.fromTo(
+        photoRef.current,
+        { opacity: 0, x: -30 },
+        { opacity: 1, x: 0, duration: 1.2, ease: "power3.out" }
+      );
     });
 
     return () => ctx.revert();
@@ -53,7 +53,41 @@ const Home = () => {
 
   return (
     <section className={styles.heroContainer}>
-      <div className={styles.content}></div>
+      <div className={styles.heroGrid}>
+        {/* Photo à gauche */}
+        <div className={styles.left} ref={photoRef}>
+          <div className={styles.photoFrame}>
+            <Image
+              src="/me.JPG"
+              alt="Portrait"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className={styles.photo}
+            />
+          </div>
+        </div>
+
+        {/* Texte à droite */}
+        <div className={styles.right}>
+          <h1 ref={titleRef} className={styles.title}>
+            Développeur / Designer{" "}
+            <span className={styles.accent}>Web & Mobile</span>
+          </h1>
+
+          <p ref={subtitleRef} className={styles.subtitle}>
+            Je conçois et développe des interfaces modernes, rapides et
+            accessibles&nbsp;: sites vitrines, dashboards, applications web et
+            mobiles.
+          </p>
+
+          <Link href="/projects" legacyBehavior>
+            <a ref={ctaAnchorRef} className={styles.cta}>
+              Voir mes projets
+            </a>
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };

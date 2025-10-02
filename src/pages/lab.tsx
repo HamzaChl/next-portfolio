@@ -56,9 +56,7 @@ const Lab = () => {
   return (
     <>
       <div className="container"></div>
-      <div className="container">
-        <div id="b" className="b"></div>
-      </div>
+
       <div className={text.e}>
         <h1 ref={titleRef} className={text.subHeading}>
           {" "}

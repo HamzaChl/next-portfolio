@@ -1,0 +1,106 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 2rem 0;
+}
+
+.blogContainer {
+    position: relative;
+}
+
+.blog {
+    background-image: var(--image);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.blog:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.3);
+    /* Bordure un peu plus visible au hover */
+}
+
+.labels {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.label {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+    color: white;
+    padding: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.blog:hover .overlay {
+    opacity: 1;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.shortDescription {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    opacity: 0.85;
+}
+
+.readMore {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6fb1ff;
+    transition: color 0.3s ease;
+}
+
+.blog:hover .readMore {
+    color: #9bc9ff;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

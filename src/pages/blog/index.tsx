@@ -7,6 +7,7 @@ import styles from "@/styles/Labo.module.css";
 import text from "@/styles/Text.module.css";
 import Technologies from "@/components/Technologies";
 import ProjectGrid2 from "@/components/ProjectGrid2";
+import BlogGrid from "@/components/BlogGrid";
 
 const blog = () => {
   const titleRef = useRef(null);
@@ -38,7 +39,9 @@ const blog = () => {
           Juste en train de tester, ne pas faire attention.
         </p>
       </div>
-      <div className="container"></div>
+      <div className="container">
+        <BlogGrid></BlogGrid>
+      </div>
       <div className="container"></div>
     </>
   );

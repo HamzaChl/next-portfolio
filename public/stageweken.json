@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Stageweek 1",
+    "shortDescription": "Kennismaking met Taxis Auto Luxe en eerste stappen in development.",
+    "text": "Mijn eerste stageweek was erg leerrijk en uitdagend. Ik heb kennisgemaakt met Taxis Auto Luxe, één van de oudste taxibedrijven in België. Hun huidige applicatie wordt niet meer onderhouden en werkt niet meer naar behoren. Ze willen een volledig nieuwe oplossing, en ik krijg de kans om hier bijna zelfstandig aan te werken. Dit geeft me de mogelijkheid om mijn ervaring te versterken, terwijl ik toch begeleid word door een ontwikkelaar bij wie ik terechtkan met vragen en om verslag uit te brengen.\n\nIk heb mijn technische stacks gekozen:\n• Frontend: React Native + Expo (moderne UI met kaarten, modals en i18n)\n• Backend: Node.js/Express met JWT, Stripe, Google Maps API en SendGrid\n• Database: MongoDB Atlas M2 (beheer van gebruikers, ritten en betalingen)\n\nOm goed te starten heb ik een GitHub-repository opgezet en ben ik al begonnen met het implementeren van de JWT-authenticatie.\n\nDaarnaast heb ik ook kennisgemaakt met Yassine, die een fitnesszaal uitbaat. Zijn project bestaat uit het ontwikkelen van een website waarmee gebruikers een privé-fitnessruimte kunnen reserveren. Zodra de reservatie bevestigd is, ontvangt de gebruiker een unieke code om de zaal te ontgrendelen, enkel geldig tijdens het gekozen tijdslot. Deze website wordt ontwikkeld met WordPress, en ik heb alvast de elektronische sloten van het Nederlandse merk Nuki geselecteerd, die gekoppeld zullen worden aan de website en een mobiele applicatie.\n\nKortom, deze eerste week legde een sterke basis: het opzetten van de omgevingen, de eerste technische stappen en het vooruitzicht op twee concrete en boeiende projecten.",
+    "image": "/public/Images/stages/1.png"
+  },
+  {
+    "title": "Stageweek 2",
+    "shortDescription": "Start mobiele app, styling, login en eerste field experience bij Zaventem.",
+    "text": "De tweede week van mijn stage was opnieuw heel boeiend en praktijkgericht. Ik kreeg toegang tot een VPS en kon eindelijk beginnen met de ontwikkeling van de mobiele applicatie. Ik ben gestart met de styling, en heb ondertussen al een functionele login en meertalige vertalingen geïntegreerd. Daarnaast heb ik nu ook toegang tot een Stripe-dashboard om betalingen te beheren en te testen.\n\nEen collega toonde mij hoe ik via Xcode meerdere iPhone-modellen kan simuleren om de verschillende schermen van de app te testen. Dat was heel handig om te zien hoe de interface er op diverse toestellen uitziet.\n\nEr heeft iemand mij ook een systeem getoond dat automatisch inspeelt op het thema van het besturingssysteem, dus dark mode of light mode, afhankelijk van de instellingen van de gebruiker. Dat vond ik heel interessant, omdat het de gebruikservaring veel moderner en persoonlijker maakt.\n\nLater in de week kreeg ik de kans om met een taxi naar Brussels Airport (Zaventem) te gaan, om te ontdekken hoe alles in de praktijk werkt. Taxis Auto Luxe is namelijk één van de weinige taxibedrijven die toegang hebben tot het interieur van de luchthaven. Ik heb daar een beter beeld gekregen van hun werking en ook de nodige berekeningen voor de ritprijzen ontvangen.\n\nWat ik tot nu toe echt waardeer aan deze stage, is dat ik niet de hele dag achter mijn computer hoef te zitten. We gaan vaak op pad naar klanten en hebben veel interactie. Voor wat ik later na mijn studies als zelfstandige wil doen, is dit tot nu toe een fantastische ervaring.",
+    "image": "/public/Images/stages/2.png"
+  },
+  {
+    "title": "Stageweek 3",
+    "shortDescription": "Niet Klaar.",
+    "text": "Nog niet klaar.",
+    "image": "/public/Images/stages/2.png"
+  }
+]
