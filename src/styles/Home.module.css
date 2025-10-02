@@ -84,7 +84,7 @@
 
 .heroGrid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    /* grid-template-columns: 1fr 1.2fr; */
     gap: clamp(24px, 5vw, 56px);
     align-items: center;
 }
@@ -97,10 +97,11 @@
 
 .photoFrame {
     position: relative;
-    width: min(420px, 90vw);
+    width: min(320px, 90vw);
     aspect-ratio: 4 / 4;
-    border-radius: 50%;
-    overflow: hidden;
+    opacity: 0;
+    /* border-radius: 50%;
+    overflow: hidden; */
 
 }
 

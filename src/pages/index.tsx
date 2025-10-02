@@ -54,8 +54,7 @@ const Home = () => {
   return (
     <section className={styles.heroContainer}>
       <div className={styles.heroGrid}>
-        {/* Photo à gauche */}
-        <div className={styles.left} ref={photoRef}>
+        {/* <div className={styles.left} ref={photoRef}>
           <div className={styles.photoFrame}>
             <Image
               src="/me.JPG"
@@ -66,19 +65,16 @@ const Home = () => {
               className={styles.photo}
             />
           </div>
-        </div>
+        </div> */}
 
-        {/* Texte à droite */}
         <div className={styles.right}>
           <h1 ref={titleRef} className={styles.title}>
-            Développeur / Designer{" "}
-            <span className={styles.accent}>Web & Mobile</span>
+            Hamza, student in softwareontwikkeling
           </h1>
 
           <p ref={subtitleRef} className={styles.subtitle}>
-            Je conçois et développe des interfaces modernes, rapides et
-            accessibles&nbsp;: sites vitrines, dashboards, applications web et
-            mobiles.
+            Met passie voor web & mobile design bouw ik toegankelijke en snelle
+            interfaces.
           </p>
 
           <Link href="/projects" legacyBehavior>
