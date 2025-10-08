@@ -54,7 +54,7 @@ const Nav2 = () => {
                 href="/"
                 className={router.pathname === "/" ? styles.active : ""}
               >
-                Accueil
+                Home
               </Link>
             </li>
             <li>
@@ -62,7 +62,7 @@ const Nav2 = () => {
                 href="/projects"
                 className={router.pathname === "/projects" ? styles.active : ""}
               >
-                Projets
+                Projecten
               </Link>
             </li>
             <li>
@@ -78,7 +78,7 @@ const Nav2 = () => {
                 href="/lab"
                 className={router.pathname === "/lab" ? styles.active : ""}
               >
-                Laboratoire
+                Labos
               </Link>
             </li>
           </ul>

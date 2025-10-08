@@ -36,7 +36,7 @@
 .scrolled {
     top: 20px;
     max-width: 70%;
-    background: rgba(255, 255, 255, 0.765);
+    background: rgba(0, 0, 0, 0.965);
     backdrop-filter: blur(12px) saturate(180%);
     -webkit-backdrop-filter: blur(12px) saturate(180%);
     border-radius: 50px;
@@ -58,6 +58,7 @@
 .scrolled .logo {
     transform: scale(0.9);
     font-size: 1.6rem;
+    color: #fff;
 }
 
 /* STATUS */
@@ -127,6 +128,15 @@
     align-items: center;
     gap: 10px;
     transition: background 0.3s ease;
+}
+
+.scrolled .ctaButton {
+    background: #fff;
+    color: #000;
+}
+
+.scrolled .navLinks li a {
+    color: #cacaca;
 }
 
 .ctaButton:hover {
