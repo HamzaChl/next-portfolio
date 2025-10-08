@@ -27,14 +27,11 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+
   font-family: "Public Sans", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: repeat;
+
 
 }
 

@@ -15,6 +15,7 @@ export interface BlogPost {
 
 const BlogGrid = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [sortBy, setSortBy] = useState<"week" | "title">("week");
   const gridRef = useRef<HTMLDivElement>(null);
 
   const generateSlug = (title: string) =>
@@ -25,71 +26,71 @@ const BlogGrid = () => {
       try {
         const response = await fetch("/stageweken.json");
         const data = await response.json();
-
         const formattedPosts = data.map((post: any, index: number) => ({
           id: index + 1,
           ...post,
         }));
-
         setPosts(formattedPosts);
       } catch (error) {
         console.error("Fout bij het ophalen van de blogposts", error);
       }
     };
-
     fetchPosts();
   }, []);
 
+  const sortedPosts = [...posts].sort((a, b) => {
+    if (sortBy === "title") return a.title.localeCompare(b.title);
+    if (sortBy === "week") return a.id - b.id;
+    return 0;
+  });
+
   useEffect(() => {
-    if (posts.length > 0 && gridRef.current) {
+    if (gridRef.current) {
       gsap.fromTo(
         gridRef.current.children,
         { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power3.out",
-          stagger: 0.2,
-        }
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out", stagger: 0.2 }
       );
     }
-  }, [posts]);
+  }, [sortedPosts]);
 
   if (posts.length === 0) return <p>Even geduld...</p>;
 
   return (
-    <div ref={gridRef} className={styles.grid}>
-      {posts.map((post, index) => (
-        <div key={post.id} className={styles.blogContainer}>
-          <Link
-            href={`/blog/${generateSlug(post.title)}`}
-            className={styles.blogLink}
+    <section className={styles.wrapper}>
+      <div className={styles.sortMenu}>
+        {["week", "title"].map((key) => (
+          <button
+            key={key}
+            className={`${styles.sortButton} ${
+              sortBy === key ? styles.active : ""
+            }`}
+            onClick={() => setSortBy(key as "week" | "title")}
           >
-            <div
-              className={styles.blog}
-              style={
-                {
-                  "--image": `url(${post.image})`,
-                } as React.CSSProperties
-              }
-            >
-              <div className={styles.labels}>
-                <span className={styles.label}>Week {index + 1}</span>
-              </div>
+            {key === "week" ? "Week" : "Titel"}
+          </button>
+        ))}
+      </div>
 
-              <div className={styles.overlay}>
-                <h2 className={styles.title}>{post.title}</h2>
-                <p className={styles.shortDescription}>
-                  {post.shortDescription}
-                </p>
-                <span className={styles.readMore}>Lees meer →</span>
-              </div>
+      <div ref={gridRef} className={styles.grid}>
+        {sortedPosts.map((post, index) => (
+          <div key={post.id} className={styles.blogCard}>
+            <Link href={`/blog/${generateSlug(post.title)}`}>
+              <div
+                className={styles.imageWrapper}
+                style={{ backgroundImage: `url(${post.image})` }}
+              ></div>
+            </Link>
+
+            <div className={styles.blogInfo}>
+              <h3 className={styles.blogTitle}>{post.title}</h3>
+              <p className={styles.shortDescription}>{post.shortDescription}</p>
+              <span className={styles.blogLabel}>Week {index + 1}</span>
             </div>
-          </Link>
-        </div>
-      ))}
-    </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

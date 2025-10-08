@@ -4,7 +4,7 @@ export enum ProjectCategory {
   Design = "Design",
   UIUX = "UI/UX",
   Autre = "Autre",
-  FullStack = "Full Stack"
+  FullStack = "Full Stack",
 }
 
 export interface Project {
@@ -13,6 +13,8 @@ export interface Project {
   year: number;
   image: string;
   hoverImage: string;
-  categories: ProjectCategory[] | string[];  // ← Ici, c'est un tableau
+  categories: string[];
+  shortDescription?: string;
+  description?: string;
   projectImages?: string[];
 }

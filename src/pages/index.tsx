@@ -5,9 +5,10 @@ import gsap from "gsap";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Technologies from "@/components/Technologies";
 
 const Home = () => {
-  const titleRef = useRef<HTMLHeadingElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaAnchorRef = useRef<HTMLAnchorElement>(null);
   const photoRef = useRef<HTMLDivElement>(null);
@@ -54,23 +55,15 @@ const Home = () => {
   return (
     <section className={styles.heroContainer}>
       <div className={styles.heroGrid}>
-        {/* <div className={styles.left} ref={photoRef}>
-          <div className={styles.photoFrame}>
-            <Image
-              src="/me.JPG"
-              alt="Portrait"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 40vw"
-              className={styles.photo}
-            />
-          </div>
-        </div> */}
-
         <div className={styles.right}>
-          <h1 ref={titleRef} className={styles.title}>
-            Hamza, student in softwareontwikkeling
-          </h1>
+          <div ref={titleRef}>
+            <h1 className={styles.heroTitle}>
+              Het creëren van impactvolle
+              <br />
+              visuele ervaringen door
+            </h1>
+            <h2 className={styles.heroSubTitle}>UI/UX designer</h2>
+          </div>
 
           <p ref={subtitleRef} className={styles.subtitle}>
             Met passie voor web & mobile design bouw ik toegankelijke en snelle
@@ -82,6 +75,7 @@ const Home = () => {
               Voir mes projets
             </a>
           </Link>
+          <Technologies></Technologies>
         </div>
       </div>
     </section>

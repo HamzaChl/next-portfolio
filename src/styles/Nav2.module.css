@@ -32,15 +32,15 @@
     z-index: 1000;
 }
 
-/* NAVBAR FLOTTANTE AU SCROLL */
+
 .scrolled {
     top: 20px;
     max-width: 70%;
     background: rgba(255, 255, 255, 0.765);
     backdrop-filter: blur(12px) saturate(180%);
     -webkit-backdrop-filter: blur(12px) saturate(180%);
-    border-radius: 20px;
-    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border-radius: 50px;
+
     height: 70px;
     padding: 10px 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -50,8 +50,9 @@
 .logo {
     font-size: 1.8rem;
     transition: transform 0.3s ease, font-size 0.3s ease;
-    font-family: "ogg", sans-serif;
-    font-weight: bold;
+    font-family: "BwGradualBold", sans-serif;
+
+
 }
 
 .scrolled .logo {
@@ -96,19 +97,19 @@
     color: #334155;
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
+    font-size: .9rem;
     padding: 10px;
     transition: all 0.3s ease;
+    opacity: .6;
 }
 
 .navLinks li a:hover,
 .navLinks .active {
-    background: linear-gradient(to right, #4568dc, #b06ab3);
-    -webkit-background-clip: text;
-    font-weight: 500;
-    -webkit-text-fill-color: transparent;
+    color: #2273d0;
+    opacity: 1;
 }
 
-/* BOUTON CONTACT */
+
 .ctaContainer {
     display: flex;
     gap: 10px;
@@ -116,7 +117,7 @@
 
 .ctaButton {
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight: 700;
     background: linear-gradient(to top, #000, #0c0c0c);
     color: #fff;

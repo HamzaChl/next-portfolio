@@ -45,12 +45,7 @@ const Nav2 = () => {
       <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
         <div className={styles.container}>
           <div className={styles.navLeft}>
-            <div className={styles.logo}>HAMZA</div>
-            <span
-              className={`${styles.statusIndicator} ${
-                isAvailable ? styles.online : styles.offline
-              }`}
-            ></span>
+            <div className={styles.logo}>Hamza</div>
           </div>
 
           <ul className={`${styles.navLinks} ${isMenuOpen ? styles.open : ""}`}>

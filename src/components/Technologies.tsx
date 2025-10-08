@@ -13,17 +13,27 @@ const Technologies: React.FC = () => {
       try {
         const response = await fetch("/api/technologies");
         const data = await response.json();
-        setImages(data.images);
+        setImages([...data.images, ...data.images]);
       } catch (error) {
         console.error("Erreur lors du chargement des images :", error);
       }
     };
 
     fetchImages();
-
-    // Animation GSAP pour le carrousel
-    
   }, []);
+
+  useEffect(() => {
+    if (!carouselRef.current || images.length === 0) return;
+
+    const totalWidth = carouselRef.current.scrollWidth / 2;
+
+    gsap.to(carouselRef.current, {
+      x: `-${totalWidth}px`,
+      duration: 20,
+      ease: "linear",
+      repeat: -1,
+    });
+  }, [images]);
 
   return (
     <div className={styles.carouselContainer}>
@@ -32,17 +42,14 @@ const Technologies: React.FC = () => {
           {images.map((img, index) => (
             <div
               key={index}
-              className={`${styles.techItem} tech-item`}
+              className={styles.techItem}
               style={{
                 backgroundImage: `url(${img})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
               }}
-            ></div>
+            />
           ))}
         </div>
       </div>
-      
     </div>
   );
 };

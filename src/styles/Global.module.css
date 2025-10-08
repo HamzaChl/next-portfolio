@@ -1,31 +1,51 @@
 .carouselContainer {
     width: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    margin-bottom: 50px;
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.carouselWrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .carousel {
     display: flex;
-    gap: 20px;
-    width: max-content;
+    align-items: center;
+    gap: 60px;
+    will-change: transform;
 }
 
 .techItem {
-    width: 150px;
-    height: 80px;
-    border-radius: 10px;
-    flex-shrink: 0;
-    border: 1px solid rgb(224, 224, 224);
+    flex: 0 0 auto;
+    width: 140px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
 
 .techItem:hover {
-    box-shadow: 0px 0px 10px #b16ab31b;
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+    .techItem {
+        width: 70px;
+        height: 70px;
+    }
+
+    .carousel {
+        gap: 40px;
+    }
+}
 
 .faqContainer {
     max-width: 70%;

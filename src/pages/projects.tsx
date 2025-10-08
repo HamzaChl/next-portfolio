@@ -1,17 +1,24 @@
 import ProjectGrid2 from "@/components/ProjectGrid2";
-import Sorting from "@/components/Sorting";
-import Technologies from "@/components/Technologies";
+import styles from "@/styles/Project.module.css";
 import React from "react";
 
-const projects = () => {
+const Projects = () => {
   return (
     <>
-      <div className="container">{/* <h5>Mes projets</h5> */}</div>
+      <section className={styles.projectHeader}>
+        <h1 className={styles.pageTitle}>Mijn Creatieve Projecten</h1>
+
+        <p className={styles.subtitle}>
+          Van webplatforms tot interactieve interfaces: deze projecten tonen de
+          kern van mijn creatieve en technische reis. Elk werk is een balans
+          tussen esthetische visie en functioneel design — gemaakt om te
+          inspireren en te verbinden.
+        </p>
+      </section>
 
       <ProjectGrid2 />
-      <div className="container">{/* <h5>Mes projets</h5> */}</div>
     </>
   );
 };
 
-export default projects;
+export default Projects;
