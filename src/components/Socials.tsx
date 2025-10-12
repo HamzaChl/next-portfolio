@@ -5,17 +5,21 @@ import React from "react";
 const Socials = () => {
   return (
     <div className={styles.socials}>
-      {/* Définition du gradient */}
       <svg width="0" height="0">
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: "#4568dc", stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: "#b06ab3", stopOpacity: 1 }} />
+            <stop
+              offset="0%"
+              style={{ stopColor: "#4568dc", stopOpacity: 1 }}
+            />
+            <stop
+              offset="100%"
+              style={{ stopColor: "#b06ab3", stopOpacity: 1 }}
+            />
           </linearGradient>
         </defs>
       </svg>
 
-      {/* Icônes avec couleur par défaut et gradient au hover */}
       <a href="https://github.com/HamzaChl" target="_blank">
         <FaGithub />
       </a>

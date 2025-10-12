@@ -18,7 +18,9 @@ const ProjectPage = () => {
       try {
         const response = await fetch("/api/projects");
         const data: Project[] = await response.json();
-        const foundProject = data.find((proj) => proj.title.toLowerCase().replace(/\s+/g, "-") === slug);
+        const foundProject = data.find(
+          (proj) => proj.title.toLowerCase().replace(/\s+/g, "-") === slug
+        );
 
         if (foundProject) {
           setProject(foundProject);
@@ -33,13 +35,16 @@ const ProjectPage = () => {
 
   useEffect(() => {
     if (containerRef.current) {
-      gsap.fromTo(containerRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, ease: "power3.out" });
+      gsap.fromTo(
+        containerRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+      );
     }
   }, [project]);
 
   if (!project) return <p>Chargement...</p>;
 
-  // Fonction pour générer une couleur pastel pour les labels
   const generatePastelColor = (text: string) => {
     let hash = 0;
     for (let i = 0; i < text.length; i++) {
@@ -53,7 +58,10 @@ const ProjectPage = () => {
     <div ref={containerRef} className={styles.container}>
       {/* ASIDE */}
       <div className={styles.aside}>
-        <button onClick={() => router.push("/projects")} className={styles.backButton}>
+        <button
+          onClick={() => router.push("/projects")}
+          className={styles.backButton}
+        >
           <FaArrowLeft /> Retour aux projets
         </button>
 
@@ -65,23 +73,29 @@ const ProjectPage = () => {
         <br />
         <div className={styles.labelsContainer}>
           {project.categories.map((cat, index) => (
-            <span 
-              key={index} 
-              className={styles.label} 
-              style={{ backgroundColor: generatePastelColor(cat), marginRight: 10 }}
+            <span
+              key={index}
+              className={styles.label}
+              style={{
+                backgroundColor: generatePastelColor(cat),
+                marginRight: 10,
+              }}
             >
               {cat}
             </span>
-            
           ))}
         </div>
       </div>
 
-      {/* SECTION IMAGES */}
       <div className="images">
         <div className={styles.imagesGrid}>
           {project.projectImages?.map((img, index) => (
-            <img className={styles.imgProject} key={index} src={img} alt={`Project ${project.title} ${index}`} />
+            <img
+              className={styles.imgProject}
+              key={index}
+              src={img}
+              alt={`Project ${project.title} ${index}`}
+            />
           ))}
         </div>
       </div>

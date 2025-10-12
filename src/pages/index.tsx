@@ -6,6 +6,7 @@ import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Technologies from "@/components/Technologies";
+import ScrollZoom from "@/components/ScrollZoom";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -76,6 +77,7 @@ const Home = () => {
             </a>
           </Link>
           <Technologies></Technologies>
+          <ScrollZoom />
         </div>
       </div>
     </section>

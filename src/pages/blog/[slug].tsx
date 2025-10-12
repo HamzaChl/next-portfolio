@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "@/styles/BlogPost.module.css";
 import text from "@/styles/Text.module.css";
+import { FaArrowLeft } from "react-icons/fa";
 
 interface BlogPost {
   id: number;
@@ -41,24 +42,27 @@ const BlogPostPage = () => {
   if (!post) return <p className={styles.loading}>Even geduld...</p>;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <div className={text.e}>
-          <h1 className={text.subHeading}>{post.title}</h1>
-          <p>Juste en train de tester, ne pas faire attention.</p>
-        </div>
-        <br />
-        <br />
-        <br />
+    <div className={styles.outerContianer}>
+      <button onClick={() => router.back()} className={styles.backButton}>
+        <FaArrowLeft /> Terug naar Blogs
+      </button>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <div className={text.e}>
+            <h1 className={styles.subHeading}>{post.title}</h1>
+            <br />
+            <p>{post.shortDescription}</p>
+          </div>
+          <br />
+          <br />
+          <br />
 
-        <p className={styles.text}>{post.text}</p>
+          <p className={styles.text}>{post.text}</p>
 
-        <div className={styles.headerImage}>
-          <img src={post.image} alt={post.title} />
+          <div className={styles.headerImage}>
+            <img src={post.image} alt={post.title} />
+          </div>
         </div>
-        <Link href="/blog" className={styles.backButton}>
-          ← Terug naar blog
-        </Link>
       </div>
     </div>
   );

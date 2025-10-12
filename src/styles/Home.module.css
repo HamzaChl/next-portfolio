@@ -127,6 +127,24 @@
     border-bottom: 2px solid currentColor;
 }
 
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socials a {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.609);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+    color: white
+}
+
 .cta {
     align-self: flex-start;
     margin-top: 10px;
