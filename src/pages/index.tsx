@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Technologies from "@/components/Technologies";
 import ScrollZoom from "@/components/ScrollZoom";
-import ArrowBackground from "@/components/ArrowBackground";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -56,8 +55,6 @@ const Home = () => {
 
   return (
     <section className={styles.heroContainer}>
-      <ArrowBackground />
-
       <div className={styles.heroGrid}>
         <div className={styles.right}>
           <div ref={titleRef}>

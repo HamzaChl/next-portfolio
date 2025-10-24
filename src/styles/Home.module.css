@@ -118,6 +118,20 @@
     opacity: 0;
 }
 
+.arrowBackground {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: auto;
+    stroke: #c8102e;
+    stroke-width: 3px;
+    fill: none;
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 1;
+}
 
 .photo {
     object-fit: cover;

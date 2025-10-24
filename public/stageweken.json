@@ -21,12 +21,12 @@
     "title": "Stageweek 4",
     "shortDescription": "Front-end ontwikkeling, visuele componenten en eerste testbare resultaten.",
     "text": "De vierde week stond vooral in het teken van het front-endgedeelte van de mobiele applicatie – iets waar ik echt enthousiast van word. Dankzij mijn achtergrond in design heb ik altijd al een grote interesse gehad in de visuele kant van projecten, en nu kon ik dat combineren met mijn technische kennis.\n\nIk heb gewerkt aan verschillende schermen van de app, zoals login, registratie, profiel en de eerste versie van het reserveringssysteem voor ritten. De styling werd stap voor stap verfijnd, met aandacht voor consistentie, leesbaarheid en moderne animaties via React Native en Expo. Ik heb ook geëxperimenteerd met modals, mapcomponenten en dynamische UI-elementen om de gebruikerservaring nog aangenamer te maken.\n\nDe integratie met Google Maps begint echt goed te werken: gebruikers kunnen nu hun locatie zien en ritten aanvragen, wat de app meteen veel realistischer maakt. Samen met het team hebben we verschillende userflows getest om te kijken hoe intuïtief de navigatie aanvoelt.\n\nWat ik vooral waardeer, is dat ik ondanks mijn status als stagiair veel vertrouwen krijg. Mijn team moedigt me aan om zelf oplossingen te zoeken en mijn ideeën te delen, maar ze zijn er ook altijd om me te ondersteunen wanneer ik vastloop. Die balans tussen zelfstandigheid en begeleiding maakt dit een supergoede leerervaring.\n\nDeze week heeft mijn passie voor front-end alleen maar bevestigd. Het is het deel waar ik mijn gevoel voor design, gebruiksvriendelijkheid en techniek kan samenbrengen tot iets tastbaars. Ik ben trots op wat ik tot nu toe heb bereikt en kijk ernaar uit om de app verder te verfijnen in de komende weken.",
-    "image": "/public/Images/stages/4.png"
+    "image": "/Images/stages/week4.png"
   },
   {
     "title": "Stageweek 5",
     "shortDescription": "Front-end ontwikkeling, visuele componenten en eerste testbare resultaten.",
     "text": "",
-    "image": "/public/Images/stages/4.png"
+    "image": "/Images/stages/week5.png"
   }
 ]
