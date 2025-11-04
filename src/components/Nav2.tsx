@@ -78,7 +78,7 @@ const Nav2 = () => {
                 href="/lab"
                 className={router.pathname === "/lab" ? styles.active : ""}
               >
-                Labos
+                Lab
               </Link>
             </li>
           </ul>
@@ -91,7 +91,6 @@ const Nav2 = () => {
         </div>
       </nav>
 
-      {/* Mobile menu */}
       <div
         className={`${styles.mobileMenu} ${
           scrolled ? styles.mobileScrolled : ""

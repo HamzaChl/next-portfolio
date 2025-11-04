@@ -1,33 +1,57 @@
 .carouselContainer {
-    width: 100%;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
     overflow: hidden;
     padding: 80px 0;
-    background: #fafafa;
+    background: #fbfbfb;
 }
 
-.carouselWrapper {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+
+.carouselContainer::before,
+.carouselContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    z-index: 2;
+    pointer-events: none;
 }
 
-.carousel {
+.carouselContainer::before {
+    left: 0;
+    background: linear-gradient(to right, #fbfbfb 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carouselContainer::after {
+    right: 0;
+    background: linear-gradient(to left, #fbfbfb 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.marqueeTrack {
     display: flex;
-    align-items: center;
-    gap: 60px;
+    width: max-content;
+    animation: marquee-scroll 25s linear infinite;
     will-change: transform;
+}
+
+.marqueeInner {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .techItem {
     flex: 0 0 auto;
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 80px;
+    margin-right: 32px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(100%);
-    opacity: 0.8;
-    transition: all 0.3s ease;
+    filter: grayscale(20%);
+    opacity: 0.95;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
 
 .techItem:hover {
@@ -36,14 +60,22 @@
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .techItem {
-        width: 70px;
-        height: 70px;
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
     }
 
-    .carousel {
-        gap: 40px;
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .techItem {
+        width: 120px;
+        height: 60px;
+        margin-right: 24px;
     }
 }
 
@@ -55,9 +87,8 @@
 
 .faqTitle {
     font-size: 24px;
-    font-weight: bold;
-    text-align: center;
     font-weight: 700;
+    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -118,11 +149,9 @@
 
 .Services {
     margin-top: -100px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     padding: 40px;
-
     border: 1px solid;
-    /* Nécessaire pour afficher la bordure */
     border-image-source: linear-gradient(to right, #4568dc, #b06ab3);
     border-image-slice: 1;
     border-radius: 10px;
@@ -130,12 +159,23 @@
 
 .Services:hover {
     box-shadow: 0 0 15px rgba(69, 104, 220, 0.5);
-    /* Ombre colorée */
-
 }
-
 
 .subContainer {
     display: flex;
     justify-content: center;
+}
+
+
+.carouselWrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    will-change: transform;
 }

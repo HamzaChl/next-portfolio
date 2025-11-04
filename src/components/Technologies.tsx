@@ -1,51 +1,44 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/Global.module.css";
 
 const Technologies: React.FC = () => {
-  const carouselRef = useRef<HTMLDivElement>(null);
   const [images, setImages] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch("/api/technologies");
-        const data = await response.json();
-        setImages([...data.images, ...data.images]);
-      } catch (error) {
-        console.error("Erreur lors du chargement des images :", error);
+        const res = await fetch("/api/technologies");
+        const data = await res.json();
+        setImages(data.images || []);
+      } catch (e) {
+        console.error("Erreur lors du chargement des images :", e);
       }
     };
-
     fetchImages();
   }, []);
 
-  useEffect(() => {
-    if (!carouselRef.current || images.length === 0) return;
-
-    const totalWidth = carouselRef.current.scrollWidth / 2;
-
-    gsap.to(carouselRef.current, {
-      x: `-${totalWidth}px`,
-      duration: 20,
-      ease: "linear",
-      repeat: -1,
-    });
-  }, [images]);
+  if (images.length === 0) return null;
 
   return (
     <div className={styles.carouselContainer}>
-      <div className={styles.carouselWrapper}>
-        <div className={styles.carousel} ref={carouselRef}>
-          {images.map((img, index) => (
+      <div className={styles.marqueeTrack}>
+        <div className={styles.marqueeInner}>
+          {images.map((img, i) => (
             <div
-              key={index}
+              key={`a-${i}`}
               className={styles.techItem}
-              style={{
-                backgroundImage: `url(${img})`,
-              }}
+              style={{ backgroundImage: `url(${img})` }}
+            />
+          ))}
+        </div>
+        <div className={styles.marqueeInner} aria-hidden="true">
+          {images.map((img, i) => (
+            <div
+              key={`b-${i}`}
+              className={styles.techItem}
+              style={{ backgroundImage: `url(${img})` }}
             />
           ))}
         </div>

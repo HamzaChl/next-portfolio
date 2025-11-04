@@ -61,7 +61,7 @@
     color: #fff;
 }
 
-/* STATUS */
+
 .statusIndicator {
     display: inline-block;
     width: 10px;
@@ -138,6 +138,16 @@
 
 .scrolled .navLinks li a {
     color: #cacaca;
+}
+
+.navLinks li a:hover,
+.navLinks li a.active {
+    color: #000;
+}
+
+.scrolled .navLinks li a:hover,
+.scrolled .navLinks li a.active {
+    color: #fff;
 }
 
 .ctaButton:hover {

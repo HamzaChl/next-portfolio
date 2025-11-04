@@ -25,8 +25,20 @@
   },
   {
     "title": "Stageweek 5",
-    "shortDescription": "Front-end ontwikkeling, visuele componenten en eerste testbare resultaten.",
-    "text": "",
+    "shortDescription": "Backend-uitbreidingen en verfijning van API’s voor ritbeheer en gebruikers.",
+    "text": "Tijdens de vijfde week lag de focus op de verdere ontwikkeling van de backend. We hebben de bestaande API uitgebreid met nieuwe functionaliteiten, waaronder de geschiedenis van ritten, statusbeheer en validatie van gebruikers. Ook werden de foutmeldingen verbeterd, zodat de communicatie tussen client en server consistenter verloopt.\n\nDaarnaast heb ik gewerkt aan de optimalisatie van de databaseprestaties. Door indexing toe te voegen in MongoDB en de query’s efficiënter te maken, werden de responstijden merkbaar korter. Dit zorgde ervoor dat ritten sneller konden worden geladen, wat belangrijk is voor een vlotte gebruikerservaring.\n\nSamen met het team heb ik de eerste volledige tests uitgevoerd tussen de app en de backend. Dit gaf ons een duidelijk beeld van hoe stabiel de API werkte in realistische omstandigheden. De week stond vooral in het teken van stabiliteit, verfijning en voorbereiding op de volgende fase – de integratie van betalingen.",
     "image": "/Images/stages/week5.png"
+  },
+  {
+    "title": "Stageweek 6",
+    "shortDescription": "Integratie van Stripe-betalingen en testen van het volledige betalingssysteem.",
+    "text": "In de zesde week heb ik gewerkt aan de integratie van Stripe voor betalingen binnen de Taxi App. Ik heb een veilige flow opgezet waarbij klanten hun ritten kunnen betalen met testkaarten via de Stripe API. De transacties worden correct doorgestuurd, gecontroleerd en gelogd in de backend.\n\nDaarnaast heb ik een testsysteem opgezet om betalingen in een sandboxomgeving te simuleren. Dit maakte het mogelijk om verschillende scenario’s te testen – succesvolle betalingen, fouten, en geannuleerde transacties. De integratie verliep vlot, en ik heb veel bijgeleerd over hoe webhooks, tokens en sessies samenwerken binnen Stripe.\n\nTot slot heb ik gewerkt aan kleine visuele verbeteringen in de app: bevestigingsschermen na betaling, duidelijke foutmeldingen en een basisstructuur voor toekomstige meldingen (zoals pushnotificaties). Deze week gaf me een goed inzicht in hoe betaalverkeer technisch én visueel geïntegreerd wordt in een mobiele applicatie.",
+    "image": "/Images/stages/week6.png"
+  },
+  {
+    "title": "Stageweek 7",
+    "shortDescription": "Beveiliging en middleware voor de drivermodule + oplossen van tokenproblemen.",
+    "text": "De zevende week was technisch uitdagender maar bijzonder leerzaam. Ik heb gewerkt aan het toevoegen van middleware in de backend om de toegang te beveiligen voor verschillende gebruikersrollen. De app is nu opgesplitst in twee gedeeltes: één voor klanten en één voor chauffeurs. Elke route en actie wordt gecontroleerd via een middleware die nagaat of het JWT-token geldig is en bij de juiste rol hoort.\n\nTijdens het testen liep ik tegen een lastig probleem aan: wanneer ik uitlogde als klant en daarna inlogde als chauffeur, kreeg ik nog steeds de schermen van de klant te zien. Zelfs na het herladen van de app bleef dit gebeuren, wat vrij frustrerend was. Na meerdere pogingen – ook met hulp van AI – ontdekte ik samen met Souffian (externe developper) dat het probleem lag aan het niet-correct verwijderen van tokens bij het uitloggen. De oude tokens bleven in local storage staan, waardoor de app verkeerde gegevens gebruikte.\n\nNa aanpassing van de logoutlogica wordt het token nu volledig verwijderd bij het afmelden, en start elke login met een schone sessie. Deze week heb ik enorm veel geleerd over authenticatie, sessiebeheer en debugging in realistische omstandigheden.",
+    "image": "/Images/stages/week7.png"
   }
 ]

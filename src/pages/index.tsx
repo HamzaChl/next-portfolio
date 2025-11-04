@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Technologies from "@/components/Technologies";
 import ScrollZoom from "@/components/ScrollZoom";
+import Faq from "@/components/Faq";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -65,19 +66,15 @@ const Home = () => {
             </h1>
             <h2 className={styles.heroSubTitle}>UI/UX Design</h2>
           </div>
-
           <p ref={subtitleRef} className={styles.subtitle}>
             Met passie voor web & mobile design bouw ik toegankelijke en snelle
             interfaces.
           </p>
-
-          <Link href="/projects" legacyBehavior>
-            <a ref={ctaAnchorRef} className={styles.cta}>
-              Voir mes projets
-            </a>
-          </Link>
-          <Technologies></Technologies>
+          <div className={styles.techContainer}>
+            <Technologies />
+          </div>
           <ScrollZoom />
+          <Faq />
         </div>
       </div>
     </section>
