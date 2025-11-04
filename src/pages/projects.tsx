@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ProjectGrid2 from "@/components/ProjectGrid2";
 import styles from "@/styles/Project.module.css";
+import LightRays from "@/components/LightRays";
 
 const Projects = () => {
   const titleRef = useRef(null);
@@ -25,6 +26,22 @@ const Projects = () => {
 
   return (
     <>
+      <div
+        style={{ width: "100%", height: "900px", position: "absolute", top: 0 }}
+      >
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#94beff"
+          raysSpeed={1.9}
+          lightSpread={0.8}
+          rayLength={0.9}
+          followMouse={true}
+          mouseInfluence={0.2}
+          noiseAmount={0.2}
+          distortion={0.05}
+          className="custom-rays"
+        />
+      </div>
       <section className={styles.projectHeader}>
         <h1 ref={titleRef} className={styles.pageTitle}>
           Mijn Creatieve Projecten

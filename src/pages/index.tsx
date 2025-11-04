@@ -8,6 +8,9 @@ import Link from "next/link";
 import Technologies from "@/components/Technologies";
 import ScrollZoom from "@/components/ScrollZoom";
 import Faq from "@/components/Faq";
+import DarkVeil from "@/components/DarkVeil";
+import LightRays from "@/components/LightRays";
+import TextAnim2 from "@/components/TextAnim2";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -56,15 +59,29 @@ const Home = () => {
 
   return (
     <section className={styles.heroContainer}>
+      <div
+        style={{ width: "100%", height: "900px", position: "absolute", top: 0 }}
+      >
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#94beff"
+          raysSpeed={1.9}
+          lightSpread={0.8}
+          rayLength={0.9}
+          followMouse={true}
+          mouseInfluence={0.2}
+          noiseAmount={0.2}
+          distortion={0.05}
+          className="custom-rays"
+        />
+      </div>
       <div className={styles.heroGrid}>
         <div className={styles.right}>
           <div ref={titleRef}>
             <h1 className={styles.heroTitle}>
-              Het creëren van impactvolle
-              <br />
-              visuele ervaringen door
+              Impactvolle digitale <br /> ervaringen door
+              <TextAnim2 />
             </h1>
-            <h2 className={styles.heroSubTitle}>UI/UX Design</h2>
           </div>
           <p ref={subtitleRef} className={styles.subtitle}>
             Met passie voor web & mobile design bouw ik toegankelijke en snelle
@@ -74,7 +91,6 @@ const Home = () => {
             <Technologies />
           </div>
           <ScrollZoom />
-          <Faq />
         </div>
       </div>
     </section>

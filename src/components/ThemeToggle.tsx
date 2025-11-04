@@ -11,7 +11,6 @@ export default function ThemeToggle() {
         cursor: "pointer",
         color: theme === "light" ? "#fff" : "#000",
         backgroundColor: "transparent",
-        // fontSize:"20px",
       }}
     >
       {theme === "light" ? "🌙" : "☀️"}

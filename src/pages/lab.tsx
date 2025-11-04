@@ -7,6 +7,9 @@ import Technologies from "@/components/Technologies";
 
 import Faq from "@/components/Faq";
 import Services from "@/components/Services";
+import TextAnim1 from "@/components/TextAnim1";
+import TextAnim2 from "@/components/TextAnim2";
+import Background2 from "@/components/Background2";
 
 const Lab = () => {
   const titleRef = useRef(null);
@@ -92,6 +95,12 @@ const Lab = () => {
       <Faq />
       <div className="container">
         <Services />
+      </div>
+      <div className="container">
+        <TextAnim1 />
+      </div>
+      <div className="container">
+        <TextAnim2 />
       </div>
     </>
   );

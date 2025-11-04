@@ -23,7 +23,7 @@
     margin: 0 auto;
     height: 90px;
     padding: 20px 40px;
-    background-color: #fbfbfbe6;
+    background-color: transparent;
     backdrop-filter: none;
     display: flex;
     justify-content: space-between;

@@ -81,6 +81,8 @@
     gap: 1rem;
     justify-content: center;
     margin-bottom: 3rem;
+    position: relative;
+    z-index: 3;
 }
 
 .categoryButton {
