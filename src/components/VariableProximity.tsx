@@ -1,11 +1,15 @@
+"use client";
+
 import {
   forwardRef,
   useMemo,
   useRef,
   useEffect,
-  MutableRefObject,
   RefObject,
   HTMLAttributes,
+  CSSProperties,
+  PropsWithChildren,
+  useState,
 } from "react";
 import { motion } from "motion/react";
 
@@ -23,7 +27,7 @@ function useAnimationFrame(callback: Callback) {
   }, [callback]);
 }
 
-function useMousePositionRef(containerRef: RefObject<HTMLElement>) {
+function useMousePositionRef(containerRef: RefObject<HTMLElement | null>) {
   const positionRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -58,7 +62,8 @@ interface VariableProximityProps extends HTMLAttributes<HTMLSpanElement> {
   label: string;
   fromFontVariationSettings: string;
   toFontVariationSettings: string;
-  containerRef: RefObject<HTMLElement>;
+  /** ✅ Nullable, aligné avec l’usage réel */
+  containerRef: React.RefObject<HTMLElement | null>;
   radius?: number;
   falloff?: "linear" | "exponential" | "gaussian";
   className?: string;
@@ -133,11 +138,13 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
 
     useAnimationFrame(() => {
       if (!containerRef?.current) return;
+
       const { x, y } = mousePositionRef.current;
       if (lastPositionRef.current.x === x && lastPositionRef.current.y === y) {
         return;
       }
       lastPositionRef.current = { x, y };
+
       const containerRect = containerRef.current.getBoundingClientRect();
 
       letterRefs.current.forEach((letterRef, index) => {
@@ -147,12 +154,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
         const letterCenterX = rect.left + rect.width / 2 - containerRect.left;
         const letterCenterY = rect.top + rect.height / 2 - containerRect.top;
 
-        const distance = calculateDistance(
-          mousePositionRef.current.x,
-          mousePositionRef.current.y,
-          letterCenterX,
-          letterCenterY
-        );
+        const distance = calculateDistance(x, y, letterCenterX, letterCenterY);
 
         if (distance >= radius) {
           letterRef.style.fontVariationSettings = fromFontVariationSettings;
@@ -221,3 +223,14 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>(
 
 VariableProximity.displayName = "VariableProximity";
 export default VariableProximity;
+
+const injectStyles = () => {
+  if (typeof document === "undefined") return;
+  const styleId = "variable-proximity-styles";
+  if (document.getElementById(styleId)) return;
+  const styleElement = document.createElement("style");
+  styleElement.id = styleId;
+  styleElement.textContent = `.variable-proximity { will-change: transform, opacity; }`;
+  document.head.appendChild(styleElement);
+};
+if (typeof document !== "undefined") injectStyles();

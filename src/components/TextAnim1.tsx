@@ -1,4 +1,3 @@
-// src/components/TextAnim1.tsx
 "use client";
 
 import React, { useRef } from "react";
