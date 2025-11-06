@@ -5,6 +5,7 @@ import gsap from "gsap";
 import ProjectGrid2 from "@/components/ProjectGrid2";
 import styles from "@/styles/Project.module.css";
 import LightRays from "@/components/LightRays";
+import GradualBlur from "@/components/GradualBlur/GradualBlur";
 
 const Projects = () => {
   const titleRef = useRef(null);
@@ -25,7 +26,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <div
         style={{ width: "100%", height: "900px", position: "absolute", top: 0 }}
       >
@@ -56,7 +57,7 @@ const Projects = () => {
       </section>
 
       <ProjectGrid2 />
-    </>
+    </div>
   );
 };
 

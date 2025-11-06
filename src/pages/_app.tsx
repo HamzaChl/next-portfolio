@@ -8,6 +8,8 @@ import "../styles/DarkVeil.css";
 import "../styles/LightRays.css";
 import "../styles/VariableProximity.css";
 import "../styles/RotatingText.css";
+import "../styles/Global.module.css";
+import "../styles/CardNav.module.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

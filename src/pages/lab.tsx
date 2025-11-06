@@ -9,7 +9,12 @@ import Faq from "@/components/Faq";
 import Services from "@/components/Services";
 import TextAnim1 from "@/components/TextAnim1";
 import TextAnim2 from "@/components/TextAnim2";
-import Background2 from "@/components/Background2";
+import { ShinyText } from "@/components/ShinyText";
+import SpotlightCard from "@/components/SpotlightCard/SpotlightCard";
+import Nav3 from "@/components/Nav3";
+import { FaCode, FaMobileAlt, FaPalette } from "react-icons/fa";
+import SpotlightCards from "@/components/SpotlightCards";
+import SplitText from "../components/SplitText/SplitText";
 
 const Lab = () => {
   const titleRef = useRef(null);
@@ -99,8 +104,40 @@ const Lab = () => {
       <div className="container">
         <TextAnim1 />
       </div>
+      <div className="container"></div>
       <div className="container">
         <TextAnim2 />
+      </div>
+
+      <div className="container">
+        <SpotlightCards></SpotlightCards>
+      </div>
+
+      <div className="container">
+        <Nav3 />
+      </div>
+
+      <div className="container">
+        <div
+          style={{
+            minHeight: "100vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "400px",
+            border: "red",
+            backgroundColor: "#000",
+            borderWidth: "2px",
+          }}
+        >
+          <ShinyText speed={2.5}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            necessitatibus id quam earum magni consectetur cum illum corporis
+            sit doloribus in nulla, aliquam, sunt accusamus fugiat facere illo
+            dolore voluptates?
+          </ShinyText>
+        </div>
       </div>
     </>
   );

@@ -40,5 +40,11 @@
     "shortDescription": "Beveiliging en middleware voor de drivermodule + oplossen van tokenproblemen.",
     "text": "De zevende week was technisch uitdagender maar bijzonder leerzaam. Ik heb gewerkt aan het toevoegen van middleware in de backend om de toegang te beveiligen voor verschillende gebruikersrollen. De app is nu opgesplitst in twee gedeeltes: één voor klanten en één voor chauffeurs. Elke route en actie wordt gecontroleerd via een middleware die nagaat of het JWT-token geldig is en bij de juiste rol hoort.\n\nTijdens het testen liep ik tegen een lastig probleem aan: wanneer ik uitlogde als klant en daarna inlogde als chauffeur, kreeg ik nog steeds de schermen van de klant te zien. Zelfs na het herladen van de app bleef dit gebeuren, wat vrij frustrerend was. Na meerdere pogingen – ook met hulp van AI – ontdekte ik samen met Souffian (externe developper) dat het probleem lag aan het niet-correct verwijderen van tokens bij het uitloggen. De oude tokens bleven in local storage staan, waardoor de app verkeerde gegevens gebruikte.\n\nNa aanpassing van de logoutlogica wordt het token nu volledig verwijderd bij het afmelden, en start elke login met een schone sessie. Deze week heb ik enorm veel geleerd over authenticatie, sessiebeheer en debugging in realistische omstandigheden.",
     "image": "/Images/stages/week7.png"
+  },
+  {
+    "title": "Stageweek 8",
+    "shortDescription": "Week In Progress.",
+    "text": "De Achtste week is nog steeds bezig.",
+    "image": "/Images/stages/weekinprogress.png"
   }
 ]

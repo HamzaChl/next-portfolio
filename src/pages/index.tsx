@@ -11,6 +11,9 @@ import Faq from "@/components/Faq";
 import DarkVeil from "@/components/DarkVeil";
 import LightRays from "@/components/LightRays";
 import TextAnim2 from "@/components/TextAnim2";
+import SpotlightCards from "@/components/SpotlightCards";
+import { ShinyText } from "@/components/ShinyText";
+import GradualBlur from "@/components/GradualBlur/GradualBlur";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -83,13 +86,15 @@ const Home = () => {
               <TextAnim2 />
             </h1>
           </div>
-          <p ref={subtitleRef} className={styles.subtitle}>
+          <ShinyText speed={2.5}>
             Met passie voor web & mobile design bouw ik toegankelijke en snelle
             interfaces.
-          </p>
+          </ShinyText>
+
           <div className={styles.techContainer}>
             <Technologies />
           </div>
+          <SpotlightCards></SpotlightCards>
           <ScrollZoom />
         </div>
       </div>
