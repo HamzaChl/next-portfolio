@@ -77,7 +77,12 @@
     "categories": ["Web"],
     "shortDescription": "A sleek business website for a digital consultancy.",
     "description": "Nayehza is a digital-first website designed for a tech consultancy. The UI emphasizes clarity, motion, and trust, using a structured layout to highlight services and client impact.",
-    "projectImages": []
+    "projectImages": [
+      "/Images/projects/06-1.png",
+      "/Images/projects/06-2.png",
+      "/Images/projects/06-3.png",
+      "/Images/projects/06-4.png"
+    ]
   },
   {
     "id": 7,
@@ -114,7 +119,11 @@
     "categories": ["Web", "Design"],
     "shortDescription": "Website concept for a construction and renovation company.",
     "description": "Murcia Renovo features a bold and clean design tailored for the renovation industry. The website highlights craftsmanship, trust, and expertise through structured sections and strong visual hierarchy.",
-    "projectImages": []
+    "projectImages": [
+      "/Images/projects/07-1.png",
+      "/Images/projects/07-3.png",
+      "/Images/projects/07-4.png"
+    ]
   },
   {
     "id": 11,

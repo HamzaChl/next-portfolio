@@ -10,14 +10,23 @@ import "../styles/VariableProximity.css";
 import "../styles/RotatingText.css";
 import "../styles/Global.module.css";
 import "../styles/CardNav.module.css";
+import ClickSpark from "@/components/ClickSpark";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Nav2 />
-      <Component {...pageProps} />
-      <ScrollToTop />
-      <Footer />
+      <ClickSpark
+        sparkColor="#94beff"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        <Nav2 />
+        <Component {...pageProps} />
+        <ScrollToTop />
+        <Footer />
+      </ClickSpark>
     </>
   );
 }

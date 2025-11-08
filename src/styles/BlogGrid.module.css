@@ -41,15 +41,10 @@
 }
 
 .subtitle {
-    font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 40px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
+    width: 70vw;
+    text-align: center;
     margin: 0 auto;
-    opacity: 0.85;
+    margin-top: 40px;
 
 }
 

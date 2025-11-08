@@ -15,6 +15,7 @@ import Nav3 from "@/components/Nav3";
 import { FaCode, FaMobileAlt, FaPalette } from "react-icons/fa";
 import SpotlightCards from "@/components/SpotlightCards";
 import SplitText from "../components/SplitText/SplitText";
+import LightRays from "@/components/LightRays";
 
 const Lab = () => {
   const titleRef = useRef(null);
@@ -63,6 +64,22 @@ const Lab = () => {
 
   return (
     <>
+      <div
+        style={{ width: "100%", height: "900px", position: "absolute", top: 0 }}
+      >
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#94beff"
+          raysSpeed={1.9}
+          lightSpread={0.8}
+          rayLength={0.9}
+          followMouse={true}
+          mouseInfluence={0.2}
+          noiseAmount={0.2}
+          distortion={0.05}
+          className="custom-rays"
+        />
+      </div>
       <div className="container"></div>
 
       <div className={text.e}>

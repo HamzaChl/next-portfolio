@@ -5,6 +5,7 @@ import gsap from "gsap";
 import BlogGrid from "@/components/BlogGrid";
 import styles from "@/styles/BlogGrid.module.css";
 import LightRays from "@/components/LightRays";
+import { ShinyText } from "@/components/ShinyText";
 
 const Blog = () => {
   const titleRef = useRef(null);
@@ -46,12 +47,13 @@ const Blog = () => {
         <h1 ref={titleRef} className={styles.pageTitle}>
           Mijn Stage Blog
         </h1>
-
-        <p ref={subtitleRef} className={styles.subtitle}>
-          Tijdens mijn stageweken heb ik veel geleerd over webontwikkeling,
-          design en teamwork. Deze blog neemt je mee door mijn ervaringen,
-          uitdagingen en groei als student in softwareontwikkeling.
-        </p>
+        <ShinyText speed={1.5}>
+          <p ref={subtitleRef} className={styles.subtitle}>
+            Tijdens mijn stageweken heb ik veel geleerd over webontwikkeling,
+            design en teamwork. Deze blog neemt je mee door mijn ervaringen,
+            uitdagingen en groei als student in softwareontwikkeling.
+          </p>
+        </ShinyText>
       </section>
 
       <BlogGrid />

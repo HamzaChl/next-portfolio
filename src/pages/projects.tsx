@@ -6,6 +6,7 @@ import ProjectGrid2 from "@/components/ProjectGrid2";
 import styles from "@/styles/Project.module.css";
 import LightRays from "@/components/LightRays";
 import GradualBlur from "@/components/GradualBlur/GradualBlur";
+import { ShinyText } from "@/components/ShinyText";
 
 const Projects = () => {
   const titleRef = useRef(null);
@@ -47,13 +48,14 @@ const Projects = () => {
         <h1 ref={titleRef} className={styles.pageTitle}>
           Mijn Creatieve Projecten
         </h1>
-
-        <p ref={subtitleRef} className={styles.subtitle}>
-          Van webplatforms tot interactieve interfaces: deze projecten tonen de
-          kern van mijn creatieve en technische reis. Elk werk is een balans
-          tussen esthetische visie en functioneel design — gemaakt om te
-          inspireren en te verbinden.
-        </p>
+        <ShinyText speed={1.5}>
+          <p ref={subtitleRef} className={styles.subtitle}>
+            Van webplatforms tot interactieve interfaces: deze projecten tonen
+            de kern van mijn creatieve en technische reis. Elk werk is een
+            balans tussen esthetische visie en functioneel design — gemaakt om
+            te inspireren en te verbinden.
+          </p>
+        </ShinyText>
       </section>
 
       <ProjectGrid2 />

@@ -86,9 +86,11 @@ const Home = () => {
               <TextAnim2 />
             </h1>
           </div>
-          <ShinyText speed={2.5}>
-            Met passie voor web & mobile design bouw ik toegankelijke en snelle
-            interfaces.
+          <ShinyText speed={1.5}>
+            <p ref={subtitleRef}>
+              Met passie voor web & mobile design bouw ik toegankelijke en
+              snelle interfaces.
+            </p>
           </ShinyText>
 
           <div className={styles.techContainer}>
