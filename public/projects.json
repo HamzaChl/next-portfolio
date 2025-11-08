@@ -39,7 +39,7 @@
     "categories": ["Design"],
     "shortDescription": "A visual identity and web design for a floral-inspired cocktail bar.",
     "description": "BloomBar Brussels combines organic shapes and soft colors to create a unique visual experience. The branding captures the essence of nature and nightlife, offering a bold yet elegant aesthetic.",
-    "projectImages": []
+    "projectImages": ["/Images/projects/03-1.png"]
   },
   {
     "id": 4,
@@ -50,7 +50,7 @@
     "categories": ["Web", "Design"],
     "shortDescription": "E-commerce website for a sustainable candle brand.",
     "description": "Chandelle Botanique is a minimalist e-commerce platform designed for a handmade candle brand. The layout prioritizes clean visuals and natural tones, creating an immersive and calm shopping experience.",
-    "projectImages": []
+    "projectImages": ["/Images/projects/04-1.png", "/Images/projects/04-2.png"]
   },
   {
     "id": 5,
@@ -164,7 +164,11 @@
     "categories": ["Mobile"],
     "shortDescription": "A mobile stats tracker app for League of Legends players.",
     "description": "This mobile app provides detailed player statistics and match analytics for League of Legends. The design prioritizes clarity, dark mode aesthetics, and game-inspired visuals.",
-    "projectImages": []
+    "projectImages": [
+      "/Images/projects/13-1.png",
+      "/Images/projects/13-2.png",
+      "/Images/projects/13-3.png"
+    ]
   },
   {
     "id": 14,
