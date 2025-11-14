@@ -73,14 +73,6 @@ const Nav2 = () => {
                 Blog
               </Link>
             </li>
-            <li>
-              <Link
-                href="/lab"
-                className={router.pathname === "/lab" ? styles.active : ""}
-              >
-                Lab
-              </Link>
-            </li>
           </ul>
 
           <div className={styles.ctaContainer}>

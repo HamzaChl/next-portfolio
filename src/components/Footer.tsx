@@ -38,6 +38,9 @@ const Footer = () => {
             <li>
               <Link href="/legal-mentions">Mentions légales</Link>
             </li>
+            <li>
+              <Link href="/lab">Lab</Link>
+            </li>
           </ul>
         </div>
       </div>
