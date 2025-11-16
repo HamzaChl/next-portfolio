@@ -41,10 +41,23 @@
     "text": "De zevende week was technisch uitdagender maar bijzonder leerzaam. Ik heb gewerkt aan het toevoegen van middleware in de backend om de toegang te beveiligen voor verschillende gebruikersrollen. De app is nu opgesplitst in twee gedeeltes: één voor klanten en één voor chauffeurs. Elke route en actie wordt gecontroleerd via een middleware die nagaat of het JWT-token geldig is en bij de juiste rol hoort.\n\nTijdens het testen liep ik tegen een lastig probleem aan: wanneer ik uitlogde als klant en daarna inlogde als chauffeur, kreeg ik nog steeds de schermen van de klant te zien. Zelfs na het herladen van de app bleef dit gebeuren, wat vrij frustrerend was. Na meerdere pogingen – ook met hulp van AI – ontdekte ik samen met Souffian (externe developper) dat het probleem lag aan het niet-correct verwijderen van tokens bij het uitloggen. De oude tokens bleven in local storage staan, waardoor de app verkeerde gegevens gebruikte.\n\nNa aanpassing van de logoutlogica wordt het token nu volledig verwijderd bij het afmelden, en start elke login met een schone sessie. Deze week heb ik enorm veel geleerd over authenticatie, sessiebeheer en debugging in realistische omstandigheden.",
     "image": "/Images/stages/week7.png"
   },
+
   {
     "title": "Stageweek 8",
+    "shortDescription": "Uitwerking van nieuwe componenten en optimalisatie van reservaties via landmarks.",
+    "text": "Tijdens de achtste week heb ik vooral gewerkt aan nieuwe componenten binnen de app die het reserveringsproces voor gebruikers eenvoudiger en sneller maken. Ik heb verschillende belangrijke plaatsen in Brussel geïntegreerd, zoals de Grote Markt, het Atomium en andere herkenbare locaties. Het doel hiervan was om gebruikers toe te laten sneller een vertrek- of aankomstpunt te selecteren zonder alles handmatig te moeten ingeven.\n\nDaarnaast heb ik ook enkele bugs opgelost die vooral op iOS voorkwamen, omdat ik grotendeels op mijn iPhone ontwikkelde en testte. Hierdoor merkte ik dat ik minder aandacht had besteed aan Android, simpelweg omdat ik persoonlijk geen Android-toestel had en Xcode enkel iPhones simuleert. Gelukkig heb ik nu een Android-smartphone gekregen zodat ik beide platformen correct kan testen en optimaliseren.\n\nOver het algemeen was dit een praktische week waarin ik vooral functionaliteit heb uitgebreid en de gebruikerservaring heb verfijnd.",
+    "image": "/Images/stages/week8.png"
+  },
+  {
+    "title": "Stageweek 9",
+    "shortDescription": "Herstel van accounts, OTP-flow en verdere e-mailautomatisatie.",
+    "text": "De negende week stond in het teken van account-herstel en e-mailfunctionaliteit. Ik heb een volledige \"wachtwoord vergeten\"-flow ontwikkeld met OTP-codes, zodat gebruikers veilig een nieuw wachtwoord kunnen instellen. Hiervoor heb ik veel gewerkt met domeinnamen, SMTP-configuratie en algemene e-mailintegraties — iets waar ik steeds meer plezier en ervaring in begin te krijgen.\n\nEen belangrijk technisch onderdeel was het correct opzetten van automatische e-mails via Nodemailer. In het begin liep dit wat stroef, maar na enkele tests en aanpassingen werkt alles nu betrouwbaar. Gebruikers ontvangen voortaan automatisch een e-mail wanneer hun betaling mislukt, en bij succesvolle reserveringen krijgen ze eveneens een bevestiging.\n\nDaarnaast heb ik toegang gekregen tot het Contabo-VPS-omgeving, hoewel we momenteel nog in lokale ontwikkeling werken omdat we veel code delen binnen het team. Deze week gaf me vooral meer inzicht in back-endflows, beveiliging en het beheren van e-mailprocessen.",
+    "image": "/Images/stages/week9.png"
+  },
+  {
+    "title": "Stageweek 10",
     "shortDescription": "Week In Progress.",
-    "text": "De Achtste week is nog steeds bezig.",
+    "text": "De tiende week is nog steeds bezig.",
     "image": "/Images/stages/weekinprogress.png"
   }
 ]
