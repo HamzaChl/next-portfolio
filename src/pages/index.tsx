@@ -3,17 +3,12 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import styles from "@/styles/Home.module.css";
-import Image from "next/image";
-import Link from "next/link";
 import Technologies from "@/components/Technologies";
 import ScrollZoom from "@/components/ScrollZoom";
-import Faq from "@/components/Faq";
-import DarkVeil from "@/components/DarkVeil";
 import LightRays from "@/components/LightRays";
 import TextAnim2 from "@/components/TextAnim2";
 import SpotlightCards from "@/components/SpotlightCards";
 import { ShinyText } from "@/components/ShinyText";
-import GradualBlur from "@/components/GradualBlur/GradualBlur";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);

@@ -50,8 +50,9 @@
 .logo {
     font-size: 1.8rem;
     transition: transform 0.3s ease, font-size 0.3s ease;
-    font-family: "BwGradualBold", sans-serif;
-
+    font-family: "BwGradual", sans-serif;
+    font-weight: 400;
+    color: #000;
 
 }
 

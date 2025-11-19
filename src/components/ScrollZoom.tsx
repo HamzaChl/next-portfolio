@@ -71,7 +71,10 @@ const ScrollZoom = () => {
         style={{
           width: "100%",
           aspectRatio: "16 / 7",
-          backgroundColor: "#111",
+          backgroundImage: "url(Images/projects/03-1.png)",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           borderRadius: "20px",
           boxShadow: "0 10px 40px rgba(0, 0, 0, 0.1)",
           willChange: "transform",
