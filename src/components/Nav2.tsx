@@ -116,6 +116,7 @@ const Nav2 = () => {
               Accueil
             </Link>
           </li>
+          <hr />
           <li>
             <Link
               href="/projects"
@@ -124,6 +125,7 @@ const Nav2 = () => {
               Projets
             </Link>
           </li>
+          <hr />
           <li>
             <Link
               href="/blog"
@@ -132,6 +134,8 @@ const Nav2 = () => {
               Blog
             </Link>
           </li>
+          <hr />
+
           <li>
             <Link
               href="/lab"
