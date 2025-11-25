@@ -1,8 +1,8 @@
 .rotating-main {
     padding-inline: 0.5rem;
     padding-block: 0.125rem;
-    background: #000000;
-    color: #ffffff;
+    background: #fff;
+    color: #000;
     font-family: "BwGradualBold", sans-serif;
     margin-left: 30px;
     font-size: clamp(3.2rem, 4.4vw, 3.8rem);

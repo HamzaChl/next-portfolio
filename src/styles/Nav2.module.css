@@ -44,6 +44,12 @@
     height: 70px;
     padding: 10px 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: rgba(38, 38, 38, 0.591);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: .1px solid rgba(255, 255, 255, 0.094);
 }
 
 
@@ -52,7 +58,7 @@
     transition: transform 0.3s ease, font-size 0.3s ease;
     font-family: "BwGradual", sans-serif;
     font-weight: 400;
-    color: #000;
+    color: #ffffff;
 
 }
 
@@ -96,7 +102,7 @@
 
 .navLinks li a {
     text-decoration: none;
-    color: #334155;
+    color: #6d819c;
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
     font-size: .9rem;
@@ -107,7 +113,7 @@
 
 .navLinks li a:hover,
 .navLinks .active {
-    color: #000;
+    color: #ffffff;
     font-weight: 500;
     opacity: 1;
 }
@@ -122,8 +128,8 @@
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: 700;
-    background: linear-gradient(to top, #000, #0c0c0c);
-    color: #fff;
+    background: linear-gradient(to top, #fff, #d1d1d1);
+    color: #000;
     border: none;
     cursor: pointer;
     display: flex;
@@ -133,7 +139,7 @@
 }
 
 .scrolled .ctaButton {
-    background: #fff;
+    background: linear-gradient(to top, #fff, #d1d1d1);
     color: #000;
 }
 
@@ -143,7 +149,7 @@
 
 .navLinks li a:hover,
 .navLinks li a.active {
-    color: #000;
+    color: #cacaca;
 }
 
 .scrolled .navLinks li a:hover,

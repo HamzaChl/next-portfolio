@@ -27,7 +27,7 @@ interface LightRaysProps {
   className?: string;
 }
 
-const DEFAULT_COLOR = "#fbfbfb";
+const DEFAULT_COLOR = "#0a0a0a";
 
 const hexToRgb = (hex: string): [number, number, number] => {
   const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -258,17 +258,12 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
   }
 
   fragColor.rgb *= raysColor;
-
-  // Fond blanc, rayons par dessus
-  float intensity = clamp(max(max(fragColor.r, fragColor.g), fragColor.b), 0.0, 1.0);
-  vec3 base = vec3(1.0); // blanc
-  fragColor.rgb = mix(base, fragColor.rgb, intensity *0.7);
 }
 
 void main() {
   vec4 color;
   mainImage(color, gl_FragCoord.xy);
-  gl_FragColor  = vec4(color.rgb, 1.0);
+  gl_FragColor  = color;
 }`;
 
       const uniforms: Uniforms = {

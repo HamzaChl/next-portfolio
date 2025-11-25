@@ -37,7 +37,7 @@
     "image": "/Images/03.png",
     "hoverImage": "/Images/03hover.png",
     "categories": ["Design"],
-    "shortDescription": "A visual identity and web design for a floral-inspired cocktail bar.",
+    "shortDescription": "Een visuele identiteit voor een cocktailbar.",
     "description": "BloomBar Brussels combines organic shapes and soft colors to create a unique visual experience. The branding captures the essence of nature and nightlife, offering a bold yet elegant aesthetic.",
     "projectImages": ["/Images/projects/03-1.png"]
   },
@@ -48,7 +48,7 @@
     "image": "/Images/04.png",
     "hoverImage": "/Images/04hover.png",
     "categories": ["Web", "Design"],
-    "shortDescription": "E-commerce website for a sustainable candle brand.",
+    "shortDescription": "E-commerce website voor een kaarsenmerk.",
     "description": "Chandelle Botanique is a minimalist e-commerce platform designed for a handmade candle brand. The layout prioritizes clean visuals and natural tones, creating an immersive and calm shopping experience.",
     "projectImages": ["/Images/projects/04-1.png", "/Images/projects/04-2.png"]
   },

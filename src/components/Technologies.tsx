@@ -29,7 +29,7 @@ const Technologies: React.FC = () => {
             <div
               key={`a-${i}`}
               className={styles.techItem}
-              style={{ backgroundImage: `url(${img})` }}
+              style={{ backgroundImage: `url(${img})`, filter: "invert(1)" }}
             />
           ))}
         </div>
@@ -38,7 +38,7 @@ const Technologies: React.FC = () => {
             <div
               key={`b-${i}`}
               className={styles.techItem}
-              style={{ backgroundImage: `url(${img})` }}
+              style={{ backgroundImage: `url(${img})`, filter: "invert(1)" }}
             />
           ))}
         </div>

@@ -56,7 +56,6 @@ const ProjectPage = () => {
 
   return (
     <div ref={containerRef} className={styles.container}>
-      {/* ASIDE */}
       <div className={styles.aside}>
         <button
           onClick={() => router.push("/projects")}
@@ -79,6 +78,7 @@ const ProjectPage = () => {
               style={{
                 backgroundColor: generatePastelColor(cat),
                 marginRight: 10,
+                color: "#000",
               }}
             >
               {cat}

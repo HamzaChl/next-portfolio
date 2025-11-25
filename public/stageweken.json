@@ -56,9 +56,9 @@
   },
   {
     "title": "Stageweek 10",
-    "shortDescription": "Week In Progress.",
-    "text": "De tiende week is nog steeds bezig.",
-    "image": "/Images/stages/weekinprogress.png"
+    "shortDescription": "Rebranding van het merk, database-migratie en verdere e-mailoptimalisaties.",
+    "text": "Tijdens de tiende week heeft het bedrijf een volledige rebranding doorgevoerd. Dit gaf mij de kans om van dichtbij te zien hoe zo’n proces wordt aangepakt: nieuwe kleuren, vernieuwde positionering en een herwerkte visuele identiteit. Het was interessant om te zien hoe design, strategie en technische implementatie samenkomen in één traject.\n\nDaarnaast heb ik verder gewerkt aan de e-mailfunctionaliteiten via Nodemailer, met focus op het verbeteren van betrouwbaarheid en foutafhandeling. Elke automatische mail — zowel bevestigingen als foutmeldingen — moest correct verzonden worden, dus heb ik meerdere testflows en kleine fixes uitgevoerd.\n\nTot slot heb ik de database gemigreerd naar de nieuwe omgeving die specifiek voor de applicatie werd opgezet. Dit zorgde voor een betere organisatie en voorbereiding op de uiteindelijke productie-omgeving. De tiende week stond dus vooral in het teken van stabiliteit, onderhoud en meewerken aan de nieuwe visuele richting van het merk.",
+    "image": "/Images/stages/week10.png"
   },
   {
     "title": "Stageweek 11",

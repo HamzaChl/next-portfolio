@@ -36,7 +36,7 @@
     font-size: clamp(3.2rem, 6.8vw, 5.8rem);
     line-height: 1.1;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     margin: 0;
 }
 
@@ -54,6 +54,7 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
+    z-index: 3;
 }
 
 .sortButton {
@@ -69,12 +70,12 @@
 }
 
 .sortButton:hover {
-    color: #000;
+    color: #fff;
 }
 
 .active {
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 /* GRID */
@@ -125,7 +126,7 @@
     font-family: "BwGradual", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #111;
+    color: #fff;
 }
 
 .shortDescription {
@@ -140,8 +141,8 @@
 .blogLabel {
     display: inline-block;
     font-size: 0.8rem;
-    color: #333;
-    border: 0.5px solid #333;
+    color: #999999;
+    border: 0.5px solid #999999;
     border-radius: 20px;
     padding: 6px 12px;
     text-transform: uppercase;

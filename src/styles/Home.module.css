@@ -64,7 +64,7 @@
     font-size: clamp(3.2rem, 6.8vw, 5.8rem);
     line-height: 1.1;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     margin: 0;
 }
 
@@ -197,14 +197,11 @@
     }
 }
 
-/* Revert any global centering that pushed layout to the right */
 .heroGrid {
     display: grid;
     gap: clamp(24px, 5vw, 56px);
     align-items: center;
-    /* keep as before */
     justify-items: initial;
-    /* important: don't force centering */
 }
 
 .right {
@@ -212,7 +209,6 @@
     flex-direction: column;
     gap: 16px;
     align-items: initial;
-    /* important: don't center all children */
 }
 
 
@@ -232,4 +228,19 @@
     .techContainer {
         width: 90%;
     }
+}
+
+.ctahome {
+    background: rgba(38, 38, 38, 0.591);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: .1px solid rgba(255, 255, 255, 0.094);
+    width: fit-content;
+    padding: 15px 20px;
+}
+
+.ctahome:hover {
+    background: rgba(38, 38, 38, 0.205);
 }

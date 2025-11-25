@@ -37,7 +37,7 @@
     font-size: clamp(3.2rem, 6.8vw, 5.8rem);
     line-height: 1.1;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     margin: 0;
 }
 
@@ -98,12 +98,12 @@
 }
 
 .categoryButton:hover {
-    color: #000;
+    color: #fff;
 }
 
 .activeCategory {
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .grid {
@@ -150,7 +150,7 @@
     font-family: "BwGradual", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #111;
+    color: #fff;
 }
 
 .shortDescription {
@@ -174,8 +174,8 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
-    color: #333;
-    border: 0.4px solid #333;
+    color: #999999;
+    border: 0.4px solid #999999;
 }
 
 .dimmed {
@@ -210,7 +210,7 @@
     gap: 8px;
     background: none;
     border: none;
-    color: #111;
+    color: #fff;
     font-size: 1rem;
     cursor: pointer;
     padding: 0;

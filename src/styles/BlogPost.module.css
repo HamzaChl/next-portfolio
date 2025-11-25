@@ -29,7 +29,7 @@
     font-size: clamp(3.2rem, 6.8vw, 5.8rem);
     line-height: 1.1;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     margin-bottom: 40px;
 }
 
@@ -59,10 +59,11 @@
     gap: 8px;
     background: none;
     border: none;
-    color: #111;
+    color: #fff;
     font-size: 1rem;
     cursor: pointer;
     padding: 0;
+    opacity: .7;
     transition: opacity 0.3s ease;
     margin-left: 100px;
 }

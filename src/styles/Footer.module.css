@@ -1,8 +1,8 @@
 .footer {
-    background: #111;
+    background: #0a0a0a;
     color: #fff;
     padding: 40px 20px;
-    border-top: 1px solid rgb(224, 224, 224);
+    border-top: .1px solid rgba(224, 224, 224, 0.392);
 }
 
 .container {
@@ -48,7 +48,7 @@
     text-align: center;
     margin-top: 30px;
     padding-top: 15px;
-    border-top: 1px solid rgb(224, 224, 224);
+    border-top: .1px solid rgba(224, 224, 224, 0.392);
     font-size: 14px;
     opacity: 0.7;
 }

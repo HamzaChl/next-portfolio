@@ -1,9 +1,9 @@
 .card-spotlight {
     position: relative;
     border-radius: 1.5rem;
-    border: 1px solid #e5e7eb;
+    border: .1px solid #e5e7eb;
     /* bordure gris très clair */
-    background-color: #ffffff;
+    background-color: #0a0a0a;
     /* carte blanche */
     color: #111827;
     /* texte bien lisible sur fond clair */

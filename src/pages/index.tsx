@@ -9,6 +9,7 @@ import LightRays from "@/components/LightRays";
 import TextAnim2 from "@/components/TextAnim2";
 import SpotlightCards from "@/components/SpotlightCards";
 import { ShinyText } from "@/components/ShinyText";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -65,10 +66,10 @@ const Home = () => {
           raysColor="#94beff"
           raysSpeed={1.9}
           lightSpread={0.8}
-          rayLength={0.9}
+          rayLength={3.9}
           followMouse={true}
           mouseInfluence={0.2}
-          noiseAmount={0.2}
+          noiseAmount={0.5}
           distortion={0.05}
           className="custom-rays"
         />
@@ -87,11 +88,19 @@ const Home = () => {
               snelle interfaces.
             </p>
           </ShinyText>
+          <div>
+            {/* <button className={styles.ctahome}>ahziuuiazh</button> */}
+          </div>
 
           <div className={styles.techContainer}>
-            <Technologies />
+            <ScrollReveal>
+              <Technologies />
+            </ScrollReveal>
           </div>
-          <SpotlightCards></SpotlightCards>
+          <ScrollReveal>
+            <SpotlightCards></SpotlightCards>
+          </ScrollReveal>
+
           <ScrollZoom />
         </div>
       </div>

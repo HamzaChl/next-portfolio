@@ -129,6 +129,9 @@ const Lab = () => {
       <div className="container">
         <SpotlightCards></SpotlightCards>
       </div>
+      <div className="container">
+        <Nav3></Nav3>
+      </div>
 
       <div className="container">
         <Nav3 />
