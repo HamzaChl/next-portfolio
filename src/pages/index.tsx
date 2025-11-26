@@ -97,7 +97,7 @@ const Home = () => {
               <Technologies />
             </ScrollReveal>
           </div>
-          <ScrollReveal>
+          <ScrollReveal start="top 100%">
             <SpotlightCards></SpotlightCards>
           </ScrollReveal>
 

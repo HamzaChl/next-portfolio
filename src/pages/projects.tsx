@@ -39,7 +39,7 @@ const Projects = () => {
           rayLength={0.9}
           followMouse={true}
           mouseInfluence={0.2}
-          noiseAmount={0.2}
+          noiseAmount={0.5}
           distortion={0.05}
           className="custom-rays"
         />
