@@ -13,13 +13,13 @@ const Footer = () => {
         <div className={styles.column}></div>
 
         <div className={styles.column}>
-          <h3>Liens rapides</h3>
+          <h3>Snelle links</h3>
           <ul>
             <li>
-              <Link href="/">Accueil</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/projects">Projects</Link>
+              <Link href="/projects">Projecten</Link>
             </li>
             <li>
               <Link href="/blog">Blog</Link>
@@ -30,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.column}>
-          <h3>Liens utiles</h3>
+          <h3>Nuttige links</h3>
           <ul>
             <li>
               <Link href="/documentation">Documentation</Link>

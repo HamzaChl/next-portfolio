@@ -19,8 +19,14 @@
     background-clip: text;
 
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
-
+    font-size: 14px;
     animation: shine var(--shine-duration, 3s) linear infinite;
+}
+
+@media (min-width: 640px) {
+    .shinyText {
+        font-size: 17px;
+    }
 }
 
 .shinyTextDisabled {
@@ -30,6 +36,7 @@
     text-shadow: none;
     color: #8f8f8f;
     animation: none;
+    font-size: 10px;
 }
 
 @keyframes shine {

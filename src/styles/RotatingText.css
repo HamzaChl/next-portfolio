@@ -11,6 +11,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 640px) {
@@ -28,17 +30,13 @@
 
 .rotating-split {
     overflow: hidden;
-    /* overflow-hidden */
     padding-bottom: 0.125rem;
-    /* pb-0.5 */
-
-    /* responsive */
 }
 
 @media (min-width: 640px) {
     .rotating-split {
         padding-bottom: 0.25rem;
-        /* sm:pb-1 */
+
     }
 }
 

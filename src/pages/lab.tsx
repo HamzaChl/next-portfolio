@@ -16,11 +16,54 @@ import { FaCode, FaMobileAlt, FaPalette } from "react-icons/fa";
 import SpotlightCards from "@/components/SpotlightCards";
 import SplitText from "../components/SplitText/SplitText";
 import LightRays from "@/components/LightRays";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiFigma,
+  SiAdobecreativecloud,
+  SiWordpress,
+} from "react-icons/si";
+import LogoLoop from "@/components/LogoLoop";
 
 const Lab = () => {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const containerRef = useRef(null);
+
+  const techLogos = [
+    { node: <SiReact />, title: "React", href: "https://react.dev" },
+
+    { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+
+    {
+      node: <SiTypescript />,
+      title: "TypeScript",
+      href: "https://www.typescriptlang.org",
+    },
+
+    {
+      node: <SiTailwindcss />,
+      title: "Tailwind CSS",
+      href: "https://tailwindcss.com",
+    },
+    {
+      node: <SiFigma />,
+      title: "Figma",
+      href: "https://www.figma.com/",
+    },
+    {
+      node: <SiAdobecreativecloud />,
+      title: "Creative Cloud",
+      href: "https://www.adobe.com/be_fr/",
+    },
+    {
+      node: <SiWordpress />,
+      title: "WordPress",
+      href: "https://www.wordpress.com/",
+    },
+  ];
 
   useEffect(() => {
     const b1 =
@@ -121,7 +164,30 @@ const Lab = () => {
       <div className="container">
         <TextAnim1 />
       </div>
-      <div className="container"></div>
+      <div className="container">
+        <Nav3></Nav3>
+      </div>
+      <div className="container">
+        <div
+          style={{ height: "200px", position: "relative", overflow: "hidden" }}
+        >
+          <LogoLoop
+            logos={techLogos}
+            speed={50}
+            direction="left"
+            logoHeight={48}
+            gap={140}
+            hoverSpeed={40}
+            scaleOnHover
+            fadeOut
+            fadeOutColor="#0a0a0a"
+            ariaLabel="Technology partners"
+          />
+        </div>
+      </div>
+      <div className="container">
+        <Technologies />
+      </div>
       <div className="container">
         <TextAnim2 />
       </div>

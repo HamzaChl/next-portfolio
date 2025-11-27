@@ -98,7 +98,7 @@
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: .5rem;
     color: #ccc;
     margin-bottom: 40px;
     max-width: 600px;
@@ -223,6 +223,11 @@
     margin: 0 auto;
 }
 
+.separator {
+    background-color: #0A0A0A;
+    box-shadow: 0px 0px 50px 120px #0A0A0A;
+}
+
 
 @media (max-width: 900px) {
     .techContainer {
@@ -238,9 +243,24 @@
     -webkit-backdrop-filter: blur(5px);
     border: .1px solid rgba(255, 255, 255, 0.094);
     width: fit-content;
+    cursor: pointer;
     padding: 15px 20px;
+    margin-top: 10px !important;
+    display: inline-flex;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: cta-fade-in 5.6s ease-out 0.2s forwards;
 }
 
+
+
 .ctahome:hover {
-    background: rgba(38, 38, 38, 0.205);
+    background: rgba(38, 38, 38, 0.383);
+}
+
+@keyframes cta-fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

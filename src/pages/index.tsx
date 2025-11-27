@@ -10,12 +10,56 @@ import TextAnim2 from "@/components/TextAnim2";
 import SpotlightCards from "@/components/SpotlightCards";
 import { ShinyText } from "@/components/ShinyText";
 import ScrollReveal from "@/components/ScrollReveal";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiFigma,
+  SiAdobecreativecloud,
+  SiWordpress,
+} from "react-icons/si";
+import LogoLoop from "@/components/LogoLoop";
+import Link from "next/link";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaAnchorRef = useRef<HTMLAnchorElement>(null);
   const photoRef = useRef<HTMLDivElement>(null);
+
+  const techLogos = [
+    { node: <SiReact />, title: "React", href: "https://react.dev" },
+
+    { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+
+    {
+      node: <SiTypescript />,
+      title: "TypeScript",
+      href: "https://www.typescriptlang.org",
+    },
+
+    {
+      node: <SiTailwindcss />,
+      title: "Tailwind CSS",
+      href: "https://tailwindcss.com",
+    },
+    {
+      node: <SiFigma />,
+      title: "Figma",
+      href: "https://www.figma.com/",
+    },
+    {
+      node: <SiAdobecreativecloud />,
+      title: "Creative Cloud",
+      href: "https://www.adobe.com/be_fr/",
+    },
+    {
+      node: <SiWordpress />,
+      title: "WordPress",
+      href: "https://www.wordpress.com/",
+    },
+  ];
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -89,17 +133,41 @@ const Home = () => {
             </p>
           </ShinyText>
           <div>
-            {/* <button className={styles.ctahome}>ahziuuiazh</button> */}
+            <Link href="/lab" className={styles.ctahome}>
+              Labo cta
+            </Link>
           </div>
 
           <div className={styles.techContainer}>
             <ScrollReveal>
-              <Technologies />
+              <div
+                style={{
+                  height: "200px",
+                  position: "relative",
+                  overflow: "hidden",
+                  margin: "70px 10px",
+                }}
+              >
+                <LogoLoop
+                  logos={techLogos}
+                  speed={50}
+                  direction="left"
+                  logoHeight={48}
+                  gap={140}
+                  hoverSpeed={40}
+                  scaleOnHover
+                  fadeOut
+                  fadeOutColor="#0a0a0a"
+                  ariaLabel="Technology partners"
+                />
+              </div>
             </ScrollReveal>
           </div>
-          <ScrollReveal start="top 100%">
-            <SpotlightCards></SpotlightCards>
-          </ScrollReveal>
+          <div className={styles.separator}>
+            <ScrollReveal start="top 100%">
+              <SpotlightCards></SpotlightCards>
+            </ScrollReveal>
+          </div>
 
           <ScrollZoom />
         </div>
