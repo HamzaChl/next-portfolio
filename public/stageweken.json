@@ -62,14 +62,14 @@
   },
   {
     "title": "Stageweek 11",
-    "shortDescription": "Week In Progress.",
-    "text": "De tiende week is nog steeds bezig.",
+    "shortDescription": "Bugfixes, UI/UX-verbeteringen en intensief testen van de app.",
+    "text": "De elfde week stond volledig in het teken van het opsporen en oplossen van bugs in de applicatie. Ik heb vooral gewerkt aan UI- en UX-verbeteringen: kleine visuele details, foutieve uitlijningen, inconsistente knoppen en schermen die niet altijd logisch aanvoelden voor de gebruiker.\n\nAan de hand van feedback en eigen testsessies heb ik stap voor stap de interface verfijnd, zodat de flows duidelijker en gebruiksvriendelijker werden. Daarnaast heb ik veel tijd besteed aan testen: verschillende scenario’s doorlopen, controleren of alle schermen correct reageren en nagaan of eerdere aanpassingen geen nieuwe problemen veroorzaakten.\n\nDeze week draaide dus vooral om kwaliteit, stabiliteit en het verder professioneel maken van de app, zodat ze klaar is voor de volgende fases.",
     "image": "/Images/stages/weekinprogress.png"
   },
   {
     "title": "Stageweek 12",
-    "shortDescription": "Week In Progress.",
-    "text": "De tiende week is nog steeds bezig.",
+    "shortDescription": "Migratie naar een VPS en voorbereiding van een WordPress one page voor de applicatie.",
+    "text": "Tijdens de twaalfde week hebben we een belangrijke technische stap gezet: de migratie van onze databanken en backend naar een VPS-omgeving. Ik heb meegeholpen aan het opzetten en configureren van de server, het koppelen van de database en het zorgen dat de backend stabiel en bereikbaar is in deze nieuwe omgeving.\n\nDaarnaast heb ik een aparte WordPress-omgeving gekregen om een one page voor de applicatie te bouwen. Omdat ik al erg vertrouwd ben met WordPress en de klant vrij openstaat voor nieuwe ideeën, heb ik de vrijheid gekregen om zelf een voorstel uit te werken voor de structuur, inhoud en lay-out van deze landingspagina.\n\nIn deze week lag de focus vooral op de technische voorbereiding: het installeren en configureren via de host, toegang in orde brengen en alles klaarzetten. Vanaf week 13 kan ik dan echt beginnen aan de uitwerking van de one page zelf.",
     "image": "/Images/stages/weekinprogress.png"
   },
   {

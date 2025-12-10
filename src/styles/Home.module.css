@@ -249,7 +249,7 @@
     display: inline-flex;
     opacity: 0;
     transform: translateY(10px);
-    animation: cta-fade-in 5.6s ease-out 0.2s forwards;
+    animation: cta-fade-in 2.6s ease-out 0.2s forwards;
 }
 
 

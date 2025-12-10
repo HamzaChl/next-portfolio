@@ -122,7 +122,7 @@ const Home = () => {
         <div className={styles.right}>
           <div ref={titleRef}>
             <h1 className={styles.heroTitle}>
-              Impactvolle digitale <br /> ervaringen door
+              Impactvolle digitale <br /> ervaringen gebouwd met <br />
               <TextAnim2 />
             </h1>
           </div>

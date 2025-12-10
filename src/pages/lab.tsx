@@ -14,7 +14,7 @@ import SpotlightCard from "@/components/SpotlightCard/SpotlightCard";
 import Nav3 from "@/components/Nav3";
 import { FaCode, FaMobileAlt, FaPalette } from "react-icons/fa";
 import SpotlightCards from "@/components/SpotlightCards";
-import SplitText from "../components/SplitText/SplitText";
+import SplitText from "../components/SplitText";
 import LightRays from "@/components/LightRays";
 import {
   SiReact,
@@ -187,6 +187,21 @@ const Lab = () => {
       </div>
       <div className="container">
         <Technologies />
+      </div>
+      <div className="container">
+        <SplitText
+          text="Hello, GSAP!"
+          className="text-2xl font-semibold text-center"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+        />
       </div>
       <div className="container">
         <TextAnim2 />
