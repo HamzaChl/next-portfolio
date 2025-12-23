@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Stageweek 1",
+    "shortDescription": "Kennismaking met Taxis Auto Luxe en eerste stappen in development.",
+    "text": "Mijn eerste stageweek was erg leerrijk en uitdagend. Ik heb kennisgemaakt met Taxis Auto Luxe, één van de oudste taxibedrijven in België. Hun huidige applicatie wordt niet meer onderhouden en werkt niet meer naar behoren. Ze willen een volledig nieuwe oplossing, en ik krijg de kans om hier grotendeels aan te werken met de steun van een ervaren team. Dit geeft me de mogelijkheid om mijn ervaring te versterken, terwijl ik goed begeleid word en regelmatig uitleg krijg wanneer ik iets niet begrijp. Ik krijg ook verantwoordelijkheden, wat me echt motiveert.\n\nIk heb mijn technische stacks gekozen:\n• Frontend: React Native + Expo (moderne UI met kaarten, modals en i18n)\n• Backend: Node.js/Express met JWT, Stripe, Google Maps API en SendGrid\n• Database: MongoDB Atlas M2 (beheer van gebruikers, ritten en betalingen)\n\nOm goed te starten heb ik een GitHub-repository opgezet en ben ik al begonnen met het implementeren van de JWT-authenticatie.\n\nDaarnaast heb ik ook kennisgemaakt met Yassine, die een fitnesszaal uitbaat. Zijn project bestaat uit het ontwikkelen van een website waarmee gebruikers een privé-fitnessruimte kunnen reserveren. Zodra de reservatie bevestigd is, ontvangt de gebruiker een unieke code om de zaal te ontgrendelen, enkel geldig tijdens het gekozen tijdslot. Deze website wordt ontwikkeld met WordPress, en ik heb alvast de elektronische sloten van het Nederlandse merk Nuki geselecteerd, die gekoppeld zullen worden aan de website en een mobiele applicatie.\n\nKortom, deze eerste week legde een sterke basis: het opzetten van de omgevingen, de eerste technische stappen en het vooruitzicht op twee concrete en boeiende projecten.",
+    "image": "/Images/stages/week1.png"
+  },
+  {
+    "title": "Stageweek 2",
+    "shortDescription": "Start mobiele app, styling, login en eerste field experience bij Zaventem.",
+    "text": "De tweede week van mijn stage was opnieuw heel boeiend en praktijkgericht. Ik kreeg toegang tot een VPS en kon eindelijk beginnen met de ontwikkeling van de mobiele applicatie. Ik ben gestart met de styling, en heb ondertussen al een functionele login en meertalige vertalingen geïntegreerd. Daarnaast heb ik nu ook toegang tot een Stripe-dashboard om betalingen te beheren en te testen.\n\nEen collega toonde mij hoe ik via Xcode meerdere iPhone-modellen kan simuleren om de verschillende schermen van de app te testen. Dat was heel handig om te zien hoe de interface er op diverse toestellen uitziet. Er heeft iemand mij ook een systeem getoond dat automatisch inspeelt op het thema van het besturingssysteem, dus dark mode of light mode, afhankelijk van de instellingen van de gebruiker. Dat vond ik heel interessant, omdat het de gebruikservaring veel moderner en persoonlijker maakt.\n\nLater in de week kreeg ik de kans om met een taxi naar Brussels Airport (Zaventem) te gaan, om te ontdekken hoe alles in de praktijk werkt. Taxis Auto Luxe is namelijk één van de weinige taxibedrijven die toegang hebben tot het interieur van de luchthaven. Ik heb daar een beter beeld gekregen van hun werking en ook de nodige berekeningen voor de ritprijzen ontvangen.\n\nWat ik tot nu toe echt waardeer aan deze stage, is dat ik niet de hele dag achter mijn computer hoef te zitten. We gaan vaak op pad naar klanten en hebben veel interactie. Voor wat ik later na mijn studies als zelfstandige wil doen, is dit tot nu toe een fantastische ervaring.",
+    "image": "/Images/stages/week2.png"
+  },
+  {
+    "title": "Stageweek 3",
+    "shortDescription": "Start van de Taxi App – backend logica, API’s en eerste architectuur.",
+    "text": "Tijdens de derde week zijn we officieel begonnen aan de eerste ontwikkelingsfase van de Taxi App. Dit was een belangrijk moment in het project, want we zijn nu echt van de voorbereiding naar de uitvoering gegaan. Ik werk samen met een klein maar efficiënt team dat mij goed ondersteunt en altijd bereid is om dingen uit te leggen. Iedereen neemt zijn deel op zich, en dat zorgt voor een fijne samenwerking waarin ik ook steeds meer verantwoordelijkheden krijg.\n\nIn deze fase lag de focus vooral op het backendgedeelte: het opzetten van een REST API met Node.js en Express voor rittenbeheer – aanmaken, updaten, het toewijzen van chauffeurs en het beheren van de ritstatussen. Ook hebben we de koppeling voorbereid met de database (MongoDB Atlas) zodat ritten, gebruikers en chauffeurs correct kunnen worden opgeslagen en opgehaald. De communicatie tussen de client en server begon stilaan vorm te krijgen, wat erg motiverend was.\n\nDaarnaast zijn we begonnen met de integratie van Google Maps en geolocatie. Dit onderdeel vond ik bijzonder interessant, omdat het een technische uitdaging is om realtime coördinaten te verwerken en ze om te zetten naar een logische ritstructuur.\n\nWe hebben ook de eerste structuur van de mobiele app uitgewerkt: login, registratie en profielpagina’s, zodat zowel chauffeurs als klanten een eigen interface kunnen hebben. De basis van het project staat er, en het voelt goed om te zien dat alle puzzelstukken stilaan in elkaar vallen.\n\nIk leer elke dag bij – niet enkel op technisch vlak, maar ook op vlak van samenwerking, planning en het omgaan met verantwoordelijkheden. Mijn begeleiders geven duidelijke uitleg en feedback, en dat helpt me enorm om te groeien als ontwikkelaar.",
+    "image": "/Images/stages/week3.png"
+  },
+  {
+    "title": "Stageweek 4",
+    "shortDescription": "Front-end ontwikkeling, visuele componenten en eerste testbare resultaten.",
+    "text": "De vierde week stond vooral in het teken van het front-endgedeelte van de mobiele applicatie – iets waar ik echt enthousiast van word. Dankzij mijn achtergrond in design heb ik altijd al een grote interesse gehad in de visuele kant van projecten, en nu kon ik dat combineren met mijn technische kennis.\n\nIk heb gewerkt aan verschillende schermen van de app, zoals login, registratie, profiel en de eerste versie van het reserveringssysteem voor ritten. De styling werd stap voor stap verfijnd, met aandacht voor consistentie, leesbaarheid en moderne animaties via React Native en Expo. Ik heb ook geëxperimenteerd met modals, mapcomponenten en dynamische UI-elementen om de gebruikerservaring nog aangenamer te maken.\n\nDe integratie met Google Maps begint echt goed te werken: gebruikers kunnen nu hun locatie zien en ritten aanvragen, wat de app meteen veel realistischer maakt. Samen met het team hebben we verschillende userflows getest om te kijken hoe intuïtief de navigatie aanvoelt.\n\nWat ik vooral waardeer, is dat ik ondanks mijn status als stagiair veel vertrouwen krijg. Mijn team moedigt me aan om zelf oplossingen te zoeken en mijn ideeën te delen, maar ze zijn er ook altijd om me te ondersteunen wanneer ik vastloop. Die balans tussen zelfstandigheid en begeleiding maakt dit een supergoede leerervaring.\n\nDeze week heeft mijn passie voor front-end alleen maar bevestigd. Het is het deel waar ik mijn gevoel voor design, gebruiksvriendelijkheid en techniek kan samenbrengen tot iets tastbaars. Ik ben trots op wat ik tot nu toe heb bereikt en kijk ernaar uit om de app verder te verfijnen in de komende weken.",
+    "image": "/Images/stages/week4.png"
+  },
+  {
+    "title": "Stageweek 5",
+    "shortDescription": "Backend-uitbreidingen en verfijning van API’s voor ritbeheer en gebruikers.",
+    "text": "Tijdens de vijfde week lag de focus op de verdere ontwikkeling van de backend. We hebben de bestaande API uitgebreid met nieuwe functionaliteiten, waaronder de geschiedenis van ritten, statusbeheer en validatie van gebruikers. Ook werden de foutmeldingen verbeterd, zodat de communicatie tussen client en server consistenter verloopt.\n\nDaarnaast heb ik gewerkt aan de optimalisatie van de databaseprestaties. Door indexing toe te voegen in MongoDB en de query’s efficiënter te maken, werden de responstijden merkbaar korter. Dit zorgde ervoor dat ritten sneller konden worden geladen, wat belangrijk is voor een vlotte gebruikerservaring.\n\nSamen met het team heb ik de eerste volledige tests uitgevoerd tussen de app en de backend. Dit gaf ons een duidelijk beeld van hoe stabiel de API werkte in realistische omstandigheden. De week stond vooral in het teken van stabiliteit, verfijning en voorbereiding op de volgende fase – de integratie van betalingen.",
+    "image": "/Images/stages/week5.png"
+  },
+  {
+    "title": "Stageweek 6",
+    "shortDescription": "Integratie van Stripe-betalingen en testen van het volledige betalingssysteem.",
+    "text": "In de zesde week heb ik gewerkt aan de integratie van Stripe voor betalingen binnen de Taxi App. Ik heb een veilige flow opgezet waarbij klanten hun ritten kunnen betalen met testkaarten via de Stripe API. De transacties worden correct doorgestuurd, gecontroleerd en gelogd in de backend.\n\nDaarnaast heb ik een testsysteem opgezet om betalingen in een sandboxomgeving te simuleren. Dit maakte het mogelijk om verschillende scenario’s te testen – succesvolle betalingen, fouten, en geannuleerde transacties. De integratie verliep vlot, en ik heb veel bijgeleerd over hoe webhooks, tokens en sessies samenwerken binnen Stripe.\n\nTot slot heb ik gewerkt aan kleine visuele verbeteringen in de app: bevestigingsschermen na betaling, duidelijke foutmeldingen en een basisstructuur voor toekomstige meldingen (zoals pushnotificaties). Deze week gaf me een goed inzicht in hoe betaalverkeer technisch én visueel geïntegreerd wordt in een mobiele applicatie.",
+    "image": "/Images/stages/week6.png"
+  },
+  {
+    "title": "Stageweek 7",
+    "shortDescription": "Beveiliging en middleware voor de drivermodule + oplossen van tokenproblemen.",
+    "text": "De zevende week was technisch uitdagender maar bijzonder leerzaam. Ik heb gewerkt aan het toevoegen van middleware in de backend om de toegang te beveiligen voor verschillende gebruikersrollen. De app is nu opgesplitst in twee gedeeltes: één voor klanten en één voor chauffeurs. Elke route en actie wordt gecontroleerd via een middleware die nagaat of het JWT-token geldig is en bij de juiste rol hoort.\n\nTijdens het testen liep ik tegen een lastig probleem aan: wanneer ik uitlogde als klant en daarna inlogde als chauffeur, kreeg ik nog steeds de schermen van de klant te zien. Zelfs na het herladen van de app bleef dit gebeuren, wat vrij frustrerend was. Na meerdere pogingen – ook met hulp van AI – ontdekte ik samen met Souffian (externe developper) dat het probleem lag aan het niet-correct verwijderen van tokens bij het uitloggen. De oude tokens bleven in local storage staan, waardoor de app verkeerde gegevens gebruikte.\n\nNa aanpassing van de logoutlogica wordt het token nu volledig verwijderd bij het afmelden, en start elke login met een schone sessie. Deze week heb ik enorm veel geleerd over authenticatie, sessiebeheer en debugging in realistische omstandigheden.",
+    "image": "/Images/stages/week7.png"
+  },
+
+  {
+    "title": "Stageweek 8",
+    "shortDescription": "Uitwerking van nieuwe componenten en optimalisatie van reservaties via landmarks.",
+    "text": "Tijdens de achtste week heb ik vooral gewerkt aan nieuwe componenten binnen de app die het reserveringsproces voor gebruikers eenvoudiger en sneller maken. Ik heb verschillende belangrijke plaatsen in Brussel geïntegreerd, zoals de Grote Markt, het Atomium en andere herkenbare locaties. Het doel hiervan was om gebruikers toe te laten sneller een vertrek- of aankomstpunt te selecteren zonder alles handmatig te moeten ingeven.\n\nDaarnaast heb ik ook enkele bugs opgelost die vooral op iOS voorkwamen, omdat ik grotendeels op mijn iPhone ontwikkelde en testte. Hierdoor merkte ik dat ik minder aandacht had besteed aan Android, simpelweg omdat ik persoonlijk geen Android-toestel had en Xcode enkel iPhones simuleert. Gelukkig heb ik nu een Android-smartphone gekregen zodat ik beide platformen correct kan testen en optimaliseren.\n\nOver het algemeen was dit een praktische week waarin ik vooral functionaliteit heb uitgebreid en de gebruikerservaring heb verfijnd.",
+    "image": "/Images/stages/week8.png"
+  },
+  {
+    "title": "Stageweek 9",
+    "shortDescription": "Herstel van accounts, OTP-flow en verdere e-mailautomatisatie.",
+    "text": "De negende week stond in het teken van account-herstel en e-mailfunctionaliteit. Ik heb een volledige \"wachtwoord vergeten\"-flow ontwikkeld met OTP-codes, zodat gebruikers veilig een nieuw wachtwoord kunnen instellen. Hiervoor heb ik veel gewerkt met domeinnamen, SMTP-configuratie en algemene e-mailintegraties — iets waar ik steeds meer plezier en ervaring in begin te krijgen.\n\nEen belangrijk technisch onderdeel was het correct opzetten van automatische e-mails via Nodemailer. In het begin liep dit wat stroef, maar na enkele tests en aanpassingen werkt alles nu betrouwbaar. Gebruikers ontvangen voortaan automatisch een e-mail wanneer hun betaling mislukt, en bij succesvolle reserveringen krijgen ze eveneens een bevestiging.\n\nDaarnaast heb ik toegang gekregen tot het Contabo-VPS-omgeving, hoewel we momenteel nog in lokale ontwikkeling werken omdat we veel code delen binnen het team. Deze week gaf me vooral meer inzicht in back-endflows, beveiliging en het beheren van e-mailprocessen.",
+    "image": "/Images/stages/week9.png"
+  },
+  {
+    "title": "Stageweek 10",
+    "shortDescription": "Rebranding van het merk, database-migratie en verdere e-mailoptimalisaties.",
+    "text": "Tijdens de tiende week heeft het bedrijf een volledige rebranding doorgevoerd. Dit gaf mij de kans om van dichtbij te zien hoe zo’n proces wordt aangepakt: nieuwe kleuren, vernieuwde positionering en een herwerkte visuele identiteit. Het was interessant om te zien hoe design, strategie en technische implementatie samenkomen in één traject.\n\nDaarnaast heb ik verder gewerkt aan de e-mailfunctionaliteiten via Nodemailer, met focus op het verbeteren van betrouwbaarheid en foutafhandeling. Elke automatische mail — zowel bevestigingen als foutmeldingen — moest correct verzonden worden, dus heb ik meerdere testflows en kleine fixes uitgevoerd.\n\nTot slot heb ik de database gemigreerd naar de nieuwe omgeving die specifiek voor de applicatie werd opgezet. Dit zorgde voor een betere organisatie en voorbereiding op de uiteindelijke productie-omgeving. De tiende week stond dus vooral in het teken van stabiliteit, onderhoud en meewerken aan de nieuwe visuele richting van het merk.",
+    "image": "/Images/stages/week10.png"
+  },
+  {
+    "title": "Stageweek 11",
+    "shortDescription": "Bugfixes, UI/UX-verbeteringen en intensief testen van de app.",
+    "text": "De elfde week stond volledig in het teken van het opsporen en oplossen van bugs in de applicatie. Ik heb vooral gewerkt aan UI- en UX-verbeteringen: kleine visuele details, foutieve uitlijningen, inconsistente knoppen en schermen die niet altijd logisch aanvoelden voor de gebruiker.\n\nAan de hand van feedback en eigen testsessies heb ik stap voor stap de interface verfijnd, zodat de flows duidelijker en gebruiksvriendelijker werden. Daarnaast heb ik veel tijd besteed aan testen: verschillende scenario’s doorlopen, controleren of alle schermen correct reageren en nagaan of eerdere aanpassingen geen nieuwe problemen veroorzaakten.\n\nDeze week draaide dus vooral om kwaliteit, stabiliteit en het verder professioneel maken van de app, zodat ze klaar is voor de volgende fases.",
+    "image": "/Images/stages/weekinprogress.png"
+  },
+  {
+    "title": "Stageweek 12",
+    "shortDescription": "Migratie naar een VPS en voorbereiding van een WordPress one page voor de applicatie.",
+    "text": "Tijdens de twaalfde week hebben we een belangrijke technische stap gezet: de migratie van onze databanken en backend naar een VPS-omgeving. Ik heb meegeholpen aan het opzetten en configureren van de server, het koppelen van de database en het zorgen dat de backend stabiel en bereikbaar is in deze nieuwe omgeving.\n\nDaarnaast heb ik een aparte WordPress-omgeving gekregen om een one page voor de applicatie te bouwen. Omdat ik al erg vertrouwd ben met WordPress en de klant vrij openstaat voor nieuwe ideeën, heb ik de vrijheid gekregen om zelf een voorstel uit te werken voor de structuur, inhoud en lay-out van deze landingspagina.\n\nIn deze week lag de focus vooral op de technische voorbereiding: het installeren en configureren via de host, toegang in orde brengen en alles klaarzetten. Vanaf week 13 kan ik dan echt beginnen aan de uitwerking van de one page zelf.",
+    "image": "/Images/stages/weekinprogress.png"
+  },
+  {
+    "title": "Stageweek 13",
+    "shortDescription": "Week In Progress.",
+    "text": "De tiende week is nog steeds bezig.",
+    "image": "/Images/stages/weekinprogress.png"
+  },
+  {
+    "title": "Stageweek 14",
+    "shortDescription": "Week In Progress.",
+    "text": "De tiende week is nog steeds bezig.",
+    "image": "/Images/stages/weekinprogress.png"
+  }
+]

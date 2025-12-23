@@ -1,0 +1,307 @@
+.carouselContainer {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    background: transparent;
+}
+
+.carouselContainer::before,
+.carouselContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.carouselContainer::before {
+    left: 0;
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.carouselContainer::after {
+    right: 0;
+    background: linear-gradient(to left,
+            transparent 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.marqueeTrack {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 25s linear infinite;
+    will-change: transform;
+}
+
+.marqueeInner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.techItem {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 80px;
+    margin-right: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(20%);
+    opacity: 0.95;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.techItem:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .techItem {
+        width: 120px;
+        height: 60px;
+        margin-right: 24px;
+    }
+}
+
+.faqContainer {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faqTitle {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.faqDescription {
+    font-size: 16px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.faqList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.faqItem {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faqQuestion {
+    width: 100%;
+    padding: 15px;
+    background: #f9f9f9;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: black;
+}
+
+.faqQuestion:hover {
+    background: #f1f1f1;
+}
+
+.faqAnswer {
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    text-align: start;
+    color: #333;
+}
+
+.ServiceContainer {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.Services {
+    margin-top: -100px;
+    background-color: #0a0a0a;
+    padding: 40px;
+    border: 1px solid;
+    border-image-source: linear-gradient(to right, #4568dc, #b06ab3);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+
+.Services:hover {
+    box-shadow: 0 0 15px rgba(69, 104, 220, 0.5);
+}
+
+.subContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.carouselWrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    will-change: transform;
+}
+
+.custom-rays {
+    background: #ffffff !important;
+}
+
+.custom-rays canvas {
+    background: transparent !important;
+}
+
+.liquid-ether-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+
+.plasma-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-nav-container {
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.card-nav {
+    display: block;
+    height: 60px;
+    padding: 0;
+    background-color: #0a0a0a;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    will-change: height;
+}
+
+.card-nav-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.45rem 0.55rem 1.1rem;
+    z-index: 2;
+}
+
+.hamburger-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger-menu:hover .hamburger-line {
+    opacity: 0.75;
+}
+
+.hamburger-line {
+    width: 30px;
+    height: 2px;
+    background-color: currentColor;
+    transition:
+        transform 0.25s ease,
+        opacity 0.2s ease,
+        margin 0.3s ease;
+    transform-origin: 50% 50%;
+}
+
+.hamburger-menu.open .hamburger-line:first-child {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger-menu.open .hamburger-line:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 28px;
+}
+
+.cardText {
+    padding-top: 20px;
+    color: rgba(105, 126, 157, 0.658);
+    font-size: 15px;
+}
+
+.cardTitle {
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.cardIcon {
+    width: 40px;
+    height: auto;
+    color: rgba(105, 126, 157, 0.658);
+}

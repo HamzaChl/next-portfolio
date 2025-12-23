@@ -1,0 +1,40 @@
+.textHeading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.subHeading {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.subTitle {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.blueText {
+    color: var(--highlight);
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 10px #b16ab36b;
+}
+
+
+.corpsText {
+    margin-top: 20px;
+    width: 65vw;
+    text-align: center;
+}
+
+.e {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

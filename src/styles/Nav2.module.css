@@ -1,0 +1,326 @@
+@import url("https://use.typekit.net/rfn8mmy.css");
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerContainer {
+    width: 100%;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 90px;
+    padding: 20px 40px;
+    background-color: transparent;
+    backdrop-filter: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.35s ease;
+    z-index: 1000;
+}
+
+
+.scrolled {
+    top: 20px;
+    max-width: 70%;
+    background: #111;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-radius: 50px;
+
+    height: 70px;
+    padding: 10px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: rgba(38, 38, 38, 0.591);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: .1px solid rgba(255, 255, 255, 0.094);
+}
+
+
+.logo {
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    font-family: "BwGradual", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.scrolled .logo {
+    transform: scale(0.9);
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+
+.statusIndicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+    border-radius: 50%;
+}
+
+.online {
+    background-color: #4caf50;
+    box-shadow: 0 0 5px rgba(34, 255, 0, 0.75);
+}
+
+.offline {
+    background-color: #e53935;
+    box-shadow: 0 0 5px #e53935;
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+}
+
+/* LIENS DE NAVIGATION */
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #6d819c;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    padding: 10px;
+    transition: all 0.3s ease;
+    opacity: .6;
+}
+
+.navLinks li a:hover,
+.navLinks .active {
+    color: #ffffff;
+    font-weight: 500;
+    opacity: 1;
+}
+
+
+.ctaContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.ctaButton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    background: linear-gradient(to top, #fff, #d1d1d1);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.scrolled .ctaButton {
+    background: linear-gradient(to top, #fff, #d1d1d1);
+    color: #000;
+}
+
+.scrolled .navLinks li a {
+    color: #cacaca;
+}
+
+.navLinks li a:hover,
+.navLinks li a.active {
+    color: #cacaca;
+}
+
+.scrolled .navLinks li a:hover,
+.scrolled .navLinks li a.active {
+    color: #fff;
+}
+
+.ctaButton:hover {
+    opacity: 0.9;
+}
+
+/* BURGER MENU */
+.mobileMenu {
+    display: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burgerLine {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+}
+
+/* MENU MOBILE */
+.menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    max-height: 600px;
+    overflow-y: auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+    height: 500px;
+    background: rgba(38, 38, 38, 0.591);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: .1px solid rgba(255, 255, 255, 0.094);
+    position: fixed;
+    top: 100px;
+}
+
+.menu.open {
+    display: block;
+    opacity: 1;
+}
+
+.navLinks.open {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .mobileMenu {
+        display: flex;
+        width: 100%;
+        max-width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 24px;
+        background: rgba(38, 38, 38, 0.591);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: .1px solid rgba(255, 255, 255, 0.094);
+        top: 10px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1000;
+    }
+
+
+    .mobileScrolled {
+        top: 20px;
+        position: fixed;
+        width: 100%;
+        max-width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 70px;
+        padding: 10px 20px;
+        background: rgba(38, 38, 38, 0.591);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
+        border: .1px solid rgba(255, 255, 255, 0.094);
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.35s ease;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctaButton {
+        display: none;
+    }
+
+    .menu {
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menu .navLinks {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 16px 20px;
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .menu .navLinks li {
+        width: 100%;
+    }
+
+    .menu .navLinks hr {
+        border: .1px solid rgba(255, 255, 255, 0.094);
+        width: 100%;
+    }
+
+    .menu .navLinks li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        color: #fff;
+    }
+}

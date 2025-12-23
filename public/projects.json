@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "title": "EventGather",
+    "year": 2023,
+    "image": "/Images/01.png",
+    "hoverImage": "/Images/01hover.png",
+    "categories": ["Web", "Design"],
+    "shortDescription": "A modern web platform for event management and collaboration.",
+    "description": "EventGather is a full-featured event management platform that enables users to create, manage, and share events effortlessly. The design emphasizes clarity and usability, with a focus on seamless navigation and engaging visuals.",
+    "projectImages": [
+      "/Images/projects/1-4.png",
+      "/Images/projects/1-1.png",
+      "/Images/projects/1-2.png",
+      "/Images/projects/1-3.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Freezmix Morocco",
+    "year": 2023,
+    "image": "/Images/02.png",
+    "hoverImage": "/Images/02hover.png",
+    "categories": ["Design"],
+    "shortDescription": "Brand identity and packaging for a Moroccan frozen dessert brand.",
+    "description": "Freezmix Morocco is a visual branding project centered around fresh colors and minimal layouts. The identity reflects the vibrant, refreshing nature of the brand, blending modern design principles with Moroccan flair.",
+    "projectImages": [
+      "/Images/projects/2-1.png",
+      "/Images/projects/2-2.png",
+      "/Images/projects/2-3.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "BloomBar Brussels",
+    "year": 2022,
+    "image": "/Images/03.png",
+    "hoverImage": "/Images/03hover.png",
+    "categories": ["Design"],
+    "shortDescription": "Een visuele identiteit voor een cocktailbar.",
+    "description": "BloomBar Brussels combines organic shapes and soft colors to create a unique visual experience. The branding captures the essence of nature and nightlife, offering a bold yet elegant aesthetic.",
+    "projectImages": ["/Images/projects/03-1.png"]
+  },
+  {
+    "id": 4,
+    "title": "Chandelle Botanique",
+    "year": 2024,
+    "image": "/Images/04.png",
+    "hoverImage": "/Images/04hover.png",
+    "categories": ["Web", "Design"],
+    "shortDescription": "E-commerce website voor een kaarsenmerk.",
+    "description": "Chandelle Botanique is a minimalist e-commerce platform designed for a handmade candle brand. The layout prioritizes clean visuals and natural tones, creating an immersive and calm shopping experience.",
+    "projectImages": ["/Images/projects/04-1.png", "/Images/projects/04-2.png"]
+  },
+  {
+    "id": 5,
+    "title": "Beauty Slim",
+    "year": 2025,
+    "image": "/Images/05.png",
+    "hoverImage": "/Images/05hover.png",
+    "categories": ["Web", "Design"],
+    "shortDescription": "Website redesign for a premium beauty and wellness center.",
+    "description": "Beauty Slim focuses on an elegant and feminine aesthetic, with a smooth UX to highlight the brand’s premium wellness services. The design blends soft gradients and modern typography for a refined digital presence.",
+    "projectImages": [
+      "/Images/projects/5-1.png",
+      "/Images/projects/5-2.png",
+      "/Images/projects/5-3.png",
+      "/Images/projects/5-4.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Nayehza",
+    "year": 2025,
+    "image": "/Images/06.png",
+    "hoverImage": "/Images/06hover.png",
+    "categories": ["Web"],
+    "shortDescription": "A sleek business website for a digital consultancy.",
+    "description": "Nayehza is a digital-first website designed for a tech consultancy. The UI emphasizes clarity, motion, and trust, using a structured layout to highlight services and client impact.",
+    "projectImages": [
+      "/Images/projects/06-1.png",
+      "/Images/projects/06-2.png",
+      "/Images/projects/06-3.png",
+      "/Images/projects/06-4.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Murcia Trading",
+    "year": 2024,
+    "image": "/Images/07.png",
+    "hoverImage": "/Images/07hover.png",
+    "categories": ["Web", "Design"],
+    "shortDescription": "Corporate branding and web platform for an international trading firm.",
+    "description": "Murcia Trading’s web platform features a professional and minimal design focused on clarity and performance. The interface balances corporate identity with an approachable design language.",
+    "projectImages": [
+      "/Images/projects/07-1.png",
+      "/Images/projects/07-3.png",
+      "/Images/projects/07-4.png"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Boutique Maschio",
+    "year": 2023,
+    "image": "/Images/09.png",
+    "hoverImage": "/Images/09hover.png",
+    "categories": ["Web", "Design"],
+    "shortDescription": "Luxury fashion e-commerce concept for a boutique brand.",
+    "description": "Boutique Maschio offers a refined e-commerce experience for a men’s luxury brand. The interface combines dark elegance and refined product presentation, elevating the brand’s digital presence.",
+    "projectImages": []
+  },
+  {
+    "id": 10,
+    "title": "Murcia Renovo",
+    "year": 2024,
+    "image": "/Images/10.png",
+    "hoverImage": "/Images/10hover.png",
+    "categories": ["Web", "Design"],
+    "shortDescription": "Website concept for a construction and renovation company.",
+    "description": "Murcia Renovo features a bold and clean design tailored for the renovation industry. The website highlights craftsmanship, trust, and expertise through structured sections and strong visual hierarchy.",
+    "projectImages": [
+      "/Images/projects/07-1.png",
+      "/Images/projects/07-3.png",
+      "/Images/projects/07-4.png"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "MileStone",
+    "year": 2024,
+    "image": "/Images/11.png",
+    "hoverImage": "/Images/11hover.png",
+    "categories": ["Full-Stack", "Design"],
+    "shortDescription": "A project management dashboard built from scratch with custom UI.",
+    "description": "MileStone is a full-stack web application designed to manage teams, projects, and milestones efficiently. It integrates a responsive dashboard, authentication system, and visual analytics.",
+    "projectImages": [
+      "/Images/projects/11-1.png",
+      "/Images/projects/11-2.png",
+      "/Images/projects/11-3.png"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Magic The Gathering",
+    "year": 2024,
+    "image": "/Images/12.png",
+    "hoverImage": "/Images/12hover.png",
+    "categories": ["Full-Stack", "Design"],
+    "shortDescription": "Fan platform and card database for Magic: The Gathering players.",
+    "description": "This full-stack web app provides an intuitive experience for MTG fans to browse, search, and organize cards. The interface balances vivid design with fast performance and interactivity.",
+    "projectImages": [
+      "/Images/projects/12-1.png",
+      "/Images/projects/12-2.png",
+      "/Images/projects/12-3.png"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "League Of Legends App",
+    "year": 2025,
+    "image": "/Images/13.png",
+    "hoverImage": "/Images/13hover.png",
+    "categories": ["Mobile"],
+    "shortDescription": "A mobile stats tracker app for League of Legends players.",
+    "description": "This mobile app provides detailed player statistics and match analytics for League of Legends. The design prioritizes clarity, dark mode aesthetics, and game-inspired visuals.",
+    "projectImages": [
+      "/Images/projects/13-1.png",
+      "/Images/projects/13-2.png",
+      "/Images/projects/13-3.png"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Bring Em GmbH",
+    "year": 2025,
+    "image": "/Images/14.png",
+    "hoverImage": "/Images/14hover.png",
+    "categories": ["Web", "Design"],
+    "shortDescription": "Corporate platform for a German SaaS and logistics company.",
+    "description": "Bring Em GmbH is a professional web platform featuring a clean, modular UI and optimized structure for scalability. The design combines modern corporate style with strong usability and performance.",
+    "projectImages": [
+      "/Images/projects/14-1.png",
+      "/Images/projects/14-2.png",
+      "/Images/projects/14-3.png",
+      "/Images/projects/14-4.png"
+    ]
+  }
+]
