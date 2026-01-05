@@ -70,13 +70,13 @@
     "title": "Stageweek 12",
     "shortDescription": "Migratie naar een VPS en voorbereiding van een WordPress one page voor de applicatie.",
     "text": "Tijdens de twaalfde week hebben we een belangrijke technische stap gezet: de migratie van onze databanken en backend naar een VPS-omgeving. Ik heb meegeholpen aan het opzetten en configureren van de server, het koppelen van de database en het zorgen dat de backend stabiel en bereikbaar is in deze nieuwe omgeving.\n\nDaarnaast heb ik een aparte WordPress-omgeving gekregen om een one page voor de applicatie te bouwen. Omdat ik al erg vertrouwd ben met WordPress en de klant vrij openstaat voor nieuwe ideeën, heb ik de vrijheid gekregen om zelf een voorstel uit te werken voor de structuur, inhoud en lay-out van deze landingspagina.\n\nIn deze week lag de focus vooral op de technische voorbereiding: het installeren en configureren via de host, toegang in orde brengen en alles klaarzetten. Vanaf week 13 kan ik dan echt beginnen aan de uitwerking van de one page zelf.",
-    "image": "/Images/stages/weekinprogress.png"
+    "image": "/Images/stages/week12.png"
   },
   {
     "title": "Stageweek 13",
     "shortDescription": "Ontwikkeling van de WordPress one page website voor de Taxi App.",
     "text": "Tijdens de dertiende week lag de focus volledig op het uitwerken van de WordPress one page website voor de Taxi App. Deze website dient als informatieve en commerciële landingspagina waarop gebruikers en potentiële klanten een duidelijk overzicht krijgen van de applicatie, de functionaliteiten en de voordelen van de dienst.\n\nIk ben gestart met het uitwerken van de structuur van de pagina: een hero-sectie met een duidelijke call-to-action, een overzicht van de belangrijkste functies, uitleg over hoe de app werkt, en een contactgedeelte. Omdat de klant openstond voor creatieve vrijheid, kon ik zelf voorstellen doen op vlak van layout, content en visuele stijl.\n\nTechnisch gezien heb ik gewerkt met een lichte en performante WordPress setup, waarbij ik veel aandacht heb besteed aan responsiviteit en laadsnelheid. Ik heb custom secties opgebouwd zodat de pagina flexibel blijft voor toekomstige aanpassingen. Ook werd rekening gehouden met SEO-basisprincipes en duidelijke copywriting, zodat de website professioneel en overtuigend overkomt.\n\nDeze week gaf me een goed inzicht in hoe een mobiele applicatie ook op marketing- en presentatievlak ondersteund moet worden. Het was interessant om de technische wereld van de app te combineren met een duidelijke online aanwezigheid via WordPress.",
-    "image": "/Images/stages/weekinprogress.png"
+    "image": "/Images/stages/week13.png"
   },
   {
     "title": "Stageweek 14",
@@ -88,6 +88,6 @@
     "title": "Stageweek 15",
     "shortDescription": "Verderzetten van deploy-voorbereidingen en afronding van publicatieflows.",
     "text": "Tijdens de vijftiende week heb ik verder gewerkt aan de voorbereidingen voor het effectief deployen van de Taxi App naar de App Store en Play Store. We hebben de eerdere configuraties verfijnd en gecontroleerd, zodat alles voldoet aan de richtlijnen van beide platformen.\n\nIk heb geholpen bij het testen van production builds, waarbij extra aandacht werd besteed aan stabiliteit, foutafhandeling en performantie. Ook werd nagegaan of alle externe services, zoals betalingen, e-mailverzending en API-koppelingen, correct functioneren in een productieomgeving.\n\nDaarnaast heb ik meegewerkt aan het opstellen van documentatie die nodig is voor toekomstige updates en herpublicaties van de app. Dit omvat onder andere versiebeheer, changelogs en een duidelijk overzicht van de deploymentstappen.\n\nDeze week vormde een mooie afronding van een belangrijk deel van het project. Ik kreeg een volledig beeld van de levenscyclus van een mobiele applicatie: van idee en ontwikkeling tot publicatie en onderhoud. Het was een waardevolle ervaring die me veel vertrouwen geeft voor toekomstige projecten.",
-    "image": "/Images/stages/weekinprogress.png"
+    "image": "/Images/stages/week15.png"
   }
 ]
