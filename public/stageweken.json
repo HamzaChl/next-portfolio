@@ -74,14 +74,20 @@
   },
   {
     "title": "Stageweek 13",
-    "shortDescription": "Week In Progress.",
-    "text": "De tiende week is nog steeds bezig.",
+    "shortDescription": "Ontwikkeling van de WordPress one page website voor de Taxi App.",
+    "text": "Tijdens de dertiende week lag de focus volledig op het uitwerken van de WordPress one page website voor de Taxi App. Deze website dient als informatieve en commerciële landingspagina waarop gebruikers en potentiële klanten een duidelijk overzicht krijgen van de applicatie, de functionaliteiten en de voordelen van de dienst.\n\nIk ben gestart met het uitwerken van de structuur van de pagina: een hero-sectie met een duidelijke call-to-action, een overzicht van de belangrijkste functies, uitleg over hoe de app werkt, en een contactgedeelte. Omdat de klant openstond voor creatieve vrijheid, kon ik zelf voorstellen doen op vlak van layout, content en visuele stijl.\n\nTechnisch gezien heb ik gewerkt met een lichte en performante WordPress setup, waarbij ik veel aandacht heb besteed aan responsiviteit en laadsnelheid. Ik heb custom secties opgebouwd zodat de pagina flexibel blijft voor toekomstige aanpassingen. Ook werd rekening gehouden met SEO-basisprincipes en duidelijke copywriting, zodat de website professioneel en overtuigend overkomt.\n\nDeze week gaf me een goed inzicht in hoe een mobiele applicatie ook op marketing- en presentatievlak ondersteund moet worden. Het was interessant om de technische wereld van de app te combineren met een duidelijke online aanwezigheid via WordPress.",
     "image": "/Images/stages/weekinprogress.png"
   },
   {
     "title": "Stageweek 14",
-    "shortDescription": "Week In Progress.",
-    "text": "De tiende week is nog steeds bezig.",
+    "shortDescription": "Voorbereiding en procedures voor publicatie op de App Store en Play Store.",
+    "text": "In de veertiende week ben ik gestart met het onderzoeken en voorbereiden van de procedures om de mobiele applicatie te publiceren op zowel de Apple App Store als de Google Play Store. Dit bleek een technisch en administratief traject te zijn dat veel nauwkeurigheid vereist.\n\nIk heb me verdiept in de vereisten van beide platformen, zoals het aanmaken van developer-accounts, het correct instellen van app-gegevens, privacy policies, en het voorbereiden van de nodige metadata zoals beschrijvingen, screenshots en iconen. Daarnaast heb ik geleerd hoe certificaten, provisioning profiles en bundel-ID’s werken binnen het Apple-ecosysteem.\n\nOok werd er gekeken naar build-configuraties binnen Expo en React Native, zodat de app correct kan worden gebundeld voor productie. Hierbij kwamen topics aan bod zoals environment variables, API-sleutels, versiebeheer en het verschil tussen development- en production builds.\n\nDeze week gaf me een realistisch beeld van wat er allemaal komt kijken bij het effectief publiceren van een app. Het gaat niet alleen om code, maar ook om compliance, documentatie en het correct volgen van procedures.",
+    "image": "/Images/stages/weekinprogress.png"
+  },
+  {
+    "title": "Stageweek 15",
+    "shortDescription": "Verderzetten van deploy-voorbereidingen en afronding van publicatieflows.",
+    "text": "Tijdens de vijftiende week heb ik verder gewerkt aan de voorbereidingen voor het effectief deployen van de Taxi App naar de App Store en Play Store. We hebben de eerdere configuraties verfijnd en gecontroleerd, zodat alles voldoet aan de richtlijnen van beide platformen.\n\nIk heb geholpen bij het testen van production builds, waarbij extra aandacht werd besteed aan stabiliteit, foutafhandeling en performantie. Ook werd nagegaan of alle externe services, zoals betalingen, e-mailverzending en API-koppelingen, correct functioneren in een productieomgeving.\n\nDaarnaast heb ik meegewerkt aan het opstellen van documentatie die nodig is voor toekomstige updates en herpublicaties van de app. Dit omvat onder andere versiebeheer, changelogs en een duidelijk overzicht van de deploymentstappen.\n\nDeze week vormde een mooie afronding van een belangrijk deel van het project. Ik kreeg een volledig beeld van de levenscyclus van een mobiele applicatie: van idee en ontwikkeling tot publicatie en onderhoud. Het was een waardevolle ervaring die me veel vertrouwen geeft voor toekomstige projecten.",
     "image": "/Images/stages/weekinprogress.png"
   }
 ]
