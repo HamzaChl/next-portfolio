@@ -82,7 +82,7 @@
     "title": "Stageweek 14",
     "shortDescription": "Voorbereiding en procedures voor publicatie op de App Store en Play Store.",
     "text": "In de veertiende week ben ik gestart met het onderzoeken en voorbereiden van de procedures om de mobiele applicatie te publiceren op zowel de Apple App Store als de Google Play Store. Dit bleek een technisch en administratief traject te zijn dat veel nauwkeurigheid vereist.\n\nIk heb me verdiept in de vereisten van beide platformen, zoals het aanmaken van developer-accounts, het correct instellen van app-gegevens, privacy policies, en het voorbereiden van de nodige metadata zoals beschrijvingen, screenshots en iconen. Daarnaast heb ik geleerd hoe certificaten, provisioning profiles en bundel-ID’s werken binnen het Apple-ecosysteem.\n\nOok werd er gekeken naar build-configuraties binnen Expo en React Native, zodat de app correct kan worden gebundeld voor productie. Hierbij kwamen topics aan bod zoals environment variables, API-sleutels, versiebeheer en het verschil tussen development- en production builds.\n\nDeze week gaf me een realistisch beeld van wat er allemaal komt kijken bij het effectief publiceren van een app. Het gaat niet alleen om code, maar ook om compliance, documentatie en het correct volgen van procedures.",
-    "image": "/Images/stages/weekinprogress.png"
+    "image": "/Images/stages/week14.png"
   },
   {
     "title": "Stageweek 15",
