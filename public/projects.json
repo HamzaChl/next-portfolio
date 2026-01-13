@@ -185,5 +185,21 @@
       "/Images/projects/14-3.png",
       "/Images/projects/14-4.png"
     ]
+  },
+  {
+    "id": 15,
+    "title": "TaxiLux",
+    "year": 2026,
+    "image": "/Images/15.png",
+    "hoverImage": "/Images/15hover.png",
+    "categories": ["Mobile App", "Web", "Full-Stack", "Design"],
+    "shortDescription": "Mobility platform developed as part of a professional internship project.",
+    "description": "TaxiLux is a complete mobility platform designed and developed during a professional internship. The project includes a mobile application for users, a backend API, and an administrative dashboard. It focuses on real-world use cases such as route calculation, airport transfers, payments, authentication, and scalability. The platform was built with a strong emphasis on usability, performance, and clean architecture, reflecting production-level development practices.",
+    "projectImages": [
+      "/Images/projects/15-1.png",
+      "/Images/projects/15-2.png",
+      "/Images/projects/15-3.png",
+      "/Images/projects/15-4.png"
+    ]
   }
 ]
