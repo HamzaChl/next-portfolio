@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import LogoLoop from "@/components/LogoLoop";
 import Link from "next/link";
+import ScrollZoom2 from "@/components/ScrollZoom2";
 
 const Home = () => {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -72,12 +73,12 @@ const Home = () => {
           letterSpacing: "0em",
           duration: 1.4,
           ease: "power4.out",
-        }
+        },
       );
       gsap.fromTo(
         subtitleRef.current,
         { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 1.2, delay: 0.3, ease: "power3.out" }
+        { opacity: 1, y: 0, duration: 1.2, delay: 0.3, ease: "power3.out" },
       );
       gsap.fromTo(
         ctaAnchorRef.current,
@@ -88,12 +89,12 @@ const Home = () => {
           delay: 0.6,
           duration: 0.8,
           ease: "back.out(1.7)",
-        }
+        },
       );
       gsap.fromTo(
         photoRef.current,
         { opacity: 0, x: -30 },
-        { opacity: 1, x: 0, duration: 1.2, ease: "power3.out" }
+        { opacity: 1, x: 0, duration: 1.2, ease: "power3.out" },
       );
     });
 
@@ -170,6 +171,7 @@ const Home = () => {
           </div>
 
           <ScrollZoom />
+          <ScrollZoom2 />
         </div>
       </div>
     </section>
